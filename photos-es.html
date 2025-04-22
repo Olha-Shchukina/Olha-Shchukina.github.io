@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>All Photos - Olha Shchukina's Portfolio</title>
+    <style>
+        /* Global Styles */
+     
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <a href="index-es.html" class="logo">Olha Shchukina</a>
+            <nav>
+                <ul>
+                    <li><a href="photos.html">Photos</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li class="language-selector">
+                        <a href="#" class="current-lang">ES</a>
+                        <div class="language-dropdown">
+                            <a href="photos.html">English</a>
+                            <a href="photos-es.html" class="active">Español</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+        <div class="page-title">
+            <h1>Photography Portfolio</h1>
+            <p>A collection of my best photographic work</p>
+        </div>
+        
+        <!-- Back button at the top -->
+        <div style="text-align: center; margin-bottom: 40px;">
+            <a href="index.html" class="back-button">Back to Home</a>
+        </div>
+        
+       <section id="photos">
+    <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+        <h2 class="section-title">Photos</h2>
+        <div class="photo-grid">
+            <!-- Wedding Collection -->
+            <div class="photo-item" data-category="weddings" data-collection="wedding-moments">
+                <img src="/api/placeholder/400/320" alt="Wedding Collection">
+                <div class="collection-overlay">
+                    <h3 class="collection-title">Wedding Moments</h3>
+                    <p class="collection-desc">Capturing the magic of special days</p>
+                    <span class="view-collection">View Collection</span>
+                </div>
+            </div>
+            
+            <!-- Portrait Collection -->
+            <div class="photo-item" data-category="portraits" data-collection="portrait-studio">
+                <img src="/api/placeholder/400/320" alt="Portrait Collection">
+                <div class="collection-overlay">
+                    <h3 class="collection-title">Studio Portraits</h3>
+                    <p class="collection-desc">Professional studio photography</p>
+                    <span class="view-collection">View Collection</span>
+                </div>
+            </div>
+            
+            <!-- Landscape Collection -->
+            <div class="photo-item" data-category="landscapes" data-collection="urban-landscapes">
+                <img src="/api/placeholder/400/320" alt="Urban Landscape Collection">
+                <div class="collection-overlay">
+                    <h3 class="collection-title">Urban Landscapes</h3>
+                    <p class="collection-desc">Beauty of city architecture</p>
+                    <span class="view-collection">View Collection</span>
+                </div>
+            </div>
+            
+            <!-- Commercial Collection -->
+            <div class="photo-item" data-category="commercial" data-collection="product-photography">
+                <img src="/api/placeholder/400/320" alt="Product Photography">
+                <div class="collection-overlay">
+                    <h3 class="collection-title">Product Photography</h3>
+                    <p class="collection-desc">Showcasing products with style</p>
+                    <span class="view-collection">View Collection</span>
+                </div>
+            </div>
+            
+            <!-- Family Collection -->
+            <div class="photo-item" data-category="portraits" data-collection="family-portraits">
+                <img src="/api/placeholder/400/320" alt="Family Portraits">
+                <div class="collection-overlay">
+                    <h3 class="collection-title">Family Portraits</h3>
+                    <p class="collection-desc">Capturing precious moments</p>
+                    <span class="view-collection">View Collection</span>
+                </div>
+            </div>
+            
+            <!-- Nature Collection -->
+            <div class="photo-item" data-category="landscapes" data-collection="nature-escapes">
+                <img src="/api/placeholder/400/320" alt="Nature Landscapes">
+                <div class="collection-overlay">
+                    <h3 class="collection-title">Nature Escapes</h3>
+                    <p class="collection-desc">Breathtaking natural scenery</p>
+                    <span class="view-collection">View Collection</span>
+                </div>
+            </div>
+        </div>
+        <div class="show-more-container">
+            <a href="photos.html" class="show-more-btn">Show More Photos</a>
+        </div>
+    </div>
+</section>
+
+<!-- Collection Modal -->
+<div class="collection-modal" id="collectionModal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 class="modal-title" id="modalTitle">Collection Title</h2>
+            <button class="close-modal">&times;</button>
+        </div>
+        <div class="modal-body">
+            <p class="collection-description" id="modalDescription">Collection description goes here.</p>
+            <div class="collection-photos" id="collectionPhotos">
+                <!-- Collection photos will be loaded here dynamically -->
+            </div>
+        </div>
+    </div>
+</div>
+    </main>
+    
+    <!-- Back to top button -->
+    <a href="#" class="back-to-top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </a>
+    
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/olha-shchukina/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                        <span>Linkedin</span>
+                    </a>
+                <a href="https://instagram.com/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                    <span>Instagram</span>
+                </a>
+                <a href="https://tiktok.com/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                        <path d="M9 12a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"></path>
+                        <path d="M16 8v8"></path>
+                        <path d="M12 16v4"></path>
+                        <path d="M20 8a4 4 0 0 0-4-4"></path>
+                        <path d="M18 4c-1.5-1.5-3-2-4-2"></path>
+                        <path d="M12 12a4 4 0 0 0-4 4"></path>
+                    </svg>
+                    <span>TikTok</span>
+                </a>
+            </div>
+            <div class="footer-languages">
+                <a href="photos.html">English</a> | 
+                <a href="photos-es.html" class="active">Español</a>
+            </div>
+            <div class="copyright">
+                &copy; 2025 Olha Shchukina. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Simple JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>
