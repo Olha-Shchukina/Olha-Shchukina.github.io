@@ -10,7 +10,26 @@ window.addEventListener('scroll', function() {
 document.addEventListener('DOMContentLoaded', function() {
     // Collection data - in a real implementation, this would come from a database or CMS
     const collections = {
-        'wedding-moments': {
+		
+		'phot-proj': {
+            title: 'Photography Project about Couples',
+            description: 'I’m really passionate about capturing the connection between people—especially couples. That’s why I decided to create my own photography project about love. The idea is to show how each couple lives in their own world, fully immersed in their love, not worrying about what’s happening around them. Sometimes, they might not even fit the standards of the world around them 😊',
+            photos: [
+                { src: 'photos/Enr y Evel/A7405825_02.jpg', alt: '' },
+                { src: 'photos/Enr y Evel/A7405856.jpg', alt: '' },
+                { src: 'photos/Enr y Evel/A7406134.jpg', alt: '' },
+                { src: 'photos/Enr y Evel/A7406109.jpg', alt: '' },
+                { src: 'photos/Mish y Mar/A7405455.jpg', alt: '' },
+                { src: 'photos/Mish y Mar/A7405459.jpg', alt: '' },
+                { src: 'photos/Mish y Mar/A7405485_rec.jpg', alt: '' },
+                { src: 'photos/Mish y Mar/A7405544_rec.jpg', alt: '' },
+                { src: 'photos/Mish y Mar/A7405608.jpg', alt: '' },
+                { src: 'photos/Mish y Mar/A7405595_rec.jpg', alt: '' }
+            ]
+        },
+		
+		
+        'amlul': {
             title: 'Photoshoot from Amlul clothing brand',
             description: 'The shoot took place in Madrid, in a location that visually resembles Miami, reflecting the brand’s timeless spirit.',
             photos: [
@@ -26,20 +45,20 @@ document.addEventListener('DOMContentLoaded', function() {
                 { src: 'photos/07_ed.jpg', alt: '' }
             ]
         },
-        'portrait-studio': {
+        'eyelash-specialist': {
             title: 'Branding photoshoot for an eyelash extension specialist',
             description: 'An eyelash extension specialist reached out for a photoshoot to enhance her personal brand on social media. We did the session in her salon using my lighting gear.',
             photos: [
-                { src: 'photos/A7401932.jpg', alt: 'Professional headshot' },
-                { src: 'photos/A7401947.jpg', alt: 'Creative portrait' },
-                { src: 'photos/A7401924.jpg', alt: 'Black and white portrait' },
-                { src: 'photos/A7402020.jpg', alt: 'Studio lighting setup' },
-                { src: 'photos/A7402007.jpg', alt: 'Corporate portrait' },
-                { src: 'photos/A7401945.jpg', alt: 'Artistic portrait' },
-				{ src: 'photos/A7402039.jpg', alt: 'Artistic portrait' },
+                { src: 'photos/A7401932.jpg', alt: '' },
+                { src: 'photos/A7401947.jpg', alt: '' },
+                { src: 'photos/A7401924.jpg', alt: '' },
+                { src: 'photos/A7402020.jpg', alt: '' },
+                { src: 'photos/A7402007.jpg', alt: '' },
+                { src: 'photos/A7401945.jpg', alt: '' },
+				{ src: 'photos/A7402039.jpg', alt: '' },
             ]
         },
-        'Carlos y Laura': {
+        'carlos-laura': {
             title: 'Carlos & Laura – Cinematic Couple Photoshoot',
             description: 'The couple wanted a session with two outfits, and for the wedding attire, they were looking for something more cinematic and symbolic.',
             photos: [
@@ -54,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
 				{ src: 'photos/A7401672-Enhanced-NR.jpg', alt: '' }
             ]
         },
-        'product-photography': {
+        'lana-personal': {
             title: 'An individual portrait session',
             description: 'Lana reached out for a personal photoshoot, and for her birthday, we did it right in her beauty salon using my gear and lighting.',
             photos: [
@@ -67,30 +86,71 @@ document.addEventListener('DOMContentLoaded', function() {
 				
             ]
         },
-        'family-portraits': {
-            title: 'Family Portraits',
-            description: 'Capturing the connections and dynamics between family members.',
+        'couples-years': {
+            title: 'Couple sessions',
+            description: 'Over the years, I have photographed many couples, capturing the connection between them and highlighting the human relationship as the most important aspect.',
             photos: [
-                { src: '/api/placeholder/800/600', alt: 'Large family group' },
-                { src: '/api/placeholder/800/600', alt: 'Parents with children' },
-                { src: '/api/placeholder/800/600', alt: 'Sibling interaction' },
-                { src: '/api/placeholder/800/600', alt: 'Family at home' },
-                { src: '/api/placeholder/800/600', alt: 'Multi-generation portrait' },
-                { src: '/api/placeholder/800/600', alt: 'Family candid moment' }
+                { src: 'photos/DSC00105.jpg', alt: '' },
+                { src: 'photos/DSC00091.jpg', alt: '' },
+                { src: 'photos/DSC00102.jpg', alt: '' },
+                { src: 'photos/DSC00448.jpg', alt: '' },
+                { src: 'photos/DSC00449.jpg', alt: '' },
+                { src: 'photos/DSC00562_lighter.jpg', alt: '' },
+				{ src: 'photos/DSC00593.jpg', alt: '' },
+				{ src: 'photos/_DSC6472-2.jpg', alt: '' },
+				{ src: 'photos/_DSC6533-1.jpg', alt: '' },
+				{ src: 'photos/_DSC6508.jpg', alt: '' }
+		
             ]
         },
-        'nature-escapes': {
-            title: 'Nature Escapes',
-            description: 'Breathtaking landscapes capturing the beauty of natural environments.',
+        'lisy': {
+            title: 'An individual photo shoot',
+            description: 'The photoshoot for a girl who found me online, done for her social media. It took place in Formigal, Spain.',
             photos: [
-                { src: '/api/placeholder/800/600', alt: 'Mountain landscape' },
-                { src: '/api/placeholder/800/600', alt: 'Ocean view' },
-                { src: '/api/placeholder/800/600', alt: 'Forest pathway' },
-                { src: '/api/placeholder/800/600', alt: 'Sunset landscape' },
-                { src: '/api/placeholder/800/600', alt: 'Lake reflection' },
-                { src: '/api/placeholder/800/600', alt: 'Natural details' }
+                { src: 'photos/A7403251-Enhanced-NR_02.jpg', alt:''  },
+                { src: 'photos/A7403246-Enhanced-NR_02.jpg', alt: '' },
+                { src: 'photos/A7403223_03.jpg', alt:''  },
+                { src: 'photos/A7403255-Enhanced-NR_02.jpg', alt: '' },
+                { src: 'photos/A7403288.jpg', alt: '' },
+                { src: 'photos/A7403254-Enhanced-NR.jpg', alt:''  },
+				{ src: 'photos/A7403237-Enhanced-NR.jpg', alt:''  }
+            ]
+        },
+		
+		'dafnis': {
+            title: 'Photo retouching for Dafni Girls Crossdressing Studio',
+            description: "For almost two years now, I've been doing this as a side job, focusing on retouching photos to help men look more feminine. My main goal is to soften their features, eliminate wrinkles, and remove unwanted hair, among other adjustments.",
+            photos: [
+                { src: 'photos/Comparasion_02.jpg', alt: '' },
+                { src: 'photos/Comparasion_08.jpg', alt: '' },
+                { src: 'photos/Comparasion_09.jpg', alt: '' },
+                { src: 'photos/Comparasion_11.jpg', alt: '' },
+                { src: 'photos/Comparasion_10.jpg', alt: '' },
+                { src: 'photos/Comparasion_03.jpg', alt: '' },
+                { src: 'photos/Comparasion_06.jpg', alt: '' },
+                { src: 'photos/Comparasion_07.jpg', alt: '' },
+                { src: 'photos/Comparasion_04.jpg', alt: '' }
+            ]
+        },
+		
+		
+		'savin': {
+            title: 'Photos for the Savin Product sausage factory',
+            description: 'One of my first projects, in which I took photos and videos. The idea was to create content for their social media, attend and capture events where their products were presented, and create appetizing still lifes combining their cured meats with other foods.',
+            photos: [
+                { src: 'photos/photo_2020-09-24_21-37-26.jpg', alt: '' },
+                { src: 'photos/photo_2020-09-24_21-36-52.jpg', alt: '' },
+                { src: 'photos/photo_2020-08-10_16-34-43.jpg', alt: '' },
+                { src: 'photos/photo_2020-08-11_22-46-05.jpg', alt: '' },
+                { src: 'photos/photo_2020-08-11_22-46-07.jpg', alt: '' },
+                { src: 'photos/IMG_1354.jpg', alt: '' },
+                { src: 'photos/photo_2020-08-11_22-46-04.jpg', alt: '' },
+                { src: 'photos/IMG_1243.jpg', alt: '' },
+                { src: 'photos/IMG_1264.jpg', alt: '' }
             ]
         }
+		
+		
     };
     
     // Collection Modal Elements
@@ -354,89 +414,3 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
-
-
-
-// Add this to your main.js file or replace the previous contact form code
-
-// Contact form handling with mailto
-document.addEventListener('DOMContentLoaded', function() {
-    const contactForm = document.getElementById('contactForm');
-    
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault(); // Prevent actual form submission
-            
-            // Get form data
-            const name = document.getElementById('name').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const subject = document.getElementById('subject').value.trim();
-            const message = document.getElementById('message').value.trim();
-            
-            // Validate form data
-            if (!name || !email || !subject || !message) {
-                showFormMessage('Please fill in all fields', 'error');
-                return;
-            }
-            
-            // Validate email format
-            if (!isValidEmail(email)) {
-                showFormMessage('Please enter a valid email address', 'error');
-                return;
-            }
-            
-            // If we get here, validation passed - proceed with mailto
-            
-            // Create a mailto link with the form data
-            const mailtoLink = `mailto:shchukinavideo@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
-            
-            // Open the mailto link
-            window.location.href = mailtoLink;
-            
-            // Show success message briefly before the email client opens
-            showFormMessage('Opening your email client...', 'success');
-            
-            // Reset the form after a short delay
-            setTimeout(() => {
-                contactForm.reset();
-            }, 1000);
-        });
-    }
-});
-
-// Email validation helper
-function isValidEmail(email) {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-}
-
-// Form message display function
-function showFormMessage(message, type) {
-    // Check if a message element already exists
-    let messageElement = document.querySelector('.form-message');
-    
-    // If not, create one
-    if (!messageElement) {
-        messageElement = document.createElement('div');
-        messageElement.className = 'form-message';
-        contactForm.appendChild(messageElement);
-    }
-    
-    // Set message and style based on type
-    messageElement.textContent = message;
-    messageElement.className = `form-message ${type}`;
-    
-    // Make sure it's visible
-    messageElement.style.display = 'block';
-    
-    // Only auto-remove error messages, not success ones (since we'll navigate away)
-    if (type === 'error') {
-        setTimeout(() => {
-            messageElement.style.opacity = '0';
-            setTimeout(() => {
-                messageElement.style.display = 'none';
-                messageElement.style.opacity = '1';
-            }, 500);
-        }, 4000);
-    }
-}
