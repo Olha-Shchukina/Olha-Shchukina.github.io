@@ -97,9 +97,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 { src: 'photos/DSC00449.jpg', alt: '' },
                 { src: 'photos/DSC00562_lighter.jpg', alt: '' },
 				{ src: 'photos/DSC00593.jpg', alt: '' },
-				{ src: 'photos/_DSC6472-2.jpg', alt: '' },
-				{ src: 'photos/_DSC6533-1.jpg', alt: '' },
-				{ src: 'photos/_DSC6508.jpg', alt: '' }
+				{ src: 'photos/DSC6472-2.jpg', alt: '' },
+				{ src: 'photos/DSC6533-1.jpg', alt: '' },
+				{ src: 'photos/DSC6508.jpg', alt: '' }
 		
             ]
         },
@@ -239,9 +239,9 @@ document.addEventListener('DOMContentLoaded', function() {
         { src: 'photos/DSC00449.jpg', alt: '' },
         { src: 'photos/DSC00562_lighter.jpg', alt: '' },
         { src: 'photos/DSC00593.jpg', alt: '' },
-        { src: 'photos/_DSC6472-2.jpg', alt: '' },
-        { src: 'photos/_DSC6533-1.jpg', alt: '' },
-        { src: 'photos/_DSC6508.jpg', alt: '' }
+        { src: 'photos/DSC6472-2.jpg', alt: '' },
+        { src: 'photos/DSC6533-1.jpg', alt: '' },
+        { src: 'photos/DSC6508.jpg', alt: '' }
     ]
 },
 
