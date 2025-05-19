@@ -148,8 +148,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 { src: 'photos/IMG_1243.jpg', alt: '' },
                 { src: 'photos/IMG_1264.jpg', alt: '' }
             ]
-        }
-
+        },
         ///spanish
 
         'phot-proj-es': {
