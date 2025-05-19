@@ -149,6 +149,148 @@ document.addEventListener('DOMContentLoaded', function() {
                 { src: 'photos/IMG_1264.jpg', alt: '' }
             ]
         }
+
+        ///spanish
+
+        'phot-proj-es': {
+    title: 'Proyecto fotográfico sobre parejas',
+    description: 'Me apasiona capturar la conexión entre las personas—especialmente las parejas. Por eso decidí crear mi propio proyecto fotográfico sobre el amor. La idea es mostrar cómo cada pareja vive en su propio mundo, completamente inmersa en su amor, sin preocuparse por lo que pasa a su alrededor. A veces, ni siquiera encajan en los estándares del mundo que les rodea 😊',
+    photos: [
+        { src: 'photos/Enr y Evel/A7405825_02.jpg', alt: '' },
+        { src: 'photos/Enr y Evel/A7405856.jpg', alt: '' },
+        { src: 'photos/Enr y Evel/A7406134.jpg', alt: '' },
+        { src: 'photos/Enr y Evel/A7406109.jpg', alt: '' },
+        { src: 'photos/Mish y Mar/A7405455.jpg', alt: '' },
+        { src: 'photos/Mish y Mar/A7405459.jpg', alt: '' },
+        { src: 'photos/Mish y Mar/A7405485_rec.jpg', alt: '' },
+        { src: 'photos/Mish y Mar/A7405544_rec.jpg', alt: '' },
+        { src: 'photos/Mish y Mar/A7405608.jpg', alt: '' },
+        { src: 'photos/Mish y Mar/A7405595_rec.jpg', alt: '' }
+    ]
+},
+
+'amlul-es': {
+    title: 'Sesión de fotos para la marca de ropa Amlul',
+    description: 'La sesión se realizó en Madrid, en una localización que visualmente recuerda a Miami, reflejando el espíritu atemporal de la marca.',
+    photos: [
+        { src: 'photos/12_ed.jpg', alt: '' },
+        { src: 'photos/11_ed.jpg', alt: '' },
+        { src: 'photos/09_ed.jpg', alt: '' },
+        { src: 'photos/01_ed.jpg', alt: '' },
+        { src: 'photos/04_ed.jpg', alt: '' },
+        { src: 'photos/03_ed.jpg', alt: '' },
+        { src: 'photos/13_ed.jpg', alt: '' },
+        { src: 'photos/05_ed.jpg', alt: '' },
+        { src: 'photos/15_ed.jpg', alt: '' },
+        { src: 'photos/07_ed.jpg', alt: '' }
+    ]
+},
+
+'eyelash-specialist-es': {
+    title: 'Sesión de marca para una especialista en extensiones de pestañas',
+    description: 'Una especialista en extensiones de pestañas me contactó para una sesión de fotos con el objetivo de mejorar su marca personal en redes sociales. Hicimos la sesión en su salón usando mi equipo de iluminación.',
+    photos: [
+        { src: 'photos/A7401932.jpg', alt: '' },
+        { src: 'photos/A7401947.jpg', alt: '' },
+        { src: 'photos/A7401924.jpg', alt: '' },
+        { src: 'photos/A7402020.jpg', alt: '' },
+        { src: 'photos/A7402007.jpg', alt: '' },
+        { src: 'photos/A7401945.jpg', alt: '' },
+        { src: 'photos/A7402039.jpg', alt: '' },
+    ]
+},
+
+'carlos-laura-es': {
+    title: 'Carlos y Laura – Sesión fotográfica cinematográfica de pareja',
+    description: 'La pareja quería una sesión con dos atuendos, y para el vestuario de boda buscaban algo más cinematográfico y simbólico.',
+    photos: [
+        { src: 'photos/A7401585.jpg', alt: '' },
+        { src: 'photos/A7401621-Enhanced-NR_02.jpg', alt: '' },
+        { src: 'photos/A7401578.jpg', alt: '' },
+        { src: 'photos/A7401572.jpg', alt: '' },
+        { src: 'photos/Laura_03.jpg', alt: '' },
+        { src: 'photos/Laura_02.jpg ', alt: '' },
+        { src: 'photos/A7401528.jpg', alt: '' },
+        { src: 'photos/A7401684-Enhanced-NR.jpg', alt: '' },
+        { src: 'photos/A7401672-Enhanced-NR.jpg', alt: '' }
+    ]
+},
+
+'lana-personal-es': {
+    title: 'Sesión de retrato individual',
+    description: 'Lana me contactó para una sesión personal, y para su cumpleaños hicimos la sesión directamente en su salón de belleza usando mi equipo de iluminación.',
+    photos: [
+        { src: 'photos/A7401767.jpg', alt: '' },
+        { src: 'photos/A7401709.jpg', alt: '' },
+        { src: 'photos/A7401704.jpg', alt: '' },
+        { src: 'photos/A7401788.jpg', alt: '' },
+        { src: 'photos/A7401837_blue_large.jpg', alt: '' },
+        { src: 'photos/A7401813_blue.jpg', alt: '' }
+    ]
+},
+
+'couples-years-es': {
+    title: 'Sesiones de pareja',
+    description: 'A lo largo de los años he fotografiado muchas parejas, capturando la conexión entre ellas y destacando la relación humana como el aspecto más importante.',
+    photos: [
+        { src: 'photos/DSC00105.jpg', alt: '' },
+        { src: 'photos/DSC00091.jpg', alt: '' },
+        { src: 'photos/DSC00102.jpg', alt: '' },
+        { src: 'photos/DSC00448.jpg', alt: '' },
+        { src: 'photos/DSC00449.jpg', alt: '' },
+        { src: 'photos/DSC00562_lighter.jpg', alt: '' },
+        { src: 'photos/DSC00593.jpg', alt: '' },
+        { src: 'photos/_DSC6472-2.jpg', alt: '' },
+        { src: 'photos/_DSC6533-1.jpg', alt: '' },
+        { src: 'photos/_DSC6508.jpg', alt: '' }
+    ]
+},
+
+'lisy-es': {
+    title: 'Sesión fotográfica individual',
+    description: 'Sesión de fotos para una chica que me encontró en internet, hecha para sus redes sociales. Se realizó en Formigal, España.',
+    photos: [
+        { src: 'photos/A7403251-Enhanced-NR_02.jpg', alt:'' },
+        { src: 'photos/A7403246-Enhanced-NR_02.jpg', alt: '' },
+        { src: 'photos/A7403223_03.jpg', alt:'' },
+        { src: 'photos/A7403255-Enhanced-NR_02.jpg', alt: '' },
+        { src: 'photos/A7403288.jpg', alt: '' },
+        { src: 'photos/A7403254-Enhanced-NR.jpg', alt:'' },
+        { src: 'photos/A7403237-Enhanced-NR.jpg', alt:'' }
+    ]
+},
+
+'dafnis-es': {
+    title: 'Retoque fotográfico para Dafni Girls Crossdressing Studio',
+    description: 'Desde hace casi dos años, hago esto como un trabajo secundario, centrándome en retocar fotos para ayudar a los hombres a verse más femeninos. Mi objetivo principal es suavizar sus rasgos, eliminar arrugas y quitar el vello no deseado, entre otros ajustes.',
+    photos: [
+        { src: 'photos/Comparasion_02.jpg', alt: '' },
+        { src: 'photos/Comparasion_08.jpg', alt: '' },
+        { src: 'photos/Comparasion_09.jpg', alt: '' },
+        { src: 'photos/Comparasion_11.jpg', alt: '' },
+        { src: 'photos/Comparasion_10.jpg', alt: '' },
+        { src: 'photos/Comparasion_03.jpg', alt: '' },
+        { src: 'photos/Comparasion_06.jpg', alt: '' },
+        { src: 'photos/Comparasion_07.jpg', alt: '' },
+        { src: 'photos/Comparasion_04.jpg', alt: '' }
+    ]
+},
+
+'savin-es': {
+    title: 'Fotos para la fábrica de embutidos Savin Product',
+    description: 'Uno de mis primeros proyectos, en el que tomé fotos y vídeos. La idea era crear contenido para sus redes sociales, asistir y capturar eventos donde se presentaban sus productos, y crear bodegones apetitosos combinando sus embutidos con otros alimentos.',
+    photos: [
+        { src: 'photos/photo_2020-09-24_21-37-26.jpg', alt: '' },
+        { src: 'photos/photo_2020-09-24_21-36-52.jpg', alt: '' },
+        { src: 'photos/photo_2020-08-10_16-34-43.jpg', alt: '' },
+        { src: 'photos/photo_2020-08-11_22-46-05.jpg', alt: '' },
+        { src: 'photos/photo_2020-08-11_22-46-07.jpg', alt: '' },
+        { src: 'photos/IMG_1354.jpg', alt: '' },
+        { src: 'photos/photo_2020-08-11_22-46-04.jpg', alt: '' },
+        { src: 'photos/IMG_1243.jpg', alt: '' },
+        { src: 'photos/IMG_1264.jpg', alt: '' }
+    ]
+}
 		
 		
     };
