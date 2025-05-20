@@ -555,3 +555,25 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+ document.addEventListener("DOMContentLoaded", () => {
+    const items = document.querySelectorAll(".video-item");
+    const btn = document.getElementById("showMoreBtn");
+    let shown = 0;
+    const batchSize = 6;
+
+    function showNextBatch() {
+      for (let i = shown; i < shown + batchSize && i < items.length; i++) {
+        items[i].classList.add("visible");
+      }
+      shown += batchSize;
+
+      if (shown >= items.length) {
+        btn.style.display = "none"; // Hide button when done
+      }
+    }
+
+    showNextBatch(); // Show initial batch
+
+    btn.addEventListener("click", showNextBatch);
+  });
