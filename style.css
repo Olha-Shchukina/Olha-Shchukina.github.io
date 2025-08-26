@@ -2978,14 +2978,14 @@
   transform: scale(0.98);
 }
 
-.lazy-img {
-  /*opacity: 0;
-  transition: opacity 0.4s ease-in;*/
+/*.lazy-img {
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
 }
 .lazy-img.loaded {
   opacity: 1;
 }
-
+*/
 /* Optional: video container responsive style */
 .video-container {
   position: relative;
@@ -3030,8 +3030,6 @@
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.2s ease-out;
-    will-change: opacity;
-  transform: translateZ(0);
 }
 
 .photo-item:hover .collection-overlay {
@@ -3052,3 +3050,39 @@
 .view-collection:hover {
   background: #eee;
 }
+
+
+/* === Performance overrides (appended) === */
+
+/* Faster lazy fade */
+.lazy-img { opacity: 0; transition: opacity 0.2s ease-in; }
+.lazy-img.loaded { opacity: 1; }
+
+/* Make overlay animate cheaply */
+.collection-overlay { will-change: opacity; transform: translateZ(0); }
+
+/* Stop work for off-screen tiles in modal */
+.collection-photo {
+  content-visibility: auto;
+  contain-intrinsic-size: 400px 300px;
+  position: relative;
+  background: #121212;
+  will-change: transform;
+}
+
+/* Lightweight loading state */
+.collection-photo.loading img { opacity: 0.3; }
+.collection-photo.loading::before {
+  content: '';
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 30px; height: 30px;
+  margin: -15px 0 0 -15px;
+  border: 3px solid rgba(255,255,255,0.25);
+  border-top-color: #e77f67;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Avoid expensive backdrop blur (major perf win) */
+.photo-caption { background: rgba(0,0,0,0.6); /* backdrop-filter: blur(5px); */ }
