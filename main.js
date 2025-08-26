@@ -11,6 +11,174 @@ document.addEventListener('DOMContentLoaded', function() {
     // Collection data - in a real implementation, this would come from a database or CMS
     const collections = {
 		
+		'wedd:Fran': {
+            title: 'Wedding session: Marta and Fran',
+            description: 'A beautiful wedding at Caserío de Lobones in Segovia, celebrating the union of two Spanish hearts, Marta and Fran. The day was a perfect blend of joy, vibrant emotions, and refined elegance.',
+            photos: [
+                { src: 'photos/Lauren and Ciaran/02.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/03.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/04.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/05.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/06.jpg', alt: '' },
+				{ src: 'photos/Lauren and Ciaran/12.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/07.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/08.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/09.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/10.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/11.jpg', alt: '' },
+				{ src: 'photos/Lauren and Ciaran/13.jpg', alt: '' },
+				{ src: 'photos/Lauren and Ciaran/14.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/15.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/16.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/17.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/18.jpg', alt: '' }
+				{ src: 'photos/Lauren and Ciaran/19.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/20.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/21.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/22.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/23.jpg', alt: '' }
+				{ src: 'photos/Lauren and Ciaran/24.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/25.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/26.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/27.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/28.jpg', alt: '' }
+				{ src: 'photos/Lauren and Ciaran/29.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/30.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/31.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/32.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/33.jpg', alt: '' }
+				{ src: 'photos/Lauren and Ciaran/34.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/35.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/36.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/37.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/38.jpg', alt: '' }
+				{ src: 'photos/Lauren and Ciaran/39.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/40.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/41.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/42.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/43.jpg', alt: '' }
+				{ src: 'photos/Lauren and Ciaran/44.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/45.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/46.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/47.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/48.jpg', alt: '' },
+				{ src: 'photos/Lauren and Ciaran/49.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/50.jpg', alt: '' }
+				{ src: 'photos/Lauren and Ciaran/51.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/52.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/53.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/54.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/55.jpg', alt: '' }
+				{ src: 'photos/Lauren and Ciaran/56.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/57.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/58.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/59.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/60.jpg', alt: '' },
+				{ src: 'photos/Lauren and Ciaran/61.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/62.jpg', alt: '' }
+				{ src: 'photos/Lauren and Ciaran/63.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/64.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/65.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/66.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/67.jpg', alt: '' }
+				{ src: 'photos/Lauren and Ciaran/68.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/70.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/71.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/72.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/73.jpg', alt: '' },
+				{ src: 'photos/Lauren and Ciaran/74.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/75.jpg', alt: '' }
+				{ src: 'photos/Lauren and Ciaran/76.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/77.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/78.jpg', alt: '' }
+               
+            ]
+        },
+		
+		'wedd:Lauren': {
+            title: 'Wedding photos: Lauren and Ciáran',
+            description: 'I had the pleasure of photographing Lauren and Ciarán’s wedding in Barcelona. They’re originally from Ireland, which made it a wonderful international experience. This was also possible thanks to my ability to work in English.',
+            photos: [
+                { src: 'photos/Lauren and Ciaran/02.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/03.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/04.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/05.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/06.jpg', alt: '' },
+				{ src: 'photos/Lauren and Ciaran/12.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/07.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/08.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/09.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/10.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/11.jpg', alt: '' },
+				{ src: 'photos/Lauren and Ciaran/13.jpg', alt: '' },
+				{ src: 'photos/Lauren and Ciaran/14.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/15.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/16.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/17.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/18.jpg', alt: '' }
+				{ src: 'photos/Lauren and Ciaran/19.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/20.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/21.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/22.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/23.jpg', alt: '' }
+				{ src: 'photos/Lauren and Ciaran/24.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/25.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/26.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/27.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/28.jpg', alt: '' }
+				{ src: 'photos/Lauren and Ciaran/29.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/30.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/31.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/32.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/33.jpg', alt: '' }
+				{ src: 'photos/Lauren and Ciaran/34.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/35.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/36.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/37.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/38.jpg', alt: '' }
+				{ src: 'photos/Lauren and Ciaran/39.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/40.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/41.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/42.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/43.jpg', alt: '' }
+				{ src: 'photos/Lauren and Ciaran/44.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/45.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/46.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/47.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/48.jpg', alt: '' },
+				{ src: 'photos/Lauren and Ciaran/49.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/50.jpg', alt: '' }
+				{ src: 'photos/Lauren and Ciaran/51.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/52.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/53.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/54.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/55.jpg', alt: '' }
+				{ src: 'photos/Lauren and Ciaran/56.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/57.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/58.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/59.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/60.jpg', alt: '' },
+				{ src: 'photos/Lauren and Ciaran/61.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/62.jpg', alt: '' }
+				{ src: 'photos/Lauren and Ciaran/63.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/64.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/65.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/66.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/67.jpg', alt: '' }
+				{ src: 'photos/Lauren and Ciaran/68.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/70.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/71.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/72.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/73.jpg', alt: '' },
+				{ src: 'photos/Lauren and Ciaran/74.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/75.jpg', alt: '' }
+				{ src: 'photos/Lauren and Ciaran/76.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/77.jpg', alt: '' },
+                { src: 'photos/Lauren and Ciaran/78.jpg', alt: '' }
+               
+            ]
+        },
+		
 		'phot-proj': {
             title: 'Photography Project about Couples',
             description: 'I’m really passionate about capturing the connection between people—especially couples. That’s why I decided to create my own photography project about love. The idea is to show how each couple lives in their own world, fully immersed in their love, not worrying about what’s happening around them. Sometimes, they might not even fit the standards of the world around them 😊',
@@ -45,6 +213,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 { src: 'photos/07_ed.jpg', alt: '' }
             ]
         },
+		
         'eyelash-specialist': {
             title: 'Branding photoshoot for an eyelash extension specialist',
             description: 'An eyelash extension specialist reached out for a photoshoot to enhance her personal brand on social media. We did the session in her salon using my lighting gear.',
@@ -73,6 +242,7 @@ document.addEventListener('DOMContentLoaded', function() {
 				{ src: 'photos/A7401672-Enhanced-NR.jpg', alt: '' }
             ]
         },
+		
         'lana-personal': {
             title: 'An individual portrait session',
             description: 'Lana reached out for a personal photoshoot, and for her birthday, we did it right in her beauty salon using my gear and lighting.',
@@ -86,6 +256,7 @@ document.addEventListener('DOMContentLoaded', function() {
 				
             ]
         },
+		
         'couples-years': {
             title: 'Couple sessions',
             description: 'Over the years, I have photographed many couples, capturing the connection between them and highlighting the human relationship as the most important aspect.',
@@ -103,6 +274,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		
             ]
         },
+		
         'lisy': {
             title: 'An individual photo shoot',
             description: 'The photoshoot for a girl who found me online, done for her social media. It took place in Formigal, Spain.',
@@ -117,21 +289,6 @@ document.addEventListener('DOMContentLoaded', function() {
             ]
         },
 		
-		'dafnis': {
-            title: 'Photo retouching for Dafni Girls Crossdressing Studio',
-            description: "For almost two years now, I've been doing this as a side job, focusing on retouching photos to help men look more feminine. My main goal is to soften their features, eliminate wrinkles, and remove unwanted hair, among other adjustments.",
-            photos: [
-                { src: 'photos/Comparasion_02.jpg', alt: '' },
-                { src: 'photos/Comparasion_08.jpg', alt: '' },
-                { src: 'photos/Comparasion_09.jpg', alt: '' },
-                { src: 'photos/Comparasion_11.jpg', alt: '' },
-                { src: 'photos/Comparasion_10.jpg', alt: '' },
-                { src: 'photos/Comparasion_03.jpg', alt: '' },
-                { src: 'photos/Comparasion_06.jpg', alt: '' },
-                { src: 'photos/Comparasion_07.jpg', alt: '' },
-                { src: 'photos/Comparasion_04.jpg', alt: '' }
-            ]
-        },
 		
 		
 		'savin': {
