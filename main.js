@@ -508,8 +508,8 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }, {
-        rootMargin: '300px 0px', // Increased from 200px for earlier loading
-        threshold: 0.1 // Increased from 0.01 to require more visibility before loading
+        rootMargin: '300px 0px',
+        threshold: 0.1
     });
     
     // Function to show a specific collection
@@ -563,6 +563,9 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
+
+  // Start observing images in modal now that DOM is ready
+  observeModalImages();
     // Open fullscreen viewer with specific photos and index
     function openFullscreen(photos, index) {
         if (!photos || photos.length === 0) return;
@@ -592,6 +595,13 @@ document.addEventListener('DOMContentLoaded', function() {
             // Update image when loaded
             fullscreenImage.src = photo.src;
             fullscreenImage.style.opacity = 1;
+            // Prefetch neighbors
+            if (Array.isArray(currentPhotos)) {
+              const next = currentPhotos[currentPhotoIndex + 1];
+              const prev = currentPhotos[currentPhotoIndex - 1];
+              if (next) prefetchImage(next.src || next);
+              if (prev) prefetchImage(prev.src || prev);
+            }
             
             // Update caption
             if (photoCaption) photoCaption.textContent = photo.alt || '';
@@ -735,32 +745,55 @@ document.addEventListener('DOMContentLoaded', function() {
     btn.addEventListener("click", showNextBatch);
   });
 
- // Lazy load images
-const lazyImgs = document.querySelectorAll('.lazy-img');
-const imgObserver = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
+/* === Prefetch neighbors for instant next/prev in fullscreen === */
+function prefetchImage(url) {
+  if (!url) return;
+  const im = new Image();
+  im.decoding = 'async';
+  im.fetchPriority = 'low';
+  im.src = url;
+}
+
+
+// --- MODAL lazy-loading (root: the modal element) ---
+function observeModalImages() {
+  const modalEl = document.getElementById('collectionModal');
+  if (!modalEl) return;
+  const modalImgs = document.querySelectorAll('#collectionPhotos img[data-src]');
+  const modalObserver = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const img = entry.target;
+      const cell = img.closest('.collection-photo');
+      if (cell) cell.classList.add('loading');
+      img.src = img.dataset.src;
+      img.onload = () => {
+        img.classList.add('loaded');
+        if (cell) cell.classList.remove('loading');
+      };
+      img.removeAttribute('data-src');
+      obs.unobserve(img);
+    });
+  }, { root: modalEl, rootMargin: '800px 0px', threshold: 0.01 });
+
+  modalImgs.forEach(img => modalObserver.observe(img));
+}
+
+
+// --- HOME GRID lazy-loading (root: viewport) ---
+(function() {
+  const gridLazyImgs = document.querySelectorAll('#photos .lazy-img[data-src]');
+  if (!gridLazyImgs.length) return;
+  const gridObserver = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
       const img = entry.target;
       img.src = img.dataset.src;
       img.onload = () => img.classList.add('loaded');
-      observer.unobserve(img);
-    }
-  });
-}, {
-  rootMargin: '200px',
-});
+      img.removeAttribute('data-src');
+      obs.unobserve(img);
+    });
+  }, { root: null, rootMargin: '200px 0px', threshold: 0.01 });
+  gridLazyImgs.forEach(img => gridObserver.observe(img));
+})();
 
-lazyImgs.forEach(img => imgObserver.observe(img));
-
-// Lazy load videos on click
-document.querySelectorAll('.video-preview').forEach(preview => {
-  preview.addEventListener('click', () => {
-    const iframe = document.createElement('iframe');
-    iframe.src = preview.dataset.videoSrc;
-    iframe.frameBorder = '0';
-    iframe.allowFullscreen = true;
-    preview.innerHTML = '';
-    preview.appendChild(iframe);
-    preview.classList.add('video-container');
-  });
-});
