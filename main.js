@@ -734,3 +734,33 @@ document.addEventListener('DOMContentLoaded', function() {
 
     btn.addEventListener("click", showNextBatch);
   });
+
+ // Lazy load images
+const lazyImgs = document.querySelectorAll('.lazy-img');
+const imgObserver = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const img = entry.target;
+      img.src = img.dataset.src;
+      img.onload = () => img.classList.add('loaded');
+      observer.unobserve(img);
+    }
+  });
+}, {
+  rootMargin: '200px',
+});
+
+lazyImgs.forEach(img => imgObserver.observe(img));
+
+// Lazy load videos on click
+document.querySelectorAll('.video-preview').forEach(preview => {
+  preview.addEventListener('click', () => {
+    const iframe = document.createElement('iframe');
+    iframe.src = preview.dataset.videoSrc;
+    iframe.frameBorder = '0';
+    iframe.allowFullscreen = true;
+    preview.innerHTML = '';
+    preview.appendChild(iframe);
+    preview.classList.add('video-container');
+  });
+});
