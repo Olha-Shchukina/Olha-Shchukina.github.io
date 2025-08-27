@@ -12,13 +12,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const collections = {
 		
 		'wedd:Fran': {
-            title: 'Wedding session: Marta and Fran',
+            title: 'Wedding photos: Marta and Fran',
             description: 'A beautiful wedding at Caserío de Lobones in Segovia, celebrating the union of two Spanish hearts, Marta and Fran. On this occasion, I had the pleasure of working as a second photographer alongside Enjoy The F Moment.',
             photos: [
-                { src: 'photos/Fran and Marta/01.jpg', alt: '' },
-				{ src: 'photos/Fran and Marta/02.jpg', alt: '' },
-                { src: 'photos/Fran and Marta/03.jpg', alt: '' },
+                { src: 'photos/Fran and Marta/02.jpg', alt: '' },
+				{ src: 'photos/Fran and Marta/03.jpg', alt: '' },
                 { src: 'photos/Fran and Marta/04.jpg', alt: '' },
+                { src: 'photos/Fran and Marta/01.jpg', alt: '' },
                 { src: 'photos/Fran and Marta/05.jpg', alt: '' },
                 { src: 'photos/Fran and Marta/06.jpg', alt: '' },
 				{ src: 'photos/Fran and Marta/12.jpg', alt: '' },
