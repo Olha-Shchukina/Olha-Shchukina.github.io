@@ -327,10 +327,10 @@ document.addEventListener('DOMContentLoaded', function() {
             title: 'An individual portrait session',
             description: 'Lana reached out for a personal photoshoot, and for her birthday, we did it right in her beauty salon using my gear and lighting.',
             photos: [
-                { src: 'photos/A7401767.jpg', alt: '' },
-				{ src: 'photos/A7401709.jpg', alt: '' },
+                { src: 'photos/A7401767_02.jpg', alt: '' },
+				{ src: 'photos/A7401788.jpg', alt: '' },
                 { src: 'photos/A7401704.jpg', alt: '' },             
-                { src: 'photos/A7401788.jpg', alt: '' },
+                { src: 'photos/A7401709.jpg', alt: '' },
                 { src: 'photos/A7401837_blue_large.jpg', alt: '' },
 				{ src: 'photos/A7401813_blue.jpg', alt: '' }
 				
