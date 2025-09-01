@@ -178,7 +178,6 @@ document.addEventListener('DOMContentLoaded', function() {
             title: 'Wedding photos: Lauren and Ciáran',
             description: 'I had the pleasure of photographing Lauren and Ciarán’s wedding in Barcelona. They’re originally from Ireland, which made it a wonderful international experience. This was also possible thanks to my ability to work in English.',
             photos: [
-                { src: 'photos/Lauren and Ciaran/02.jpg', alt: '' },
                 { src: 'photos/Lauren and Ciaran/03.jpg', alt: '' },
                 { src: 'photos/Lauren and Ciaran/04.jpg', alt: '' },
                 { src: 'photos/Lauren and Ciaran/05.jpg', alt: '' },
@@ -330,7 +329,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 { src: 'photos/A7401767_02.jpg', alt: '' },
 				{ src: 'photos/A7401788.jpg', alt: '' },
                 { src: 'photos/A7401704.jpg', alt: '' },             
-                { src: 'photos/A7401709.jpg', alt: '' },
+                { src: 'photos/A7401709.j pg', alt: '' },
                 { src: 'photos/A7401837_blue_large.jpg', alt: '' },
 				{ src: 'photos/A7401813_blue.jpg', alt: '' }
 				
