@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Collection data - in a real implementation, this would come from a database or CMS
     const collections = {
 		
+		
 		'wedd:M y N': {
             title: 'Wedding photos: Marta and Nacho',
             description: 'I had the pleasure of photographing Marta and Nacho’s wedding at Casa del Esquileo in Segovia. On this occasion, I worked as a second photographer alongside Enjoy The F Moment.',
@@ -116,6 +117,76 @@ document.addEventListener('DOMContentLoaded', function() {
                 { src: 'photos/Marta and Nacho/100.jpg', alt: '' },
 				{ src: 'photos/Marta and Nacho/101.jpg', alt: '' },
                 { src: 'photos/Marta and Nacho/102.jpg', alt: '' }
+                
+                
+               
+            ]
+        },
+		
+		'Rosa y Jesus': {
+            title: 'Pre-wedding session: Rosa and Jesús',
+            description: 'Very fun and diverse pre-wedding photo session at Las Lagunas de las Madres in Arganda del Rey.',
+            photos: [
+			    { src: 'photos/Rosa y Jesus/01.jpg', alt: '' },
+				{ src: 'photos/Rosa y Jesus/03.jpg', alt: '' },
+                { src: 'photos/Rosa y Jesus/04.jpg', alt: '' },
+                { src: 'photos/Rosa y Jesus/05.jpg', alt: '' },
+                { src: 'photos/Rosa y Jesus/06.jpg', alt: '' },
+                { src: 'photos/Rosa y Jesus/07.jpg', alt: '' },
+                { src: 'photos/Rosa y Jesus/08.jpg', alt: '' },
+                { src: 'photos/Rosa y Jesus/09.jpg', alt: '' },
+                { src: 'photos/Rosa y Jesus/10.jpg', alt: '' },
+                { src: 'photos/Rosa y Jesus/11.jpg', alt: '' },
+				{ src: 'photos/Rosa y Jesus/12.jpg', alt: '' },
+				{ src: 'photos/Rosa y Jesus/13.jpg', alt: '' },
+                { src: 'photos/Rosa y Jesus/15.jpg', alt: '' },
+                { src: 'photos/Rosa y Jesus/17.jpg', alt: '' },
+                { src: 'photos/Rosa y Jesus/18.jpg', alt: '' },
+				{ src: 'photos/Rosa y Jesus/19.jpg', alt: '' },
+                { src: 'photos/Rosa y Jesus/22.jpg', alt: '' },
+                { src: 'photos/Rosa y Jesus/23.jpg', alt: '' },
+				{ src: 'photos/Rosa y Jesus/24.jpg', alt: '' },
+                { src: 'photos/Rosa y Jesus/25.jpg', alt: '' },
+                { src: 'photos/Rosa y Jesus/26.jpg', alt: '' },
+                { src: 'photos/Rosa y Jesus/27.jpg', alt: '' },
+                { src: 'photos/Rosa y Jesus/28.jpg', alt: '' },
+				{ src: 'photos/Rosa y Jesus/29.jpg', alt: '' },
+                { src: 'photos/Rosa y Jesus/30.jpg', alt: '' },
+                { src: 'photos/Rosa y Jesus/31.jpg', alt: '' },
+                { src: 'photos/Rosa y Jesus/32.jpg', alt: '' },
+                { src: 'photos/Rosa y Jesus/33.jpg', alt: '' },
+                { src: 'photos/Rosa y Jesus/35.jpg', alt: '' },
+                { src: 'photos/Rosa y Jesus/36.jpg', alt: '' },
+                { src: 'photos/Rosa y Jesus/37.jpg', alt: '' },
+                { src: 'photos/Rosa y Jesus/38.jpg', alt: '' },
+				{ src: 'photos/Rosa y Jesus/39.jpg', alt: '' },
+                { src: 'photos/Rosa y Jesus/40.jpg', alt: '' },
+                { src: 'photos/Rosa y Jesus/41.jpg', alt: '' },
+                { src: 'photos/Rosa y Jesus/42.jpg', alt: '' },
+                { src: 'photos/Rosa y Jesus/43.jpg', alt: '' },
+				{ src: 'photos/Rosa y Jesus/44.jpg', alt: '' },
+                { src: 'photos/Rosa y Jesus/45.jpg', alt: '' },
+                { src: 'photos/Rosa y Jesus/46.jpg', alt: '' },
+                { src: 'photos/Rosa y Jesus/47.jpg', alt: '' },
+                { src: 'photos/Rosa y Jesus/48.jpg', alt: '' },
+				{ src: 'photos/Rosa y Jesus/49.jpg', alt: '' },
+                { src: 'photos/Rosa y Jesus/50.jpg', alt: '' },
+                { src: 'photos/Rosa y Jesus/52.jpg', alt: '' },
+                { src: 'photos/Rosa y Jesus/53.jpg', alt: '' },
+                { src: 'photos/Rosa y Jesus/54.jpg', alt: '' },
+                { src: 'photos/Rosa y Jesus/55.jpg', alt: '' },
+				{ src: 'photos/Rosa y Jesus/56.jpg', alt: '' },
+                { src: 'photos/Rosa y Jesus/57.jpg', alt: '' },
+                { src: 'photos/Rosa y Jesus/58.jpg', alt: '' },
+                { src: 'photos/Rosa y Jesus/59.jpg', alt: '' },
+                { src: 'photos/Rosa y Jesus/60.jpg', alt: '' },
+				{ src: 'photos/Rosa y Jesus/61.jpg', alt: '' },
+                { src: 'photos/Rosa y Jesus/62.jpg', alt: '' },
+				{ src: 'photos/Rosa y Jesus/63.jpg', alt: '' },
+                { src: 'photos/Rosa y Jesus/64.jpg', alt: '' },
+                { src: 'photos/Rosa y Jesus/65.jpg', alt: '' },
+                { src: 'photos/Rosa y Jesus/66.jpg', alt: '' }
+                
                 
                 
                
