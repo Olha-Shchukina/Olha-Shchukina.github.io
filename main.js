@@ -144,7 +144,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 { src: 'photos/Rosa y Jesus/18.jpg', alt: '' },
 				{ src: 'photos/Rosa y Jesus/19.jpg', alt: '' },
                 { src: 'photos/Rosa y Jesus/22.jpg', alt: '' },
-                { src: 'photos/Rosa y Jesus/23.jpg', alt: '' },
 				{ src: 'photos/Rosa y Jesus/24.jpg', alt: '' },
                 { src: 'photos/Rosa y Jesus/25.jpg', alt: '' },
                 { src: 'photos/Rosa y Jesus/26.jpg', alt: '' },
