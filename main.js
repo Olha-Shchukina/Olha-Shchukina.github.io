@@ -706,16 +706,29 @@ document.addEventListener('DOMContentLoaded', function() {
             title: 'Photography Project about Couples',
             description: 'I’m really passionate about capturing the connection between people—especially couples. That’s why I decided to create my own photography project about love. The idea is to show how each couple lives in their own world, fully immersed in their love, not worrying about what’s happening around them. Sometimes, they might not even fit the standards of the world around them 😊',
             photos: [
-                { src: 'photos/Enr y Evel/A7405825_02.jpg', alt: '' },
+                { src: 'photos/Enr y Evel/A7405825.jpg', alt: '' },
                 { src: 'photos/Enr y Evel/A7405856.jpg', alt: '' },
+				{ src: 'photos/Enr y Evel/A7405866.jpg', alt: '' },
                 { src: 'photos/Enr y Evel/A7406134.jpg', alt: '' },
-                { src: 'photos/Enr y Evel/A7406109.jpg', alt: '' },
-                { src: 'photos/Mish y Mar/A7405455.jpg', alt: '' },
-                { src: 'photos/Mish y Mar/A7405459.jpg', alt: '' },
-                { src: 'photos/Mish y Mar/A7405485_rec.jpg', alt: '' },
-                { src: 'photos/Mish y Mar/A7405544_rec.jpg', alt: '' },
-                { src: 'photos/Mish y Mar/A7405608.jpg', alt: '' },
-                { src: 'photos/Mish y Mar/A7405595_rec.jpg', alt: '' }
+                { src: 'photos/Enr y Evel/A7406109_02.jpg', alt: '' },
+				{ src: 'photos/Enr y Evel/A7406193.jpg', alt: '' },
+				{ src: 'photos/Maryam/01.jpg', alt: '' },
+                { src: 'photos/Maryam/02.jpg', alt: '' },
+				{ src: 'photos/Maryam/03.jpg', alt: '' },
+                { src: 'photos/Maryam/04.jpg', alt: '' },
+                { src: 'photos/Maryam/05.jpg', alt: '' },
+				{ src: 'photos/Maryam/06.jpg', alt: '' },
+				{ src: 'photos/Maryam/07.jpg', alt: '' },
+				{ src: 'photos/Maryam/08.jpg', alt: '' },
+				{ src: 'photos/Fernanda y Charles/01.jpg', alt: '' },
+				{ src: 'photos/Fernanda y Charles/02.jpg', alt: '' },
+				{ src: 'photos/Fernanda y Charles/03.jpg', alt: '' },
+				{ src: 'photos/Fernanda y Charles/04.jpg', alt: '' },
+                { src: 'photos/Mish y Mar/01.jpg', alt: '' },
+                { src: 'photos/Mish y Mar/02.jpg', alt: '' },
+                { src: 'photos/Mish y Mar/03.jpg', alt: '' },
+                { src: 'photos/Mish y Mar/04.jpg', alt: '' }
+                
             ]
         },
 		
