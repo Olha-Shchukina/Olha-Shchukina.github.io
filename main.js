@@ -8,6 +8,47 @@ window.addEventListener('scroll', function() {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
+
+     const form = document.getElementById('contactForm');
+  if (!form) return;
+
+  const statusEl = document.getElementById('contactStatus');
+  const submitBtn = form.querySelector('button[type="submit"]');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    // basic guard
+    if (!form.checkValidity()) {
+      form.reportValidity?.();
+      return;
+    }
+
+    submitBtn.disabled = true;
+    statusEl.textContent = 'Sending…';
+
+        try {
+          const formData = new FormData(form);
+          const res = await fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+          });
+
+          if (res.ok) {
+            form.reset();
+            statusEl.textContent = 'Thanks! Your message has been sent.';
+          } else {
+            const data = await res.json().catch(() => ({}));
+            statusEl.textContent = data?.errors?.[0]?.message || 'Oops — something went wrong. Please try again later.';
+          }
+        } catch (err) {
+          statusEl.textContent = 'Network error. Please check your connection and try again.';
+        } finally {
+          submitBtn.disabled = false;
+          setTimeout(() => { statusEl.textContent = ''; }, 6000);
+        }
+      });
     // Collection data - in a real implementation, this would come from a database or CMS
     const collections = {
 		
