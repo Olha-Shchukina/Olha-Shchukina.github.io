@@ -526,8 +526,12 @@
                 </div>
                 
                 <div class="contact-form">
+
                     <h3>Send Me a Message</h3>
-                    <form id="contactForm">
+                    <form id="contactForm"
+                      action="https://formspree.io/f/mjkanbno"
+                      method="POST"
+                    >   
                         <div class="form-group">
                             <label for="name">Name</label>
                             <input type="text" id="name" name="name" required>
@@ -545,6 +549,7 @@
                             <textarea id="message" name="message" rows="5" required></textarea>
                         </div>
                         <button type="submit" class="submit-btn">Send Message</button>
+                        <p id="contactStatus" class="form-status" aria-live="polite"></p>
                     </form>
                 </div>
             </div>
