@@ -3142,3 +3142,67 @@
   /* height: auto;     /* Makes the image take the full height of the div */ */
   /* object-fit: cover; /* Resizes and crops the image to cover the entire space */ */
 /* } */
+
+/* Play button overlay for video thumbnails */
+.video-item2 a {
+    position: relative;
+    display: block;
+}
+
+/* Play button circle background */
+.video-item2 a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* Play button triangle */
+.video-item2 a::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 0 15px 26px;
+    border-color: transparent transparent transparent #e25545;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 3;
+    pointer-events: none;
+}
+
+/* Show play button on hover */
+.video-item2:hover a::before,
+.video-item2:hover a::after {
+    opacity: 1;
+}
+
+.video-item2:hover a::before {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.video-item2:hover a::after {
+    transform: translate(-40%, -50%) scale(1.1);
+}
+
+/* Darken image slightly on hover */
+.video-item2 img {
+    transition: filter 0.3s ease;
+}
+
+.video-item2:hover img {
+    filter: brightness(0.8);
+}
