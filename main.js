@@ -839,13 +839,14 @@ document.addEventListener('DOMContentLoaded', function() {
             title: 'Couple sessions',
             description: 'Over the years, I have photographed many couples, capturing the connection between them and highlighting the human relationship as the most important aspect.',
             photos: [
-                { src: 'photos/DSC00105.jpg', alt: '' },
-                { src: 'photos/DSC00091.jpg', alt: '' },
-                { src: 'photos/DSC00102.jpg', alt: '' },
+               
                 { src: 'photos/DSC00448.jpg', alt: '' },
                 { src: 'photos/DSC00449.jpg', alt: '' },
                 { src: 'photos/DSC00562_lighter.jpg', alt: '' },
 				{ src: 'photos/DSC00593.jpg', alt: '' },
+				{ src: 'photos/DSC00105.jpg', alt: '' },
+                { src: 'photos/DSC00091.jpg', alt: '' },
+                { src: 'photos/DSC00102.jpg', alt: '' },
 				{ src: 'photos/DSC6472-2.jpg', alt: '' },
 				{ src: 'photos/DSC6533-1.jpg', alt: '' },
 				{ src: 'photos/DSC6508.jpg', alt: '' }
