@@ -809,10 +809,10 @@ document.addEventListener('DOMContentLoaded', function() {
             title: 'Carlos & Laura – Cinematic Couple Photoshoot',
             description: 'The couple wanted a session with two outfits, and for the wedding attire, they were looking for something more cinematic and symbolic.',
             photos: [
-                { src: 'photos/A7401585.jpg', alt: '' },
-                { src: 'photos/A7401621-Enhanced-NR_02.jpg', alt: '' },
 				{ src: 'photos/A7401578.jpg', alt: '' },
+                { src: 'photos/A7401585.jpg', alt: '' },
 				{ src: 'photos/A7401572.jpg', alt: '' },
+			    { src: 'photos/A7401621-Enhanced-NR_02.jpg', alt: '' },
 				{ src: 'photos/Laura_03.jpg', alt: '' },
                 { src: 'photos/Laura_02.jpg ', alt: '' },
                 { src: 'photos/A7401528.jpg', alt: '' },
@@ -828,7 +828,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 { src: 'photos/A7401767_02.jpg', alt: '' },
 				{ src: 'photos/A7401788.jpg', alt: '' },
                 { src: 'photos/A7401704.jpg', alt: '' },             
-                { src: 'photos/A7401709.j pg', alt: '' },
+                { src: 'photos/A7401709.jpg', alt: '' },
                 { src: 'photos/A7401837_blue_large.jpg', alt: '' },
 				{ src: 'photos/A7401813_blue.jpg', alt: '' }
 				
@@ -869,7 +869,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		
 		
 		
-		'savin': {
+		/*'savin': {
             title: 'Photos for the Savin Product sausage factory',
             description: 'One of my first projects, in which I took photos and videos. The idea was to create content for their social media, attend and capture events where their products were presented, and create appetizing still lifes combining their cured meats with other foods.',
             photos: [
@@ -884,6 +884,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 { src: 'photos/IMG_1264.jpg', alt: '' }
             ]
         },
+		*/
         ///spanish
 
         'phot-proj-es': {
@@ -1010,7 +1011,7 @@ document.addEventListener('DOMContentLoaded', function() {
     ]
 },
 
-'savin-es': {
+/*'savin-es': {
     title: 'Fotos para la fábrica de embutidos Savin Product',
     description: 'Uno de mis primeros proyectos, en el que tomé fotos y vídeos. La idea era crear contenido para sus redes sociales, asistir y capturar eventos donde se presentaban sus productos, y crear bodegones apetitosos combinando sus embutidos con otros alimentos.',
     photos: [
@@ -1024,7 +1025,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { src: 'photos/IMG_1243.jpg', alt: '' },
         { src: 'photos/IMG_1264.jpg', alt: '' }
     ]
-}
+}*/
 		
 		
     };
@@ -1374,4 +1375,5 @@ function observeModalImages() {
   }, { root: null, rootMargin: '200px 0px', threshold: 0.01 });
   gridLazyImgs.forEach(img => gridObserver.observe(img));
 })();
+
 
