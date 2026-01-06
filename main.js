@@ -1304,7 +1304,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
  document.addEventListener("DOMContentLoaded", () => {
-    const items = document.querySelectorAll(".video-item");
+    const items = document.querySelectorAll(".video-item2");
     const btn = document.getElementById("showMoreBtn");
     let shown = 0;
     const batchSize = 6;

@@ -551,6 +551,10 @@
             .contact-container {
                 grid-template-columns: 1fr;
             }
+			
+			.nav-class{
+				margin-left:0px !important;
+			}
         }
         
          /* Photo Items with Collection Overlay */
@@ -1919,11 +1923,11 @@
         @media (max-width: 768px) {
             .header-container {
                 flex-direction: column;
-                padding: 20px;
+                padding: 0px;
             }
             
             nav ul {
-                margin-top: 20px;
+                margin-top: 0px;
             }
             
             nav ul li {
@@ -1936,7 +1940,7 @@
             }
             
             .title-subtitle h4 {
-                font-size: 16px;
+                font-size: 22px;
                 display: block;
                 width: 100%;
             }
@@ -2960,17 +2964,16 @@
     /* This makes the video 'zoom in' to fill the box without black bars */
     object-fit: cover; 
 }
-.video-item {
+.video-item2 {
   width: 100%;
-  max-width: 600px;
   margin: 0 auto 30px;
 }
 
-.video-item {
+.video-item2 {
   display: none;
 }
 
-.video-item.visible {
+.video-item2.visible {
   display: block;
 }
 
@@ -3156,8 +3159,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 50%;
     opacity: 0;
@@ -3176,7 +3179,7 @@
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 15px 0 15px 26px;
+    border-width: 12px 0 12px 20px;
     border-color: transparent transparent transparent #e25545;
     opacity: 0;
     transition: opacity 0.3s ease, transform 0.3s ease;
@@ -3206,3 +3209,9 @@
 .video-item2:hover img {
     filter: brightness(0.8);
 }
+
+/* Nav buttons on top ([photos and videos) */
+.nav-class{
+	margin-left:-124px;
+}
+
