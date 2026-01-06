@@ -1612,16 +1612,16 @@
             display: block;
         }
 		
-			.text-overlay2 {
-			   position: absolute;
-				top: 95%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				padding: 10px;
-				background-color: rgba(0, 0, 0, 0.3);
-				width: 100%;
-				color: white;
-		}	
+			/* .text-overlay2 { */
+			   /* position: absolute; */
+				/* top: 95%; */
+				/* left: 50%; */
+				/* transform: translate(-50%, -50%); */
+				/* padding: 10px; */
+				/* background-color: rgba(0, 0, 0, 0.3); */
+				/* width: 100%; */
+				/* color: white; */
+		/* }	 */
         
         /* Videos Grid */
         .video-grid {
@@ -3215,3 +3215,116 @@
 	margin-left:-124px;
 }
 
+
+
+/* Reset base styles for options */
+.video-item2.option1 .text-overlay2,
+.video-item2.option2 .text-overlay2,
+.video-item2.option3 .text-overlay2,
+.video-item2.option4 .text-overlay2 {
+    position: absolute;
+    left: 0;
+}
+
+/* Style label for demo purposes */
+.style-label {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* OPTION 1: Gradient Fade - Elegant & Subtle */
+/* OPTION 1: Gradient Fade - Always Visible */
+.video-item2.option1 .text-overlay2 {
+    bottom: 0;
+    top: auto;
+    transform: none;
+    width: 100%;
+    padding: 30px 20px 20px 20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.7) 50%, transparent 100%);
+    color: white;
+    opacity: 1; /* Changed from 0 to 1 - always visible */
+    transition: opacity 0.4s ease;
+}
+
+/* Optional: slightly brighten on hover */
+.video-item2.option1:hover .text-overlay2 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.87) 0%, rgba(0, 0, 0, 0.8) 50%, transparent 100%);
+}
+
+.video-item2.option1 .style-label {
+    color: #e25545;
+}
+
+/* OPTION 2: Glass Morphism - Trendy */
+.video-item2.option2 .text-overlay2 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.video-item2.option2:hover .text-overlay2 {
+    opacity: 1;
+}
+
+.video-item2.option2 .style-label {
+    color: #e25545;
+}
+
+/* OPTION 3: Bottom Bar - Clean & Always Visible */
+.video-item2.option3 .text-overlay2 {
+    bottom: 0;
+    top: auto;
+    transform: none;
+    width: 100%;
+    padding: 15px 20px;
+    background-color: white;
+    color: #423c3c;
+    font-weight: 500;
+    border-top: 3px solid #e25545;
+    opacity: 1;
+    transition: padding 0.3s ease;
+}
+
+.video-item2.option3 .style-label {
+    color: #e25545;
+}
+
+.video-item2.option3:hover .text-overlay2 {
+    padding: 20px;
+}
+
+/* OPTION 4: Minimal Fade-In */
+.video-item2.option4 .text-overlay2 {
+    bottom: 0;
+    top: auto;
+    transform: none;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.6) 70%, transparent 100%);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.video-item2.option4:hover .text-overlay2 {
+    opacity: 1;
+}
+
+.video-item2.option4 .style-label {
+    color: #e25545;
+}
