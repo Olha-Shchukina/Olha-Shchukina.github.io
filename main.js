@@ -8,6 +8,47 @@ window.addEventListener('scroll', function() {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
+
+     const form = document.getElementById('contactForm');
+  if (!form) return;
+
+  const statusEl = document.getElementById('contactStatus');
+  const submitBtn = form.querySelector('button[type="submit"]');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    // basic guard
+    if (!form.checkValidity()) {
+      form.reportValidity?.();
+      return;
+    }
+
+    submitBtn.disabled = true;
+    statusEl.textContent = 'Sending…';
+
+        try {
+          const formData = new FormData(form);
+          const res = await fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+          });
+
+          if (res.ok) {
+            form.reset();
+            statusEl.textContent = 'Thanks! Your message has been sent.';
+          } else {
+            const data = await res.json().catch(() => ({}));
+            statusEl.textContent = data?.errors?.[0]?.message || 'Oops — something went wrong. Please try again later.';
+          }
+        } catch (err) {
+          statusEl.textContent = 'Network error. Please check your connection and try again.';
+        } finally {
+          submitBtn.disabled = false;
+          setTimeout(() => { statusEl.textContent = ''; }, 6000);
+        }
+      });
     // Collection data - in a real implementation, this would come from a database or CMS
     const collections = {
 		
@@ -768,10 +809,10 @@ document.addEventListener('DOMContentLoaded', function() {
             title: 'Carlos & Laura – Cinematic Couple Photoshoot',
             description: 'The couple wanted a session with two outfits, and for the wedding attire, they were looking for something more cinematic and symbolic.',
             photos: [
-                { src: 'photos/A7401585.jpg', alt: '' },
-                { src: 'photos/A7401621-Enhanced-NR_02.jpg', alt: '' },
 				{ src: 'photos/A7401578.jpg', alt: '' },
+                { src: 'photos/A7401585.jpg', alt: '' },
 				{ src: 'photos/A7401572.jpg', alt: '' },
+			    { src: 'photos/A7401621-Enhanced-NR_02.jpg', alt: '' },
 				{ src: 'photos/Laura_03.jpg', alt: '' },
                 { src: 'photos/Laura_02.jpg ', alt: '' },
                 { src: 'photos/A7401528.jpg', alt: '' },
@@ -787,7 +828,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 { src: 'photos/A7401767_02.jpg', alt: '' },
 				{ src: 'photos/A7401788.jpg', alt: '' },
                 { src: 'photos/A7401704.jpg', alt: '' },             
-                { src: 'photos/A7401709.j pg', alt: '' },
+                { src: 'photos/A7401709.jpg', alt: '' },
                 { src: 'photos/A7401837_blue_large.jpg', alt: '' },
 				{ src: 'photos/A7401813_blue.jpg', alt: '' }
 				
@@ -798,13 +839,14 @@ document.addEventListener('DOMContentLoaded', function() {
             title: 'Couple sessions',
             description: 'Over the years, I have photographed many couples, capturing the connection between them and highlighting the human relationship as the most important aspect.',
             photos: [
-                { src: 'photos/DSC00105.jpg', alt: '' },
-                { src: 'photos/DSC00091.jpg', alt: '' },
-                { src: 'photos/DSC00102.jpg', alt: '' },
+               
                 { src: 'photos/DSC00448.jpg', alt: '' },
                 { src: 'photos/DSC00449.jpg', alt: '' },
                 { src: 'photos/DSC00562_lighter.jpg', alt: '' },
 				{ src: 'photos/DSC00593.jpg', alt: '' },
+				{ src: 'photos/DSC00105.jpg', alt: '' },
+                { src: 'photos/DSC00091.jpg', alt: '' },
+                { src: 'photos/DSC00102.jpg', alt: '' },
 				{ src: 'photos/DSC6472-2.jpg', alt: '' },
 				{ src: 'photos/DSC6533-1.jpg', alt: '' },
 				{ src: 'photos/DSC6508.jpg', alt: '' }
@@ -828,7 +870,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		
 		
 		
-		'savin': {
+		/*'savin': {
             title: 'Photos for the Savin Product sausage factory',
             description: 'One of my first projects, in which I took photos and videos. The idea was to create content for their social media, attend and capture events where their products were presented, and create appetizing still lifes combining their cured meats with other foods.',
             photos: [
@@ -843,6 +885,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 { src: 'photos/IMG_1264.jpg', alt: '' }
             ]
         },
+		*/
         ///spanish
 
         'phot-proj-es': {
@@ -969,7 +1012,7 @@ document.addEventListener('DOMContentLoaded', function() {
     ]
 },
 
-'savin-es': {
+/*'savin-es': {
     title: 'Fotos para la fábrica de embutidos Savin Product',
     description: 'Uno de mis primeros proyectos, en el que tomé fotos y vídeos. La idea era crear contenido para sus redes sociales, asistir y capturar eventos donde se presentaban sus productos, y crear bodegones apetitosos combinando sus embutidos con otros alimentos.',
     photos: [
@@ -983,7 +1026,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { src: 'photos/IMG_1243.jpg', alt: '' },
         { src: 'photos/IMG_1264.jpg', alt: '' }
     ]
-}
+}*/
 		
 		
     };
@@ -1261,7 +1304,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
  document.addEventListener("DOMContentLoaded", () => {
-    const items = document.querySelectorAll(".video-item");
+    const items = document.querySelectorAll(".video-item2");
     const btn = document.getElementById("showMoreBtn");
     let shown = 0;
     const batchSize = 6;
@@ -1333,4 +1376,5 @@ function observeModalImages() {
   }, { root: null, rootMargin: '200px 0px', threshold: 0.01 });
   gridLazyImgs.forEach(img => gridObserver.observe(img));
 })();
+
 
