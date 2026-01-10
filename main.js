@@ -737,11 +737,64 @@ document.addEventListener('DOMContentLoaded', function() {
                 { src: 'photos/Joelle and Sina/251.jpg', alt: '' },
                 { src: 'photos/Joelle and Sina/252.jpg', alt: '' }
                 
-                
-                
-               
             ]
         },
+		
+		'Ishreet': {
+            title: 'A Surprise Proposal | Retiro park',
+            description: 'I was originally contacted by Isreet, who wanted a photo session to celebrate their trip to Madrid. However, the story took a secret turn when her boyfriend reached out to me, saying that he was planning to propose during our session!My friend and I organized a petal heart at the location — which you can see in the photos — and had it ready for the moment we arrived at the main spot with the couple. In the end, everything went perfectly smooth. It was such a rewarding experience to be part of their story!',
+            photos: [
+                { src: 'photos/Ishreet and Joet/12.jpg', alt: '' },
+                { src: 'photos/Ishreet and Joet/08.jpg', alt: '' },
+                { src: 'photos/Ishreet and Joet/05.jpg', alt: '' }, 
+				{ src: 'photos/Ishreet and Joet/03.jpg', alt: '' },
+                { src: 'photos/Ishreet and Joet/07.jpg', alt: '' },
+                { src: 'photos/Ishreet and Joet/11.jpg', alt: '' },
+                { src: 'photos/Ishreet and Joet/09.jpg', alt: '' },
+                { src: 'photos/Ishreet and Joet/04.jpg', alt: '' },
+				{ src: 'photos/Ishreet and Joet/14.jpg', alt: '' },
+                { src: 'photos/Ishreet and Joet/15.jpg', alt: '' },
+                { src: 'photos/Ishreet and Joet/17.jpg', alt: '' },
+                { src: 'photos/Ishreet and Joet/18.jpg', alt: '' },
+                { src: 'photos/Ishreet and Joet/20.jpg', alt: '' },
+                { src: 'photos/Ishreet and Joet/21.jpg', alt: '' },
+                { src: 'photos/Ishreet and Joet/23.jpg', alt: '' },
+				{ src: 'photos/Ishreet and Joet/39.jpg', alt: '' },
+				{ src: 'photos/Ishreet and Joet/24.jpg', alt: '' },
+				{ src: 'photos/Ishreet and Joet/31.jpg', alt: '' },
+                { src: 'photos/Ishreet and Joet/25.jpg', alt: '' },
+                { src: 'photos/Ishreet and Joet/28.jpg', alt: '' },
+				{ src: 'photos/Ishreet and Joet/29.jpg', alt: '' },
+                { src: 'photos/Ishreet and Joet/40.jpg', alt: '' },
+                { src: 'photos/Ishreet and Joet/37.jpg', alt: '' },
+                { src: 'photos/Ishreet and Joet/41.jpg', alt: '' },
+                { src: 'photos/Ishreet and Joet/42.jpg', alt: '' },
+                { src: 'photos/Ishreet and Joet/45.jpg', alt: '' },
+                { src: 'photos/Ishreet and Joet/46.jpg', alt: '' },
+                { src: 'photos/Ishreet and Joet/47.jpg', alt: '' },
+                { src: 'photos/Ishreet and Joet/48.jpg', alt: '' },
+				{ src: 'photos/Ishreet and Joet/49.jpg', alt: '' },
+                { src: 'photos/Ishreet and Joet/50.jpg', alt: '' },
+				{ src: 'photos/Ishreet and Joet/51.jpg', alt: '' },
+                { src: 'photos/Ishreet and Joet/52.jpg', alt: '' },
+                { src: 'photos/Ishreet and Joet/53.jpg', alt: '' },
+                { src: 'photos/Ishreet and Joet/54.jpg', alt: '' },
+                { src: 'photos/Ishreet and Joet/55.jpg', alt: '' },
+				{ src: 'photos/Ishreet and Joet/56.jpg', alt: '' },
+                { src: 'photos/Ishreet and Joet/57.jpg', alt: '' },
+                { src: 'photos/Ishreet and Joet/58.jpg', alt: '' },
+                { src: 'photos/Ishreet and Joet/59.jpg', alt: '' },
+				{ src: 'photos/Ishreet and Joet/61.jpg', alt: '' },
+                { src: 'photos/Ishreet and Joet/62.jpg', alt: '' },
+				{ src: 'photos/Ishreet and Joet/63.jpg', alt: '' },
+                { src: 'photos/Ishreet and Joet/65.jpg', alt: '' },
+                { src: 'photos/Ishreet and Joet/66.jpg', alt: '' },
+                { src: 'photos/Ishreet and Joet/67.jpg', alt: '' },
+                { src: 'photos/Ishreet and Joet/70.jpg', alt: '' },
+                { src: 'photos/Ishreet and Joet/71.jpg', alt: '' }
+		  ]
+        },
+		
 		
 		'phot-proj': {
             title: 'Photography Project about Couples',
@@ -769,6 +822,79 @@ document.addEventListener('DOMContentLoaded', function() {
                 { src: 'photos/Mish y Mar/02.jpg', alt: '' },
                 { src: 'photos/Mish y Mar/03.jpg', alt: '' },
                 { src: 'photos/Mish y Mar/04.jpg', alt: '' }
+                
+            ]
+        },
+		
+		'Geli': {
+            title: 'An individual photo session',
+            description: 'For this session, I aimed for a dreamy, ethereal aesthetic. After finding the perfect look with the client, I captured the story in a park setting. To achieve this specific mood, I used a lens filter on several shots to create that poetic atmosphere.',
+            photos: [
+              
+				{ src: 'photos/Geli/04.jpg', alt: '' },
+                { src: 'photos/Geli/06.jpg', alt: '' },
+				{ src: 'photos/Geli/01.jpg', alt: '' },
+                // { src: 'photos/Geli/04.jpg', alt: '' },
+                { src: 'photos/Geli/02.jpg', alt: '' },
+				// { src: 'photos/Geli/03.jpg', alt: '' },
+				{ src: 'photos/Geli/09.jpg', alt: '' },
+				{ src: 'photos/Geli/10.jpg', alt: '' },
+				{ src: 'photos/Geli/07.jpg', alt: '' },
+				{ src: 'photos/Geli/08.jpg', alt: '' },
+				{ src: 'photos/Geli/11.jpg', alt: '' },
+				// { src: 'photos/Geli/12.jpg', alt: '' },
+                { src: 'photos/Geli/13.jpg', alt: '' },
+                { src: 'photos/Geli/14.jpg', alt: '' },
+                { src: 'photos/Geli/15.jpg', alt: '' },
+                { src: 'photos/Geli/16.jpg', alt: '' },
+				 { src: 'photos/Geli/17.jpg', alt: '' },
+                // { src: 'photos/Geli/18.jpg', alt: '' },
+				{ src: 'photos/Geli/19.jpg', alt: '' },
+                { src: 'photos/Geli/20.jpg', alt: '' },
+                { src: 'photos/Geli/21.jpg', alt: '' },
+                { src: 'photos/Geli/22.jpg', alt: '' },
+                { src: 'photos/Geli/23.jpg', alt: '' },
+				{ src: 'photos/Geli/24.jpg', alt: '' },
+                { src: 'photos/Geli/25.jpg', alt: '' },
+                // { src: 'photos/Geli/26.jpg', alt: '' },
+                { src: 'photos/Geli/27.jpg', alt: '' },
+				// { src: 'photos/Geli/28.jpg', alt: '' },
+				{ src: 'photos/Geli/29.jpg', alt: '' },
+                { src: 'photos/Geli/30.jpg', alt: '' },
+                { src: 'photos/Geli/31.jpg', alt: '' },
+                { src: 'photos/Geli/32.jpg', alt: '' },
+                { src: 'photos/Geli/33.jpg', alt: '' },
+				// { src: 'photos/Geli/34.jpg', alt: '' },
+                { src: 'photos/Geli/35.jpg', alt: '' },
+                { src: 'photos/Geli/36.jpg', alt: '' },
+                { src: 'photos/Geli/37.jpg', alt: '' },
+                { src: 'photos/Geli/38.jpg', alt: '' },
+				{ src: 'photos/Geli/39.jpg', alt: '' },
+                // { src: 'photos/Geli/40.jpg', alt: '' },
+                { src: 'photos/Geli/41.jpg', alt: '' },
+                { src: 'photos/Geli/42.jpg', alt: '' },
+                { src: 'photos/Geli/43.jpg', alt: '' },
+				{ src: 'photos/Geli/44.jpg', alt: '' },
+                { src: 'photos/Geli/45.jpg', alt: '' },
+                { src: 'photos/Geli/46.jpg', alt: '' },
+                { src: 'photos/Geli/47.jpg', alt: '' },
+                { src: 'photos/Geli/48.jpg', alt: '' },
+				{ src: 'photos/Geli/49.jpg', alt: '' },
+                { src: 'photos/Geli/50.jpg', alt: '' },
+				{ src: 'photos/Geli/51.jpg', alt: '' },
+                { src: 'photos/Geli/52.jpg', alt: '' },
+                { src: 'photos/Geli/53.jpg', alt: '' },
+                { src: 'photos/Geli/54.jpg', alt: '' },
+                { src: 'photos/Geli/55.jpg', alt: '' },
+				{ src: 'photos/Geli/56.jpg', alt: '' },
+                { src: 'photos/Geli/57.jpg', alt: '' },
+                { src: 'photos/Geli/58.jpg', alt: '' },
+                { src: 'photos/Geli/59.jpg', alt: '' },
+                { src: 'photos/Geli/60.jpg', alt: '' },
+				{ src: 'photos/Geli/61.jpg', alt: '' }
+              
+				
+				
                 
             ]
         },
