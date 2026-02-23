@@ -1121,6 +1121,60 @@ document.addEventListener('DOMContentLoaded', function() {
             ]
         },
 		
+		
+		
+		'Valentine': {
+            title: 'Valentine’s Day Photoshoot',
+            description: 'The amazing couple Monica and Jorge contacted me for a Valentine’s Day photo session. I opted for one of my favorite studios in Madrid, and in just one hour, we captured these vibrant and romantic photos.',
+            photos: [
+                
+				{ src: 'photos/Monica and Jorge/14.jpg', alt: '' },
+               // { src: 'photos/Monica and Jorge/17.jpg', alt: '' },
+                { src: 'photos/Monica and Jorge/18.jpg', alt: '' },
+                { src: 'photos/Monica and Jorge/20.jpg', alt: '' },
+                { src: 'photos/Monica and Jorge/21.jpg', alt: '' },
+				//{ src: 'photos/Monica and Jorge/22.jpg', alt: '' },
+                { src: 'photos/Monica and Jorge/23.jpg', alt: '' },
+				{ src: 'photos/Monica and Jorge/24.jpg', alt: '' },
+				//{ src: 'photos/Monica and Jorge/26.jpg', alt: '' },
+				{ src: 'photos/Monica and Jorge/29.jpg', alt: '' },
+				{ src: 'photos/Monica and Jorge/31.jpg', alt: '' },
+				{ src: 'photos/Monica and Jorge/34.jpg', alt: '' },
+				{ src: 'photos/Monica and Jorge/35.jpg', alt: '' },
+                { src: 'photos/Monica and Jorge/37.jpg', alt: '' },
+				//{ src: 'photos/Monica and Jorge/40.jpg', alt: '' },
+				{ src: 'photos/Monica and Jorge/41.jpg', alt: '' },
+				{ src: 'photos/Monica and Jorge/44.jpg', alt: '' },
+                //{ src: 'photos/Monica and Jorge/45.jpg', alt: '' },
+                { src: 'photos/Monica and Jorge/48.jpg', alt: '' },
+                { src: 'photos/Monica and Jorge/50.jpg', alt: '' },
+                { src: 'photos/Monica and Jorge/52.jpg', alt: '' },
+                { src: 'photos/Monica and Jorge/53.jpg', alt: '' },
+                { src: 'photos/Monica and Jorge/54.jpg', alt: '' },
+                { src: 'photos/Monica and Jorge/55.jpg', alt: '' },                
+				{ src: 'photos/Monica and Jorge/60.jpg', alt: '' },
+				{ src: 'photos/Monica and Jorge/62.jpg', alt: '' },
+				{ src: 'photos/Monica and Jorge/61.jpg', alt: '' },
+                { src: 'photos/Monica and Jorge/57.jpg', alt: '' },
+				{ src: 'photos/Monica and Jorge/01.jpg', alt: '' },
+                { src: 'photos/Monica and Jorge/02.jpg', alt: '' },
+                { src: 'photos/Monica and Jorge/06.jpg', alt: '' },
+                { src: 'photos/Monica and Jorge/08.jpg', alt: '' },
+				{ src: 'photos/Monica and Jorge/09.jpg', alt: '' },
+				{ src: 'photos/Monica and Jorge/11.jpg', alt: '' },
+				{ src: 'photos/Monica and Jorge/13.jpg', alt: '' },
+				{ src: 'photos/Monica and Jorge/64.jpg', alt: '' },
+                { src: 'photos/Monica and Jorge/65.jpg', alt: '' },
+                { src: 'photos/Monica and Jorge/66.jpg', alt: '' },
+				{ src: 'photos/Monica and Jorge/69.jpg', alt: '' },
+                { src: 'photos/Monica and Jorge/71.jpg', alt: '' },
+				{ src: 'photos/Monica and Jorge/72.jpg', alt: '' },
+				{ src: 'photos/Monica and Jorge/74.jpg', alt: '' }
+		  ]
+        },
+		
+		
+		
 		'Geli': {
             title: 'An individual photo session',
             description: 'For this session, I aimed for a dreamy, ethereal aesthetic. After finding the perfect look with the client, I captured the story in a park setting. To achieve this specific mood, I used a lens filter on several shots to create that poetic atmosphere.',
@@ -1275,7 +1329,7 @@ document.addEventListener('DOMContentLoaded', function() {
             ]
         },
 		
-        'lisy': {
+       /* 'lisy': {
             title: 'An individual photo shoot',
             description: 'The photoshoot for a girl who found me online, done for her social media. It took place in Formigal, Spain.',
             photos: [
@@ -1287,7 +1341,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 { src: 'photos/A7403254-Enhanced-NR.jpg', alt:''  },
 				{ src: 'photos/A7403237-Enhanced-NR.jpg', alt:''  }
             ]
-        },
+        }, */
 		
 		
 		
