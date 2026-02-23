@@ -555,6 +555,11 @@
 			.nav-class{
 				margin-left:0px !important;
 			}
+			
+			}
+			.collection-overlay {
+				padding:5px !important;
+			}
         }
         
          /* Photo Items with Collection Overlay */
