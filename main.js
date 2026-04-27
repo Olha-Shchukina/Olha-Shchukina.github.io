@@ -1600,7 +1600,8 @@ document.addEventListener('DOMContentLoaded', function() {
             ]
         },
 		
-        'lana-personal': {
+       /* 
+	   'lana-personal': {
             title: 'An individual portrait session',
             description: 'Lana reached out for a personal photoshoot, and for her birthday, we did it right in her beauty salon using my gear and lighting.',
             photos: [
@@ -1613,6 +1614,84 @@ document.addEventListener('DOMContentLoaded', function() {
 				
             ]
         },
+		*/
+		
+		'marina': {
+            title: 'Candlefire Conceptual Session',
+            description: 'Marina reached out to me on Instagram with a vision for a studio session. When she shared her concept, incorporating live candles into her styling, I was immediately on board. Together, we brought the idea to life. She custom-made the jacket with candles on the shoulders, and it was a true pleasure to work on a project this unique.',
+            photos: [
+			    { src: 'photos/Marina/26.jpg', alt: '' },
+				{ src: 'photos/Marina/27.jpg', alt: '' },
+				{ src: 'photos/Marina/28.jpg', alt: '' },
+				{ src: 'photos/Marina/29.jpg', alt: '' },
+				{ src: 'photos/Marina/30.jpg', alt: '' },
+				{ src: 'photos/Marina/31.jpg', alt: '' },
+				{ src: 'photos/Marina/32.jpg', alt: '' },
+                { src: 'photos/Marina/33.jpg', alt: '' },             
+                { src: 'photos/Marina/34.jpg', alt: '' },
+                { src: 'photos/Marina/35.jpg', alt: '' },
+				{ src: 'photos/Marina/36.jpg', alt: '' },
+				{ src: 'photos/Marina/37.jpg', alt: '' },
+				{ src: 'photos/Marina/38.jpg', alt: '' },
+				{ src: 'photos/Marina/39.jpg', alt: '' },
+				{ src: 'photos/Marina/40.jpg', alt: '' },
+				{ src: 'photos/Marina/41.jpg', alt: '' },
+				{ src: 'photos/Marina/42.jpg', alt: '' },
+                { src: 'photos/Marina/43.jpg', alt: '' },             
+                { src: 'photos/Marina/44.jpg', alt: '' },
+                { src: 'photos/Marina/45.jpg', alt: '' },
+				{ src: 'photos/Marina/46.jpg', alt: '' },
+				{ src: 'photos/Marina/47.jpg', alt: '' },
+				{ src: 'photos/Marina/48.jpg', alt: '' },
+				{ src: 'photos/Marina/49.jpg', alt: '' },
+			    { src: 'photos/Marina/20.jpg', alt: '' },
+				{ src: 'photos/Marina/21.jpg', alt: '' },
+				{ src: 'photos/Marina/22.jpg', alt: '' },
+                { src: 'photos/Marina/23.jpg', alt: '' },
+				{ src: 'photos/Marina/50.jpg', alt: '' },
+                { src: 'photos/Marina/01.jpg', alt: '' },
+				{ src: 'photos/Marina/02.jpg', alt: '' },
+                { src: 'photos/Marina/03.jpg', alt: '' },             
+                { src: 'photos/Marina/04.jpg', alt: '' },
+                { src: 'photos/Marina/05.jpg', alt: '' },
+				{ src: 'photos/Marina/08.jpg', alt: '' },
+				{ src: 'photos/Marina/09.jpg', alt: '' },
+				{ src: 'photos/Marina/10.jpg', alt: '' },
+				{ src: 'photos/Marina/12.jpg', alt: '' },
+                { src: 'photos/Marina/13.jpg', alt: '' },             
+                { src: 'photos/Marina/15.jpg', alt: '' },
+				{ src: 'photos/Marina/16.jpg', alt: '' },
+				{ src: 'photos/Marina/18.jpg', alt: '' },             
+                { src: 'photos/Marina/24.jpg', alt: '' },
+				{ src: 'photos/Marina/25.jpg', alt: '' },
+				{ src: 'photos/Marina/51.jpg', alt: '' },
+				{ src: 'photos/Marina/52.jpg', alt: '' },
+                { src: 'photos/Marina/53.jpg', alt: '' },             
+                { src: 'photos/Marina/54.jpg', alt: '' },
+                { src: 'photos/Marina/55.jpg', alt: '' },
+				{ src: 'photos/Marina/56.jpg', alt: '' },
+				{ src: 'photos/Marina/57.jpg', alt: '' },
+				{ src: 'photos/Marina/58.jpg', alt: '' },
+				{ src: 'photos/Marina/59.jpg', alt: '' },
+				{ src: 'photos/Marina/60.jpg', alt: '' },
+				{ src: 'photos/Marina/61.jpg', alt: '' },
+				{ src: 'photos/Marina/62.jpg', alt: '' },
+                { src: 'photos/Marina/63.jpg', alt: '' },             
+                { src: 'photos/Marina/64.jpg', alt: '' },
+                { src: 'photos/Marina/65.jpg', alt: '' },
+				{ src: 'photos/Marina/66.jpg', alt: '' },
+				{ src: 'photos/Marina/67.jpg', alt: '' },
+				{ src: 'photos/Marina/68.jpg', alt: '' },
+				{ src: 'photos/Marina/69.jpg', alt: '' },
+				{ src: 'photos/Marina/70.jpg', alt: '' },
+				{ src: 'photos/Marina/71.jpg', alt: '' },
+				{ src: 'photos/Marina/72.jpg', alt: '' }
+               
+				
+            ]
+        },
+		
+		
 		
         'couples-years': {
             title: 'Couple sessions',
