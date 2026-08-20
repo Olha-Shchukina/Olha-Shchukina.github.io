@@ -53,8 +53,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const collections = {
 		
 		'wedd:M y N': {
-            title: 'Wedding photos: Marta and Nacho',
-            description: 'I had the pleasure of photographing Marta and Nacho’s wedding at Casa del Esquileo in Segovia. It was a day full of family warmth, bright moments, and great energy all around.',
+            title: 'Reportaje de boda: Marta y Nacho',
+            description: 'Tuve el placer de fotografiar la boda de Marta y Nacho en la Casa del Esquileo, en Segovia. Fue un día lleno de calidez familiar, momentos luminosos y una energía estupenda.',
             photos: [
 			    { src: 'photos/Marta and Nacho/01.jpg', alt: '' },
                 { src: 'photos/Marta and Nacho/02.jpg', alt: '' },
@@ -169,8 +169,8 @@ document.addEventListener('DOMContentLoaded', function() {
 		
 		
 		'Rosa y Jesus': {
-            title: 'Pre-wedding session: Rosa and Jesús',
-            description: 'Very fun and diverse pre-wedding photo session at Las Lagunas de las Madres in Arganda del Rey.',
+            title: 'Sesión preboda: Rosa y Jesús',
+            description: 'Una sesión de fotos preboda muy divertida y variada en las Lagunas de las Madres, en Arganda del Rey.',
             photos: [
 			    { src: 'photos/Rosa y Jesus/01.jpg', alt: '' },
 				{ src: 'photos/Rosa y Jesus/03.jpg', alt: '' },
@@ -239,8 +239,8 @@ document.addEventListener('DOMContentLoaded', function() {
 		
 		
 		'FlorPaolo': {
-            title: 'Wedding photos: Flor and Paolo',
-            description: 'A lovely blend of Italian tradition and Spanish elegance at Palacio de Viñuelas. This wedding celebrated the groom’s Sicilian roots with a bright yellow color theme that made the whole place feel cozy, cheerful, and truly special.',
+            title: 'Reportaje de boda: Flor y Paolo',
+            description: 'Una preciosa combinación de tradición italiana y elegancia española en el Palacio de Viñuelas. Esta boda celebró las raíces sicilianas del novio con una temática en color amarillo vivo que hizo que todo el lugar se sintiera acogedor, alegre y verdaderamente especial.',
             photos: [
 				
 				{ src: 'photos/Flor and Poalo/BODA PF 06062026 WEB (3).jpg', alt: '' },
@@ -729,8 +729,8 @@ document.addEventListener('DOMContentLoaded', function() {
 		
 		
 		'Wed:Silvia': {
-            title: 'Civil Wedding of Silvia and Alejandro',
-            description: 'This was Silvia and Alejandro’s civil wedding. My work began with the bridal preparations at Silvia’s home, followed by the ceremony at the Moncloa-Aravaca Register Office and a portrait session in the park. I captured group photos, shots of the newlyweds, and some beautiful moments with their child. It was an amazing day!',
+            title: 'Boda civil de Silvia y Alejandro',
+            description: 'Esta fue la boda civil de Silvia y Alejandro. Mi trabajo comenzó con los preparativos de la novia en su casa, seguidos de la ceremonia en el Registro Civil de Moncloa-Aravaca y una sesión de retratos en el parque. Capturé fotos de grupo, instantáneas de los recién casados y algunos momentos preciosos con su hijo. ¡Fue un día increíble!',
             photos: [
                 { src: 'photos/Silvia and Alejandro/01.jpg', alt: '' },
                 { src: 'photos/Silvia and Alejandro/03.jpg', alt: '' },
@@ -930,8 +930,8 @@ document.addEventListener('DOMContentLoaded', function() {
 		
 		
 		'wedd:Fran': {
-            title: 'Wedding photos: Marta and Fran',
-            description: 'A beautiful wedding at Caserío de Lobones in Segovia, celebrating the union of two Spanish hearts, Marta and Fran. On this occasion, I had the pleasure of working as a second photographer alongside Enjoy The F Moment.',
+            title: 'Reportaje de boda: Marta y Fran',
+            description: 'Una hermosa boda en el Caserío de Lobones, en Segovia, para celebrar la unión de dos corazones españoles: Marta y Fran. En esta ocasión, tuve el placer de trabajar como segunda fotógrafa junto a Enjoy The F Moment.',
             photos: [
                 { src: 'photos/Fran and Marta/02.jpg', alt: '' },
 				{ src: 'photos/Fran and Marta/03.jpg', alt: '' },
@@ -1094,8 +1094,8 @@ document.addEventListener('DOMContentLoaded', function() {
 		
 		
 		'wedd:Lauren': {
-            title: 'Wedding photos: Lauren and Ciáran',
-            description: 'I had the pleasure of photographing Lauren and Ciarán’s wedding in Barcelona. They’re originally from Ireland, which made it a wonderful international experience.',
+            title: 'Reportaje de boda: Lauren y Ciáran',
+            description: 'Tuve el placer de fotografiar la boda de Lauren y Ciáran en Barcelona. Son originarios de Irlanda, lo que convirtió la experiencia en algo maravilloso e internacional.',
             photos: [
                 { src: 'photos/Lauren and Ciaran/03.jpg', alt: '' },
                 { src: 'photos/Lauren and Ciaran/04.jpg', alt: '' },
@@ -1178,8 +1178,8 @@ document.addEventListener('DOMContentLoaded', function() {
 		
 		
 		'Wed:Monica': {
-            title: 'Wedding photos: Monica and Colin',
-            description: 'A wedding of two hearts from different corners of Europe: the Spanish grace of Monica and Irish charm of Colin. It was an honour to capture their day, filled with meaningful traditions, artistic performances by their family, and absolute soul-stirring energy on the floor once the music started.',
+            title: 'Reportaje de boda: Mónica y Colin',
+            description: 'Una boda que unió dos corazones de diferentes rincones de Europa: la gracia española de Mónica y el encanto irlandés de Colin. Fue un honor capturar su gran día, lleno de tradiciones significativas, actuaciones artísticas de su familia y una energía conmovedora en la pista de baile una vez que comenzó la música.',
             photos: [
 			    { src: 'photos/Monica and Colin/01.jpg', alt: '' },
                 { src: 'photos/Monica and Colin/03.jpg', alt: '' }, 
@@ -1470,8 +1470,8 @@ document.addEventListener('DOMContentLoaded', function() {
 		
 		
 		'wedd:J y S': {
-            title: 'Wedding photos: Joelle and Sina',
-            description: 'The grand Palacio de Galiana, a sunset that will stay in everyone’s memory, and the most vibrant people dancing to the best pop and Arabic hits. This is how everyone, including me, will remember the incredible wedding of Joelle and Sina! I had the pleasure of being the second photographer, focusing mainly on capturing the guests.',
+            title: 'Reportaje de boda: Joelle y Sina',
+            description: 'El imponente Palacio de Galiana, una puesta de sol que quedará grabada en la memoria de todos y la gente más animada bailando al ritmo de los mejores éxitos pop y árabes. ¡Así es como todos, incluyéndome a mí, recordaremos la increíble boda de Joelle y Sina! Tuve el placer de ser la segunda fotógrafa, centrándome principalmente en capturar a los invitados.',
             photos: [
 			    { src: 'photos/Joelle and Sina/01.jpg', alt: '' },
                 { src: 'photos/Joelle and Sina/02.jpg', alt: '' },
@@ -1728,8 +1728,8 @@ document.addEventListener('DOMContentLoaded', function() {
         },
 		
 		'Ishreet': {
-            title: 'A Surprise Proposal | Retiro park',
-            description: 'I was originally contacted by Isreet, who wanted a photo session to celebrate their trip to Madrid. However, the story took a secret turn when her boyfriend reached out to me, saying that he was planning to propose during our session!My friend and I organized a petal heart at the location — which you can see in the photos — and had it ready for the moment we arrived at the main spot with the couple. In the end, everything went perfectly smooth. It was such a rewarding experience to be part of their story!',
+            title: 'Una pedida de mano sorpresa',
+            description: 'Originalmente me contactó Isreet, quien quería una sesión de fotos para celebrar su viaje a Madrid. Sin embargo, la historia dio un giro secreto cuando su novio se puso en contacto conmigo para contarme que ¡planeaba pedirle matrimonio durante nuestra sesión! Mi amiga y yo organizamos un corazón de pétalos en el lugar, que se puede ver en las fotos, y lo tuvimos listo para el momento en que llegamos al punto principal con la pareja. Al final, todo salió a la perfección. ¡Fue una experiencia muy bonita formar parte de su historia!',
             photos: [
                 { src: 'photos/Ishreet and Joet/12.jpg', alt: '' },
                 { src: 'photos/Ishreet and Joet/08.jpg', alt: '' },
@@ -1784,8 +1784,8 @@ document.addEventListener('DOMContentLoaded', function() {
 		
 		
 		'phot-proj': {
-            title: 'Photography Project about Couples',
-            description: 'I’m really passionate about capturing the connection between people—especially couples. That’s why I decided to create my own photography project about love. The idea is to show how each couple lives in their own world, fully immersed in their love, not worrying about what’s happening around them. Sometimes, they might not even fit the standards of the world around them 😊',
+            title: 'Proyecto de fotografía sobre parejas',
+            description: 'Me apasiona capturar la conexión entre las personas, especialmente entre las parejas. Por eso decidí crear mi propio proyecto de fotografía sobre el amor. La idea es mostrar cómo cada pareja vive en su propio mundo, completamente sumergida en su amor, sin preocuparse por lo que sucede a su alrededor. ¡A veces, puede que ni siquiera encajen en los estándares del mundo que los rodea! 😊',
             photos: [
                 { src: 'photos/Enr y Evel/A7405825.jpg', alt: '' },
                 { src: 'photos/Enr y Evel/A7405856.jpg', alt: '' },
@@ -1816,8 +1816,8 @@ document.addEventListener('DOMContentLoaded', function() {
 		
 		
 		'Valentine': {
-            title: 'Valentine’s Day Photoshoot',
-            description: 'The amazing couple Monica and Jorge contacted me for a Valentine’s Day photo session. I opted for one of my favorite studios in Madrid, and in just one hour, we captured these vibrant and romantic photos.',
+            title: 'Sesión de fotos de San Valentín',
+            description: 'La increíble pareja formada por Mónica y Jorge se puso en contacto conmigo para realizar una sesión de fotos de San Valentín. Elegí uno de mis estudios favoritos en Madrid y, en apenas una hora, capturamos estas fotos vibrantes y románticas.',
             photos: [
                 
 				{ src: 'photos/Monica and Jorge/14.jpg', alt: '' },
@@ -1868,8 +1868,8 @@ document.addEventListener('DOMContentLoaded', function() {
 		
 		
 		'Geli': {
-            title: 'An individual photo session',
-            description: 'For this session, I aimed for a dreamy, ethereal aesthetic. After finding the perfect look with the client, I captured the story in a park setting. To achieve this specific mood, I used a lens filter on several shots to create that poetic atmosphere.',
+            title: 'Sesión de fotos individual',
+            description: 'Para esta sesión, busqué una estética de ensueño y etérea. Tras encontrar el look perfecto con la clienta, capturé la historia en un entorno de parque. Para conseguir este ambiente tan específico, utilicé un filtro de objetivo en varias tomas para crear esa atmósfera poética.',
             photos: [
               
 				{ src: 'photos/Geli/04.jpg', alt: '' },
@@ -1939,8 +1939,8 @@ document.addEventListener('DOMContentLoaded', function() {
 		
 		
 		'taller': {
-            title: 'Floral Workshop Photos',
-            description: 'It was a Sunday floral workshop on how to make table centerpieces at the Florinatta studio. It was full of preserved flowers and amazing energy. At the end, the girls created different but very attractive decorations.',
+            title: 'Fotos del taller floral',
+            description: 'Fue un taller floral un domingo sobre cómo elaborar centros de mesa en el Taller de Florinatta. Estuvo lleno de flores preservadas y de una energía increíble. Al final, las chicas crearon decoraciones diferentes pero muy atractivas. ',
             photos: [
               
 				
@@ -2044,8 +2044,8 @@ document.addEventListener('DOMContentLoaded', function() {
 		
 		
         'amlul': {
-            title: 'Photoshoot from Amlul clothing brand',
-            description: 'The shoot took place in Madrid, in a location that visually resembles Miami, reflecting the brand’s timeless spirit.',
+            title: 'Sesión de fotos para la marca de ropa Amlul',
+            description: 'La sesión tuvo lugar en Madrid, en una localización que recuerda visualmente a Miami, reflejando el espíritu atemporal de la marca.',
             photos: [
 			    { src: 'photos/10_ed_02.jpg', alt: '' },
                 { src: 'photos/12_ed.jpg', alt: '' },
@@ -2062,8 +2062,8 @@ document.addEventListener('DOMContentLoaded', function() {
         },
 		
         'eyelash-specialist': {
-            title: 'Branding photoshoot for an eyelash extension specialist',
-            description: 'An eyelash extension specialist reached out for a photoshoot to enhance her personal brand on social media. We did the session in her salon using my lighting gear.',
+            title: 'Sesión de branding para una especialista en extensiones de pestañas',
+            description: 'Una especialista en extensiones de pestañas se puso en contacto conmigo para una sesión de fotos destinada a potenciar su marca personal en las redes sociales. Hicimos la sesión en su salón utilizando mi propio equipo de iluminación.',
             photos: [
                 { src: 'photos/A7402039.jpg', alt: '' },
                 { src: 'photos/A7401947.jpg', alt: '' },
@@ -2075,8 +2075,8 @@ document.addEventListener('DOMContentLoaded', function() {
             ]
         },
         'carlos-laura': {
-            title: 'Carlos & Laura – Cinematic Couple Photoshoot',
-            description: 'The couple wanted a session with two outfits, and for the wedding attire, they were looking for something more cinematic and symbolic.',
+            title: 'Carlos y Laura – Sesión de fotos de pareja cinematográfica',
+            description: 'La pareja quería una sesión con dos conjuntos de ropa y, para el atuendo de boda, buscaban algo más cinematográfico y simbólico.',
             photos: [
 				{ src: 'photos/A7401578.jpg', alt: '' },
                 { src: 'photos/A7401585.jpg', alt: '' },
@@ -2107,8 +2107,8 @@ document.addEventListener('DOMContentLoaded', function() {
 		*/
 		
 		'marina': {
-            title: 'Candlefire Conceptual Session',
-            description: 'Marina reached out to me on Instagram with a vision for a studio session. When she shared her concept, incorporating live candles into her styling, I was immediately on board. Together, we brought the idea to life. She custom-made the jacket with candles on the shoulders, and it was a true pleasure to work on a project this unique.',
+            title: 'Sesión conceptual con velas',
+            description: 'Marina se puso en contacto conmigo a través de Instagram con una idea muy clara para una sesión en estudio. Cuando compartió su concepto, que incorporaba velas reales en su estilismo, me sumé de inmediato. Juntas dimos vida a la idea: ella misma diseñó y confeccionó la chaqueta con velas en los hombros, y fue un auténtico placer trabajar en un proyecto tan único.',
             photos: [
 			    { src: 'photos/Marina/26.jpg', alt: '' },
 				{ src: 'photos/Marina/27.jpg', alt: '' },
@@ -2184,8 +2184,8 @@ document.addEventListener('DOMContentLoaded', function() {
 		
 		
         'couples-years': {
-            title: 'Couple sessions',
-            description: 'Over the years, I have photographed many couples, capturing the connection between them and highlighting the human relationship as the most important aspect.',
+            title: 'Sesiones de pareja',
+            description: 'A lo largo de los años, he fotografiado a muchas parejas, capturando la conexión entre ellas y destacando la relación humana como el aspecto más importante.',
             photos: [
                
                 { src: 'photos/DSC00448.jpg', alt: '' },
@@ -2203,8 +2203,8 @@ document.addEventListener('DOMContentLoaded', function() {
         },
 		
         'lisy': {
-            title: 'An individual photo shoot',
-            description: 'The photoshoot for a girl who found me online, done for her social media. It took place in Formigal, Spain.',
+            title: 'Sesión de fotos individual',
+            description: 'La sesión de fotos para una chica que me encontró en internet, realizada para sus redes sociales. Tuvo lugar en Formigal, España.',
             photos: [
                 { src: 'photos/A7403251-Enhanced-NR_02.jpg', alt:''  },
                 { src: 'photos/A7403246-Enhanced-NR_02.jpg', alt: '' },
