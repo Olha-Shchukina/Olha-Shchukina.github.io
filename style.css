@@ -116,10 +116,23 @@
             height: auto;
             border-radius: 4px;
         }
-        
-        .title-subtitle {
-            margin-bottom: 20px;
-        }
+		
+		.logo {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    line-height: 1.2; /* Ajusta el espacio entre las dos líneas para que no estén muy separadas */
+}
+		
+		.logo-subtitle {
+    font-size: 0.8rem;       /* Tamaño más pequeño */
+    font-weight: 320;         /* Letra más fina */
+    text-transform: uppercase; /* OPCIONAL: Si quieres que aparezca en mayúsculas sobrias (HOLA VISUALS) */
+    letter-spacing: 1px;       /* OPCIONAL: Espaciado entre letras para un acabado cinematográfico */
+    /*opacity: 0.95;            /* OPCIONAL: Suaviza ligeramente el tono del texto */
+}
+      
+
         
         .title-subtitle h4 {
             font-size: 18px;
@@ -128,6 +141,15 @@
             margin-bottom: 10px;
             display: block;
         }
+		
+		.subtitle-tagline {
+    font-size: 2rem;
+    font-weight: 500;
+    font-style: italic;
+    margin-top: -2rem;
+    margin-bottom: 1.5rem;
+	font-family: 'Cormorant Garamond', Georgia, serif;
+}
         
         .hero-name {
             font-size: 80px;
@@ -173,7 +195,8 @@
             padding: 80px 0;
             scroll-margin-top: 80px;
         }
-        
+		
+  
         .section-title {
             font-size: 36px;
             margin-bottom: 40px;
@@ -534,10 +557,15 @@
                 font-size: 16px;
                 display: block;
                 width: 100%;
+				margin-bottom: 0px;
             }
             
             .hero-name {
                 font-size: 50px;
+				font-weight: 700;
+                line-height: 1;
+				margin-top: 5px;       /* <-- AÑADE ESTA LÍNEA para pegar tu nombre al texto superior */
+                margin-bottom: 20px;
             }
             
             .photo-grid {
@@ -1472,7 +1500,7 @@
         }
         
         .title-subtitle {
-            margin-bottom: 20px;
+           
         }
         
         .title-subtitle h4 {
