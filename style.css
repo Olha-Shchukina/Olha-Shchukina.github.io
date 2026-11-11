@@ -99,7 +99,7 @@
         .hero-container {
             display: flex;
             width: 100%;
-            padding-top: 20px;
+            padding-top: 80px;
         }
         
         .hero-content {
@@ -517,6 +517,7 @@
         @media (max-width: 968px) {
             .hero-container {
                 flex-direction: column;
+				
             }
             
             .hero-content {
@@ -565,7 +566,7 @@
 				font-weight: 700;
                 line-height: 1;
 				margin-top: 5px;       /* <-- AÑADE ESTA LÍNEA para pegar tu nombre al texto superior */
-                margin-bottom: 20px;
+                margin-bottom: 09px;
             }
             
             .photo-grid {
@@ -1481,7 +1482,8 @@
         .hero-container {
             display: flex;
             width: 100%;
-            padding-top: 90px;
+            padding-top: 60px;
+			
         }
         
         .hero-content {
@@ -1497,6 +1499,7 @@
             width: 100%;
             height: auto;
             border-radius: 4px;
+			margin-top: 60px;
         }
         
         .title-subtitle {
@@ -1516,7 +1519,7 @@
             font-weight: 700;
             line-height: 1;
             color: #C14C42;
-            margin-bottom: 35px;
+            margin-bottom: 09px;
         }
         
         .hero-bio {
