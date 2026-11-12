@@ -28,7 +28,7 @@ const refs = (text, re) => [...new Set([...noComments(text).matchAll(re)].map(m 
 const gallery = refs(read('main.js'), /src:\s*'(photos\/[^']+\.(?:jpe?g|JPG|JPEG|webp))'/g).map(r => inner(r, 'web')).filter(Boolean);
 const pageRefs = refs(read('index.html'), /(?:src|data-src|href)="(photos\/[^"]+\.(?:jpe?g|JPG|JPEG|webp))"/g);
 const thumbs = pageRefs.filter(r => !r.startsWith('photos/web/') || r.startsWith('photos/web/thumbs/')).map(r => inner(r, 'web/thumbs')).filter(Boolean);
-// index.html may also use a full-size copy (photos/web/<x>.webp, max 2000px), e.g. the portrait in the intro.
+// index.html may also use a large copy (photos/web/<x>.webp, max 1500px), e.g. the portrait in the intro.
 const pageLarge = pageRefs.filter(r => r.startsWith('photos/web/') && !r.startsWith('photos/web/thumbs/')).map(r => inner(r, 'web')).filter(Boolean);
 function findOriginal(name) { for (const e of EXTS) { const p = path.join(repo, 'photos', name + e); if (fs.existsSync(p)) return p; } return null; }
 // A reference ending in "-bw" (e.g. photos/web/thumbs/me-working-bw.webp) is a black-and-white
@@ -52,7 +52,7 @@ async function convert(name, sub, maxEdge) {
   return 'ok';
 }
 (async () => {
-  const jobs = [...gallery.map(n => [n, 'web', 2000]), ...pageLarge.map(n => [n, 'web', 2000]), ...thumbs.map(n => [n, 'web/thumbs', 1200])];
+  const jobs = [...gallery.map(n => [n, 'web', 2000]), ...pageLarge.map(n => [n, 'web', 1500]), ...thumbs.map(n => [n, 'web/thumbs', 1200])];
   const stats = { ok: 0, skip: 0, missing: 0 }; let i = 0;
   await Promise.all(Array.from({ length: 8 }, async () => { while (i < jobs.length) { const [n, sub, max] = jobs[i++]; stats[await convert(n, sub, max)]++; } }));
   console.log(`converted ${stats.ok}, already up to date ${stats.skip}, no original and no copy ${stats.missing}`);
