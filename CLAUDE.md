@@ -6,6 +6,12 @@ branch (checked via the Pages API in Nov 2026), so a push to `main` is live with
 By habit `main` is also merged into `gh-pages` with a pull request to keep the two identical, but
 `gh-pages` is not what visitors see.
 
+## Publishing rule (always)
+
+Never `git push` (or merge into `gh-pages`) on your own. Commit locally, say "committed, not pushed",
+and wait: a push to `main` is live on olha-shchukina.com within a minute and Olha reviews first.
+A "push" instruction covers only the changes the owner is looking at, not later ones.
+
 ## Files that matter
 
 - `index.html` — the whole site (Spanish). Order: hero (Olha + portrait), bio with "Pide tu fecha" (wa.link),
