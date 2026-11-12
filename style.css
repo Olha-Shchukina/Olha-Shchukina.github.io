@@ -1,17 +1,21 @@
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'Helvetica Neue', Arial, sans-serif;
         }
+*/
         
       
         
         /* Navigation */
-        nav ul {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+nav ul {
             display: flex;
             list-style: none;
         }
+*/
         .left-nav{
 		color:black;
 		}
@@ -19,39 +23,48 @@
 		.right-nav{
 			margin:auto;
 		}
-        nav ul li {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+nav ul li {
             margin-left: 30px;
         }
+*/
         
         nav ul li a {
-            text-decoration: none;
-            color: #e0e0e0;
+            /* DUP (overridden by a later rule for the same selector): text-decoration: none; */
+            /* DUP (overridden by a later rule for the same selector): color: #e0e0e0; */
             font-weight: 500;
-            font-size: 16px;
-            transition: color 0.3s ease;
+            /* DUP (overridden by a later rule for the same selector): font-size: 16px; */
+            /* DUP (overridden by a later rule for the same selector): transition: color 0.3s ease; */
         }
         
         
         
         /* Language Selector */
-        .language-selector {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.language-selector {
             position: relative;
         }
+*/
         
-        .current-lang {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.current-lang {
             display: flex;
             align-items: center;
             font-weight: 500;
         }
+*/
         
-        .current-lang:after {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.current-lang:after {
             content: '▼';
             font-size: 8px;
             margin-left: 5px;
             margin-top: 2px;
         }
+*/
         
-        .language-dropdown {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.language-dropdown {
             position: absolute;
             top: 100%;
             right: 0;
@@ -63,27 +76,36 @@
             z-index: 100;
             overflow: hidden;
         }
+*/
         
-        .language-selector:hover .language-dropdown {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.language-selector:hover .language-dropdown {
             display: block;
         }
+*/
         
-        .language-dropdown a {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.language-dropdown a {
             display: block;
             padding: 10px 15px;
             text-decoration: none;
             color: #e0e0e0;
             transition: background-color 0.3s;
         }
+*/
         
-        .language-dropdown a:hover {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.language-dropdown a:hover {
             background-color: #333;
         }
+*/
         
-        .language-dropdown a.active {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.language-dropdown a.active {
             background-color: #e77f67;
             color: #000000;
         }
+*/
         
         /* Main Content */
        /* main {
@@ -96,31 +118,39 @@
         }*/
         
         /* Hero Section */
-        .hero-container {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.hero-container {
             display: flex;
             width: 100%;
             padding-top: 80px;
         }
+*/
         
-        .hero-content {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.hero-content {
             flex: 1;
             padding-right: 40px;
         }
+*/
         
-        .hero-image {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.hero-image {
             flex: 1;
         }
+*/
         
-        .hero-image img {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.hero-image img {
             width: 100%;
             height: auto;
             border-radius: 4px;
         }
+*/
 		
 		.logo {
     display: flex;
     flex-direction: column;
-    text-decoration: none;
+    /* DUP (overridden by a later rule for the same selector): text-decoration: none; */
     line-height: 1.2; /* Ajusta el espacio entre las dos líneas para que no estén muy separadas */
 }
 		
@@ -134,13 +164,15 @@
       
 
         
-        .title-subtitle h4 {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.title-subtitle h4 {
             font-size: 18px;
             font-weight: 400;
             color: #e0e0e0;
             margin-bottom: 10px;
             display: block;
         }
+*/
 		
 		.subtitle-tagline {
     font-size: 2rem;
@@ -151,31 +183,40 @@
 	font-family: 'Cormorant Garamond', Georgia, serif;
 }
         
-        .hero-name {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.hero-name {
             font-size: 80px;
             font-weight: 700;
             line-height: 1;
             color: #C14C42;
             margin-bottom: 40px;
         }
+*/
         
-        .hero-bio {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.hero-bio {
             margin-bottom: 30px;
         }
+*/
         
-        .hero-bio p {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.hero-bio p {
             margin-bottom: 20px;
             font-size: 16px;
             line-height: 1.8;
             color: #e0e0e0;
         }
+*/
         
-        .social-icons {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.social-icons {
             display: flex;
             margin-top: 40px;
         }
+*/
         
-        .social-icons a {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.social-icons a {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -187,25 +228,31 @@
             margin-right: 15px;
             transition: all 0.3s ease;
         }
+*/
         
       
         
         /* Sections */
-        section {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+section {
             padding: 80px 0;
             scroll-margin-top: 80px;
         }
+*/
 		
   
-        .section-title {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.section-title {
             font-size: 36px;
             margin-bottom: 40px;
             text-align: center;
             position: relative;
             color: #e0e0e0;
         }
+*/
         
-        .section-title::after {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.section-title::after {
             content: '';
             position: absolute;
             bottom: -10px;
@@ -215,53 +262,67 @@
             height: 3px;
             background-color: #e77f67;
         }
+*/
         
         /* Photos Grid */
-        .photo-grid {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.photo-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 20px;
         }
+*/
         
-        .photo-item {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.photo-item {
             overflow: hidden;
             border-radius: 8px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
             transition: transform 0.3s ease;
         }
+*/
         
     /*    .photo-item:hover {
             transform: translateY(-5px);
         }*/
         
-        .photo-item img {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.photo-item img {
             width: 100%;
             height: 250px;
             object-fit: cover;
             display: block;
         }
+*/
         
         /* Videos Grid */
-        .video-grid {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.video-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
             gap: 30px;
         }
+*/
         
-        .video-item {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.video-item {
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
+*/
         
-        .video-container {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.video-container {
             position: relative;
-            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio * /
             height: 0;
             overflow: hidden;
         }
+*/
         
-        .video-container iframe, 
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.video-container iframe, 
         .video-container video {
             position: absolute;
             top: 0;
@@ -270,30 +331,40 @@
             height: 100%;
             border: 0;
         }
+*/
         
-        .video-info {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.video-info {
             padding: 15px;
             background-color: #1e1e1e;
         }
+*/
         
-        .video-info h3 {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.video-info h3 {
             font-size: 18px;
             margin-bottom: 8px;
             color: #e0e0e0;
         }
+*/
         
-        .video-info p {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.video-info p {
             color: #aaa;
             font-size: 14px;
         }
+*/
         
         /* Show More Button */
-        .show-more-container {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.show-more-container {
             text-align: center;
             margin-top: 40px;
         }
+*/
         
-        .show-more-btn {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.show-more-btn {
             display: inline-block;
             background-color: #e77f67;
             color: #000000;
@@ -304,86 +375,116 @@
             font-size: 16px;
             transition: background-color 0.3s ease;
         }
+*/
         
-        .show-more-btn:hover {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.show-more-btn:hover {
             background-color: #d56c57;
         }
+*/
         
         /* Contact Section */
-        .contact-container {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.contact-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 40px;
         }
+*/
         
-        .contact-info {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.contact-info {
             padding: 30px;
             background-color: #1e1e1e;
             border-radius: 8px;
         }
+*/
         
-        .contact-info h3 {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.contact-info h3 {
             font-size: 24px;
             margin-bottom: 20px;
             color: #e0e0e0;
         }
+*/
         
-        .contact-details {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.contact-details {
             margin-top: 30px;
         }
+*/
         
-        .contact-item {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.contact-item {
             margin-bottom: 15px;
         }
+*/
         
-        .contact-label {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.contact-label {
             display: block;
             font-weight: 600;
             margin-bottom: 5px;
             color: #aaa;
         }
+*/
         
-        .contact-value {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.contact-value {
             font-size: 18px;
             color: #e0e0e0;
         }
+*/
         
-        .contact-value a {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.contact-value a {
             color: #e77f67;
             text-decoration: none;
             transition: color 0.3s ease;
         }
+*/
         
-        .contact-value a:hover {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.contact-value a:hover {
             color: #d56c57;
             text-decoration: underline;
         }
+*/
         
-        .contact-form {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.contact-form {
             background-color: #1e1e1e;
             padding: 30px;
             border-radius: 8px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
         }
+*/
         
-        .contact-form h3 {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.contact-form h3 {
             font-size: 24px;
             margin-bottom: 20px;
             color: #e0e0e0;
         }
+*/
         
-        .form-group {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.form-group {
             margin-bottom: 20px;
         }
+*/
         
-        .form-group label {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.form-group label {
             display: block;
             margin-bottom: 8px;
             font-weight: 500;
             color: #b0b0b0;
         }
+*/
         
-        .form-group input,
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.form-group input,
         .form-group textarea {
             width: 100%;
             padding: 12px 15px;
@@ -394,14 +495,18 @@
             background-color: #2c2c2c;
             color: #e0e0e0;
         }
+*/
         
-        .form-group input:focus,
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.form-group input:focus,
         .form-group textarea:focus {
             border-color: #e77f67;
             outline: none;
         }
+*/
         
-        .submit-btn {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.submit-btn {
             background-color: #e77f67;
             color: #000000;
             border: none;
@@ -412,19 +517,25 @@
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
+*/
         
-        .submit-btn:hover {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.submit-btn:hover {
             background-color: #d56c57;
         }
+*/
         
         /* Specialties Section */
-        .specialties-grid {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.specialties-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 30px;
         }
+*/
         
-        .specialty-item {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.specialty-item {
             background-color: #1e1e1e;
             border-radius: 8px;
             padding: 30px;
@@ -432,47 +543,63 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+*/
         
-        .specialty-item:hover {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.specialty-item:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
         }
+*/
         
-        .specialty-icon {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.specialty-icon {
             margin-bottom: 20px;
             color: #e77f67;
         }
+*/
         
-        .specialty-item h3 {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.specialty-item h3 {
             font-size: 20px;
             margin-bottom: 15px;
             color: #e0e0e0;
         }
+*/
         
-        .specialty-item p {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.specialty-item p {
             color: #b0b0b0;
             line-height: 1.6;
         }
+*/
         
         /* Footer */
-        footer {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+footer {
             background-color: #0a0a0a;
             color: #e0e0e0;
             padding: 40px 0;
             text-align: center;
         }
+*/
         
-        .footer-container {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.footer-container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
+*/
         
-        .social-links {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.social-links {
             margin-bottom: 20px;
         }
+*/
         
-        .social-links a {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.social-links a {
             color: #e0e0e0;
             font-size: 16px;
             margin: 0 15px;
@@ -480,41 +607,55 @@
             align-items: center;
             text-decoration: none;
         }
+*/
         
       
         
-        .social-links .icon {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.social-links .icon {
             margin-right: 8px;
         }
+*/
         
-        .footer-languages {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.footer-languages {
             margin-top: 20px;
             margin-bottom: 20px;
         }
+*/
         
-        .footer-languages a {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.footer-languages a {
             color: #b0b0b0;
             text-decoration: none;
             margin: 0 10px;
             transition: color 0.3s;
         }
+*/
         
-        .footer-languages a:hover {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.footer-languages a:hover {
             color: #e77f67;
         }
+*/
         
-        .footer-languages a.active {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.footer-languages a.active {
             color: #e77f67;
             font-weight: 500;
         }
+*/
         
-        .copyright {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.copyright {
             font-size: 14px;
             color: #777;
         }
+*/
         
         /* Responsive Design */
-        @media (max-width: 968px) {
+        /* DUPLICATE BLOCK — every rule in it is redefined later in this file; commented out:
+@media (max-width: 968px) {
             .hero-container {
                 flex-direction: column;
 				
@@ -534,52 +675,67 @@
                 font-size: 60px;
             }
         }
+*/
         
         @media (max-width: 768px) {
-            .header-container {
+            /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.header-container {
                 flex-direction: column;
                 padding: 20px;
             }
+*/
             
-            nav ul {
+            /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+nav ul {
                 margin-top: 20px;
             }
+*/
             
-            nav ul li {
+            /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+nav ul li {
                 margin: 0 15px;
             }
+*/
             
-            .title-subtitle {
+            /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.title-subtitle {
                 display: block;
                 width: 100%;
             }
+*/
             
             .title-subtitle h4 {
-                font-size: 16px;
-                display: block;
-                width: 100%;
+                /* DUP (overridden by a later rule for the same selector): font-size: 16px; */
+                /* DUP (overridden by a later rule for the same selector): display: block; */
+                /* DUP (overridden by a later rule for the same selector): width: 100%; */
 				margin-bottom: 0px;
             }
             
             .hero-name {
-                font-size: 50px;
+                /* DUP (overridden by a later rule for the same selector): font-size: 50px; */
 				font-weight: 700;
                 line-height: 1;
 				margin-top: 5px;       /* <-- AÑADE ESTA LÍNEA para pegar tu nombre al texto superior */
                 margin-bottom: 09px;
             }
             
-            .photo-grid {
+            /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.photo-grid {
                 grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
             }
+*/
             
-            .video-grid {
+            /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.video-grid {
                 grid-template-columns: 1fr;
             }
+*/
             
-            .contact-container {
+            /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.contact-container {
                 grid-template-columns: 1fr;
             }
+*/
 			
 			.nav-class{
 				margin-left:0px !important;
@@ -589,10 +745,11 @@
 			.collection-overlay {
 				padding:5px !important;
 			}
-        }
+        /* stray closing brace removed by cleanup — browsers were silently dropping the rule after it: } */
         
          /* Photo Items with Collection Overlay */
-    .photo-item {
+    /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.photo-item {
         overflow: hidden;
         border-radius: 8px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -600,18 +757,21 @@
         position: relative;
         cursor: pointer;
     }
+*/
     
  /*   .photo-item:hover {
         transform: translateY(-5px);
     }*/
     
-    .photo-item img {
+    /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.photo-item img {
         width: 100%;
         height: 250px;
         object-fit: cover;
         display: block;
         transition: transform 0.5s ease, filter 0.5s ease;
     }
+*/
     
  
     
@@ -643,12 +803,15 @@
 			margin-bottom: 10px;
     }
     
-    .collection-desc {
+    /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.collection-desc {
         font-size: 14px;
         color: rgba(255, 255, 255, 0.8);
     }
+*/
     
-    .view-collection {
+    /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.view-collection {
         display: inline-block;
         background-color: #e77f67;
         color: #121212;
@@ -659,13 +822,17 @@
         font-size: 14px;
         transition: background-color 0.3s;
     }
+*/
     
-    .view-collection:hover {
+    /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.view-collection:hover {
         background-color: #d56c57;
     }
+*/
     
     /* Collection Modal */
-    .collection-modal {
+    /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.collection-modal {
         position: fixed;
         top: 0;
         left: 0;
@@ -679,12 +846,16 @@
         overflow-y: auto;
         padding: 50px 20px;
     }
+*/
     
-    .collection-modal.open {
+    /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.collection-modal.open {
         display: flex;
     }
+*/
     
-    .modal-content {
+    /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.modal-content {
         max-width: 2000px;
         width: 100%;
         background-color: #1a1a1a;
@@ -693,8 +864,10 @@
         position: relative;
         animation: modalFadeIn 0.3s ease;
     }
+*/
     
-    @keyframes modalFadeIn {
+    /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+@keyframes modalFadeIn {
         from {
             opacity: 0;
             transform: scale(0.95);
@@ -704,21 +877,27 @@
             transform: scale(1);
         }
     }
+*/
     
-    .modal-header {
+    /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.modal-header {
         padding: 20px;
         border-bottom: 1px solid #333;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
+*/
     
-    .modal-title {
+    /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.modal-title {
         font-size: 24px;
         color: #e0e0e0;
     }
+*/
     
-    .close-modal {
+    /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.close-modal {
         background: none;
         border: none;
         color: #999;
@@ -726,46 +905,62 @@
         cursor: pointer;
         transition: color 0.3s;
     }
+*/
     
-    .close-modal:hover {
+    /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.close-modal:hover {
         color: #e0e0e0;
     }
+*/
     
-    .modal-body {
+    /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.modal-body {
         padding: 20px;
     }
+*/
     
-    .collection-description {
+    /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.collection-description {
         margin-bottom: 30px;
         color: #b0b0b0;
         line-height: 1.6;
     }
+*/
     
-    .collection-photos {
+    /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.collection-photos {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
         gap: 15px;
     }
+*/
     
-    .collection-photo {
+    /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.collection-photo {
         overflow: hidden;
         border-radius: 4px;
         cursor: pointer;
     }
+*/
     
-    .collection-photo img {
+    /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.collection-photo img {
         width: 100%;
         height: 200px;
         object-fit: cover;
         transition: transform 0.3s;
     }
+*/
     
-    .collection-photo:hover img {
+    /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.collection-photo:hover img {
         transform: scale(1.05);
     }
+*/
     
     /* Responsive adjustments */
-    @media (max-width: 768px) {
+    /* DUPLICATE BLOCK — every rule in it is redefined later in this file; commented out:
+@media (max-width: 768px) {
         .collection-title {
             font-size: 20px;
         }
@@ -778,8 +973,10 @@
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         }
     }
+*/
     
-    @media (max-width: 576px) {
+    /* DUPLICATE BLOCK — every rule in it is redefined later in this file; commented out:
+@media (max-width: 576px) {
         .modal-content {
             width: 100%;
             height: auto;
@@ -790,8 +987,10 @@
             grid-template-columns: 1fr 1fr;
         }
     }
+*/
     
     /* Collection Modal Styles */
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .collection-modal {
     position: fixed;
     top: 0;
@@ -806,11 +1005,15 @@
     overflow-y: auto;
     padding: 50px 20px;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .collection-modal.open {
     display: flex;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .modal-content {
     max-width: 2000px;
     width: 100%;
@@ -820,7 +1023,9 @@
     position: relative;
     animation: modalFadeIn 0.3s ease;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 @keyframes modalFadeIn {
     from {
         opacity: 0;
@@ -831,7 +1036,9 @@
         transform: scale(1);
     }
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .modal-header {
     padding: 20px;
     border-bottom: 1px solid #333;
@@ -839,12 +1046,16 @@
     justify-content: space-between;
     align-items: center;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .modal-title {
     font-size: 24px;
     color: #e0e0e0;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .close-modal {
     background: none;
     border: none;
@@ -853,34 +1064,46 @@
     cursor: pointer;
     transition: color 0.3s;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .close-modal:hover {
     color: #e0e0e0;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .modal-body {
     padding: 20px;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .collection-description {
     margin-bottom: 30px;
     color: #b0b0b0;
     line-height: 1.6;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .collection-photos {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 15px;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .collection-photo {
     overflow: hidden;
     border-radius: 4px;
     cursor: pointer;
-    /*position: relative;*/
+    /*position: relative;* /
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .collection-photo:after {
     content: '👁️';
     position: absolute;
@@ -899,23 +1122,31 @@
     align-items: center;
     justify-content: center;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .collection-photo:hover:after {
     opacity: 1;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .collection-photo img {
     width: 100%;
     height: 200px;
     object-fit: cover;
     transition: transform 0.3s;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .collection-photo:hover img {
     transform: scale(1.05);
 }
+*/
 
 /* Fullscreen Photo Viewer Styles */
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .fullscreen-photo-viewer {
     position: fixed;
     top: 0;
@@ -928,11 +1159,15 @@
     justify-content: center;
     align-items: center;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .fullscreen-photo-viewer.active {
     display: flex;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .fullscreen-container {
     position: relative;
     width: 90%;
@@ -941,14 +1176,18 @@
     justify-content: center;
     align-items: center;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .fullscreen-container img {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .fullscreen-controls {
     position: absolute;
     top: 0;
@@ -957,7 +1196,9 @@
     height: 100%;
     pointer-events: none;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .prev-photo, .next-photo {
     background: rgba(0, 0, 0, 0.5);
     color: white;
@@ -976,19 +1217,27 @@
     transform: translateY(-50%);
     pointer-events: auto;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .prev-photo {
     left: 20px;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .next-photo {
     right: 20px;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .prev-photo:hover, .next-photo:hover {
     background: rgba(50, 50, 50, 0.7);
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .close-fullscreen {
     background: rgba(0, 0, 0, 0.5);
     color: white;
@@ -1007,11 +1256,15 @@
     right: 20px;
     pointer-events: auto;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .close-fullscreen:hover {
     background: rgba(50, 50, 50, 0.7);
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .photo-caption {
     position: absolute;
     bottom: 60px;
@@ -1023,7 +1276,9 @@
     font-size: 18px;
     background: rgba(0, 0, 0, 0.6);
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .photo-counter {
     position: absolute;
     bottom: 20px;
@@ -1033,8 +1288,10 @@
     color: #aaa;
     font-size: 14px;
 }
+*/
 
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .collection-modal {
     position: fixed;
     top: 0;
@@ -1045,26 +1302,32 @@
     z-index: 2000;
     display: none;
     justify-content: center;
-    align-items: flex-start; /* Changed from center to allow scrolling */
+    align-items: flex-start; /* Changed from center to allow scrolling * /
     overflow-y: auto;
     padding: 30px 20px;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .collection-modal.open {
     display: flex;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .modal-content {
-    max-width: 1200px; /* Increased from 1000px */
+    max-width: 1200px; /* Increased from 1000px * /
     width: 100%;
     background-color: #1a1a1a;
     border-radius: 8px;
     overflow: hidden;
     position: relative;
     animation: modalFadeIn 0.3s ease;
-    margin: 30px auto; /* Added margin for better spacing when scrolling */
+    margin: 30px auto; /* Added margin for better spacing when scrolling * /
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 @keyframes modalFadeIn {
     from {
         opacity: 0;
@@ -1075,29 +1338,35 @@
         transform: scale(1);
     }
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .modal-header {
     padding: 20px;
     border-bottom: 1px solid #333;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky; /* Make header sticky */
+    position: sticky; /* Make header sticky * /
     top: 0;
     background-color: #1a1a1a;
     z-index: 10;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .modal-title {
-    font-size: 28px; /* Increased from 24px */
+    font-size: 28px; /* Increased from 24px * /
     color: #e0e0e0;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .close-modal {
     background: none;
     border: none;
     color: #999;
-    font-size: 32px; /* Increased from 28px */
+    font-size: 32px; /* Increased from 28px * /
     cursor: pointer;
     transition: color 0.3s;
     width: 40px;
@@ -1106,45 +1375,57 @@
     align-items: center;
     justify-content: center;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .close-modal:hover {
     color: #e0e0e0;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .modal-body {
     padding: 20px;
 }
+*/
 
 
 /* Updated collection photos grid with larger images */
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .collection-photos {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Changed to 2 columns per row */
-    gap: 20px; /* Increased from 15px */
+    grid-template-columns: repeat(2, 1fr); /* Changed to 2 columns per row * /
+    gap: 20px; /* Increased from 15px * /
     max-width: 1100px;
     margin: 0 auto;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .collection-photo {
     overflow: hidden;
-    border-radius: 8px; /* Increased from 4px */
+    border-radius: 8px; /* Increased from 4px * /
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    background-color: #121212; /* Added for placeholder background */
-    /*position: relative;*/
+    background-color: #121212; /* Added for placeholder background * /
+    /*position: relative;* /
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .collection-photo img {
     width: 100%;
-    height: 400px; /* Increased from 200px */
+    height: 400px; /* Increased from 200px * /
     object-fit: cover;
     transition: transform 0.3s, filter 0.3s;
     display: block;
 }
+*/
 
 
 
 /* Loading animation */
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .collection-photo.loading::before {
     content: '';
     position: absolute;
@@ -1158,12 +1439,16 @@
     border-top-color: #e77f67;
     animation: spin 1s ease-in-out infinite;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 @keyframes spin {
     to { transform: rotate(360deg); }
 }
+*/
 
 /* Fullscreen Photo Viewer Styles */
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .fullscreen-photo-viewer {
     position: fixed;
     top: 0;
@@ -1178,12 +1463,16 @@
     opacity: 0;
     transition: opacity 0.3s ease;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .fullscreen-photo-viewer.active {
     display: flex;
     opacity: 1;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .fullscreen-container {
     position: relative;
     width: 90%;
@@ -1192,7 +1481,9 @@
     justify-content: center;
     align-items: center;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .fullscreen-container img {
     max-width: 100%;
     max-height: 100%;
@@ -1201,7 +1492,9 @@
     opacity: 0.3;
     transition: opacity 0.5s ease;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .fullscreen-controls {
     position: absolute;
     top: 0;
@@ -1211,7 +1504,9 @@
     pointer-events: none;
     z-index: 10;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .prev-photo, .next-photo {
     background: rgba(0, 0, 0, 0.5);
     color: white;
@@ -1231,24 +1526,34 @@
     pointer-events: auto;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .prev-photo {
     left: 20px;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .next-photo {
     right: 20px;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .prev-photo:hover, .next-photo:hover {
     background: rgba(50, 50, 50, 0.8);
     transform: translateY(-50%) scale(1.1);
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .prev-photo:active, .next-photo:active {
     transform: translateY(-50%) scale(0.95);
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .close-fullscreen {
     background: rgba(0, 0, 0, 0.5);
     color: white;
@@ -1268,16 +1573,22 @@
     pointer-events: auto;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .close-fullscreen:hover {
     background: rgba(50, 50, 50, 0.8);
     transform: scale(1.1);
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .close-fullscreen:active {
     transform: scale(0.95);
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .photo-caption {
     position: absolute;
     bottom: 60px;
@@ -1292,7 +1603,9 @@
     opacity: 0.9;
     transition: opacity 0.3s;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .photo-counter {
     position: absolute;
     bottom: 20px;
@@ -1302,15 +1615,17 @@
     color: #aaa;
     font-size: 14px;
 }
+*/
 
 /* Responsive adjustments for fullscreen viewer */
+/* DUPLICATE BLOCK — every rule in it is redefined later in this file; commented out:
 @media (max-width: 768px) {
     .collection-photos {
-        grid-template-columns: 1fr; /* Single column on mobile */
+        grid-template-columns: 1fr; /* Single column on mobile * /
     }
     
     .collection-photo img {
-        height: 300px; /* Smaller on mobile but still prominent */
+        height: 300px; /* Smaller on mobile but still prominent * /
     }
     
     .prev-photo, .next-photo, .close-fullscreen {
@@ -1329,7 +1644,9 @@
         right: 10px;
     }
 }
+*/
 
+/* DUPLICATE BLOCK — every rule in it is redefined later in this file; commented out:
 @media (max-width: 576px) {
     .prev-photo, .next-photo {
         width: 40px;
@@ -1344,7 +1661,8 @@
     .next-photo {
         right: 10px;
     }
-}* {
+}
+*/* { /* FINAL definition (earlier duplicates commented out) */
            margin: 0;
 			padding: 0;
 			box-sizing: border-box;
@@ -1383,7 +1701,7 @@
             align-items: center;
         }
         
-        .logo {
+        .logo { /* FINAL definition (earlier duplicates commented out) */
                font-size: 24px;
 				/* font-weight: 100; */
 				color: #000000;
@@ -1392,16 +1710,16 @@
         }
         
         /* Navigation */
-        nav ul {
+        nav ul { /* FINAL definition (earlier duplicates commented out) */
             display: flex;
             list-style: none;
         }
         
-        nav ul li {
+        nav ul li { /* FINAL definition (earlier duplicates commented out) */
             margin-left: 30px;
         }
         
-        nav ul li a {
+        nav ul li a { /* FINAL definition (earlier duplicates commented out) */
 			text-decoration: none;
 			color: #000000;
 			/* font-weight: 600; */
@@ -1416,25 +1734,25 @@
         }
         
         /* Language Selector */
-        .language-selector {
+        .language-selector { /* FINAL definition (earlier duplicates commented out) */
             position: relative;
         }
         
-        .current-lang {
+        .current-lang { /* FINAL definition (earlier duplicates commented out) */
 			font-size: 18px;
             display: flex;
             align-items: center;
             font-weight: 500;
         }
         
-        .current-lang:after {
+        .current-lang:after { /* FINAL definition (earlier duplicates commented out) */
             content: '▼';
             font-size: 8px;
             margin-left: 5px;
             margin-top: 2px;
         }
         
-        .language-dropdown {
+        .language-dropdown { /* FINAL definition (earlier duplicates commented out) */
             position: absolute;
             top: 100%;
             right: 0;
@@ -1447,11 +1765,11 @@
             overflow: hidden;
         }
         
-        .language-selector:hover .language-dropdown {
+        .language-selector:hover .language-dropdown { /* FINAL definition (earlier duplicates commented out) */
             display: block;
         }
         
-        .language-dropdown a {
+        .language-dropdown a { /* FINAL definition (earlier duplicates commented out) */
             display: block;
             padding: 10px 15px;
             text-decoration: none;
@@ -1459,11 +1777,11 @@
             transition: background-color 0.3s;
         }
         
-        .language-dropdown a:hover {
+        .language-dropdown a:hover { /* FINAL definition (earlier duplicates commented out) */
             background-color: #333;
         }
         
-        .language-dropdown a.active {
+        .language-dropdown a.active { /* FINAL definition (earlier duplicates commented out) */
             background-color: #e25545;
             color: #000000;
         }
@@ -1479,23 +1797,23 @@
         }
         
         /* Hero Section */
-        .hero-container {
+        .hero-container { /* FINAL definition (earlier duplicates commented out) */
             display: flex;
             width: 100%;
             padding-top: 60px;
 			
         }
         
-        .hero-content {
+        .hero-content { /* FINAL definition (earlier duplicates commented out) */
             flex: 1;
             padding-right: 40px;
         }
         
-        .hero-image {
+        .hero-image { /* FINAL definition (earlier duplicates commented out) */
             flex: 1;
         }
         
-        .hero-image img {
+        .hero-image img { /* FINAL definition (earlier duplicates commented out) */
             width: 100%;
             height: auto;
             border-radius: 4px;
@@ -1506,7 +1824,7 @@
            
         }
         
-        .title-subtitle h4 {
+        .title-subtitle h4 { /* FINAL definition (earlier duplicates commented out) */
             font-size: 24px;
             font-weight: 400;
             color: #000000;
@@ -1514,7 +1832,7 @@
             display: block;
         }
         
-        .hero-name {
+        .hero-name { /* FINAL definition (earlier duplicates commented out) */
             font-size: 60px;
             font-weight: 700;
             line-height: 1;
@@ -1522,23 +1840,23 @@
             margin-bottom: 09px;
         }
         
-        .hero-bio {
+        .hero-bio { /* FINAL definition (earlier duplicates commented out) */
             margin-bottom: 30px;
         }
         
-        .hero-bio p {
+        .hero-bio p { /* FINAL definition (earlier duplicates commented out) */
                margin-bottom: 20px;
 				font-size: 18px;
 				line-height: 1.6;
 				color: #000000;
         }
         
-        .social-icons {
+        .social-icons { /* FINAL definition (earlier duplicates commented out) */
             display: flex;
             margin-top: 40px;
         }
         
-        .social-icons a {
+        .social-icons a { /* FINAL definition (earlier duplicates commented out) */
             display: flex;
             align-items: center;
             justify-content: center;
@@ -1557,12 +1875,12 @@
         }
         
         /* Sections */
-        section {
+        section { /* FINAL definition (earlier duplicates commented out) */
             padding: 40px 0;
             scroll-margin-top: 80px;
         }
         
-        .section-title {
+        .section-title { /* FINAL definition (earlier duplicates commented out) */
            font-size: 25px;
 			margin-bottom: 33px;
 			text-align: center;
@@ -1571,7 +1889,7 @@
 			font-weight: 100;
         }
         
-        .section-title::after {
+        .section-title::after { /* FINAL definition (earlier duplicates commented out) */
            content: '';
     position: absolute;
     bottom: 0px;
@@ -1594,29 +1912,33 @@
         }
         
         /* Photos Grid */
-        .photo-grid {
+        .photo-grid { /* FINAL definition (earlier duplicates commented out) */
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 20px;
         }
         
-        .photo-item {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.photo-item {
             overflow: hidden;
             border-radius: 8px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
             transition: transform 0.3s ease;
         }
+*/
         
       /*  .photo-item:hover {
             transform: translateY(-5px);
         }
         */
-        .photo-item img {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.photo-item img {
             width: 100%;
             height: 250px;
             object-fit: cover;
             display: block;
         }
+*/
 		
 		
 		 .video-grid2 {
@@ -1660,26 +1982,29 @@
 		/* }	 */
         
         /* Videos Grid */
-        .video-grid {
+        .video-grid { /* FINAL definition (earlier duplicates commented out) */
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
             gap: 30px;
         }
         
-        .video-item {
+        .video-item { /* FINAL definition (earlier duplicates commented out) */
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
         
-        .video-container {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.video-container {
             position: relative;
-            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio * /
             height: 0;
             overflow: hidden;
         }
+*/
         
-        .video-container iframe, 
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.video-container iframe, 
         .video-container video {
             position: absolute;
             top: 0;
@@ -1688,30 +2013,31 @@
             height: 100%;
             border: 0;
         }
+*/
         
-        .video-info {
+        .video-info { /* FINAL definition (earlier duplicates commented out) */
             padding: 15px;
             background-color: #1e1e1e;
         }
         
-        .video-info h3 {
+        .video-info h3 { /* FINAL definition (earlier duplicates commented out) */
             font-size: 18px;
             margin-bottom: 8px;
             color: #e0e0e0;
         }
         
-        .video-info p {
+        .video-info p { /* FINAL definition (earlier duplicates commented out) */
             color: #aaa;
             font-size: 14px;
         }
         
         /* Show More Button */
-        .show-more-container {
+        .show-more-container { /* FINAL definition (earlier duplicates commented out) */
             text-align: center;
             margin-top: 40px;
         }
         
-        .show-more-btn {
+        .show-more-btn { /* FINAL definition (earlier duplicates commented out) */
             display: inline-block;
             background-color: #e77f67;
             color: #000000;
@@ -1723,79 +2049,79 @@
             transition: background-color 0.3s ease;
         }
         
-        .show-more-btn:hover {
+        .show-more-btn:hover { /* FINAL definition (earlier duplicates commented out) */
             background-color: #d56c57;
         }
         
         /* Contact Section */
-        .contact-container {
+        .contact-container { /* FINAL definition (earlier duplicates commented out) */
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 40px;
         }
         
-        .contact-info {
+        .contact-info { /* FINAL definition (earlier duplicates commented out) */
             padding: 30px;
 			box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
             background-color: white;
             border-radius: 8px;
         }
         
-        .contact-info h3 {
+        .contact-info h3 { /* FINAL definition (earlier duplicates commented out) */
             font-size: 24px;
             margin-bottom: 20px;
             color: #423c3c;
         }
         
-        .contact-details {
+        .contact-details { /* FINAL definition (earlier duplicates commented out) */
             margin-top: 30px;
         }
         
-        .contact-item {
+        .contact-item { /* FINAL definition (earlier duplicates commented out) */
             margin-bottom: 15px;
         }
         
-        .contact-label {
+        .contact-label { /* FINAL definition (earlier duplicates commented out) */
             display: block;
             font-weight: 600;
             margin-bottom: 5px;
             color: #423c3c;
         }
         
-        .contact-value {
+        .contact-value { /* FINAL definition (earlier duplicates commented out) */
             font-size: 18px;
             color:#e25545;
         }
         
-        .contact-value a {
+        .contact-value a { /* FINAL definition (earlier duplicates commented out) */
             color: #e25545;
             text-decoration: none;
             transition: color 0.3s ease;
         }
         
-        .contact-value a:hover {
+        .contact-value a:hover { /* FINAL definition (earlier duplicates commented out) */
             color: #e25545;
             text-decoration: underline;
         }
         
-        .contact-form {
+        .contact-form { /* FINAL definition (earlier duplicates commented out) */
             background-color: white;
             padding: 30px;
             border-radius: 8px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
         }
         
-        .contact-form h3 {
+        .contact-form h3 { /* FINAL definition (earlier duplicates commented out) */
             font-size: 24px;
             margin-bottom: 20px;
             color: #423c3c;
         }
         
-        .form-group {
+        .form-group { /* FINAL definition (earlier duplicates commented out) */
             margin-bottom: 20px;
         }
         
-        .form-group label {
+        .form-group label { /* FINAL definition (earlier duplicates commented out) */
             display: block;
             margin-bottom: 8px;
             font-weight: 500;
@@ -1803,7 +2129,7 @@
         }
         
         .form-group input,
-        .form-group textarea {
+        .form-group textarea { /* FINAL definition (earlier duplicates commented out) */
             width: 100%;
             padding: 12px 15px;
             border: 1px solid #333;
@@ -1815,12 +2141,12 @@
         }
         
         .form-group input:focus,
-        .form-group textarea:focus {
+        .form-group textarea:focus { /* FINAL definition (earlier duplicates commented out) */
             border-color: #e77f67;
             outline: none;
         }
         
-        .submit-btn {
+        .submit-btn { /* FINAL definition (earlier duplicates commented out) */
             background-color: #e25545;
             color: white;
             border: none;
@@ -1832,18 +2158,18 @@
             transition: background-color 0.3s ease;
         }
         
-        .submit-btn:hover {
+        .submit-btn:hover { /* FINAL definition (earlier duplicates commented out) */
             background-color: #C14C42;
         }
         
         /* Specialties Section */
-        .specialties-grid {
+        .specialties-grid { /* FINAL definition (earlier duplicates commented out) */
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 30px;
         }
         
-        .specialty-item {
+        .specialty-item { /* FINAL definition (earlier duplicates commented out) */
             background-color: #1e1e1e;
             border-radius: 8px;
             padding: 30px;
@@ -1852,46 +2178,46 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         
-        .specialty-item:hover {
+        .specialty-item:hover { /* FINAL definition (earlier duplicates commented out) */
             transform: translateY(-5px);
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
         }
         
-        .specialty-icon {
+        .specialty-icon { /* FINAL definition (earlier duplicates commented out) */
             margin-bottom: 20px;
             color: #e77f67;
         }
         
-        .specialty-item h3 {
+        .specialty-item h3 { /* FINAL definition (earlier duplicates commented out) */
             font-size: 20px;
             margin-bottom: 15px;
             color: #e0e0e0;
         }
         
-        .specialty-item p {
+        .specialty-item p { /* FINAL definition (earlier duplicates commented out) */
             color: #b0b0b0;
             line-height: 1.6;
         }
         
         /* Footer */
-        footer {
+        footer { /* FINAL definition (earlier duplicates commented out) */
             background-color: #0a0a0a;
             color: #e0e0e0;
             padding: 40px 0;
             text-align: center;
         }
         
-        .footer-container {
+        .footer-container { /* FINAL definition (earlier duplicates commented out) */
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
         
-        .social-links {
+        .social-links { /* FINAL definition (earlier duplicates commented out) */
             margin-bottom: 20px;
         }
         
-        .social-links a {
+        .social-links a { /* FINAL definition (earlier duplicates commented out) */
             color: #e0e0e0;
             font-size: 16px;
             margin: 0 15px;
@@ -1904,107 +2230,107 @@
             color: #e25545;
         }
         
-        .social-links .icon {
+        .social-links .icon { /* FINAL definition (earlier duplicates commented out) */
             margin-right: 8px;
         }
         
-        .footer-languages {
+        .footer-languages { /* FINAL definition (earlier duplicates commented out) */
             margin-top: 20px;
             margin-bottom: 20px;
         }
         
-        .footer-languages a {
+        .footer-languages a { /* FINAL definition (earlier duplicates commented out) */
             color: #b0b0b0;
             text-decoration: none;
             margin: 0 10px;
             transition: color 0.3s;
         }
         
-        .footer-languages a:hover {
+        .footer-languages a:hover { /* FINAL definition (earlier duplicates commented out) */
             color: #e25545;
         }
         
-        .footer-languages a.active {
+        .footer-languages a.active { /* FINAL definition (earlier duplicates commented out) */
             color: #e25545;
             font-weight: 500;
         }
         
-        .copyright {
+        .copyright { /* FINAL definition (earlier duplicates commented out) */
             font-size: 14px;
             color: #777;
         }
         
         /* Responsive Design */
         @media (max-width: 968px) {
-            .hero-container {
+            .hero-container { /* FINAL definition (earlier duplicates commented out) */
                 flex-direction: column;
                 padding-top: 80px;
             }
             
-            .hero-content {
+            .hero-content { /* FINAL definition (earlier duplicates commented out) */
                 padding-right: 0;
                 order: 1;
             }
             
-            .hero-image {
+            .hero-image { /* FINAL definition (earlier duplicates commented out) */
                 order: 2;
                 margin-top: 40px;
             }
             
-            .hero-name {
+            .hero-name { /* FINAL definition (earlier duplicates commented out) */
                 font-size: 60px;
             }
         }
         
         @media (max-width: 768px) {
-            .header-container {
+            .header-container { /* FINAL definition (earlier duplicates commented out) */
                 flex-direction: column;
                 padding: 0px;
             }
             
-            nav ul {
+            nav ul { /* FINAL definition (earlier duplicates commented out) */
                 margin-top: 0px;
             }
             
-            nav ul li {
+            nav ul li { /* FINAL definition (earlier duplicates commented out) */
                 margin: 0 15px;
             }
             
-            .title-subtitle {
+            .title-subtitle { /* FINAL definition (earlier duplicates commented out) */
                 display: block;
                 width: 100%;
             }
             
-            .title-subtitle h4 {
+            .title-subtitle h4 { /* FINAL definition (earlier duplicates commented out) */
                 font-size: 22px;
                 display: block;
                 width: 100%;
             }
             
-            .hero-name {
+            .hero-name { /* FINAL definition (earlier duplicates commented out) */
                 font-size: 50px;
             }
             
-            .photo-grid {
+            .photo-grid { /* FINAL definition (earlier duplicates commented out) */
                 grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
             }
             
-            .video-grid {
+            .video-grid { /* FINAL definition (earlier duplicates commented out) */
                 grid-template-columns: 1fr;
             }
             
-            .contact-container {
+            .contact-container { /* FINAL definition (earlier duplicates commented out) */
                 grid-template-columns: 1fr;
             }
         }
         
          /* Photo Items with Collection Overlay */
     .photo-item {
-        overflow: hidden;
+        /* DUP (overridden by a later rule for the same selector): overflow: hidden; */
         border-radius: 8px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         transition: transform 0.3s ease;
-        position: relative;
+        /* DUP (overridden by a later rule for the same selector): position: relative; */
         cursor: pointer;
     }
     
@@ -2013,17 +2339,18 @@
     }*/
     
     .photo-item img {
-        width: 100%;
-        height: 250px;
+        /* DUP (overridden by a later rule for the same selector): width: 100%; */
+        /* DUP (overridden by a later rule for the same selector): height: 250px; */
         object-fit: cover;
-        display: block;
-        transition: transform 0.5s ease, filter 0.5s ease;
+        /* DUP (overridden by a later rule for the same selector): display: block; */
+        /* DUP (overridden by a later rule for the same selector): transition: transform 0.5s ease, filter 0.5s ease; */
     }
     
   /*  .photo-item:hover img {
         transform: scale(1.05);
 /*        filter: brightness(0.7);*/
-    }*/
+    /* stray closing brace removed by cleanup — browsers were silently dropping the rule after it: } *//* INVALID RULE — a stray comment-closer above it (from an unbalanced comment) makes the selector unparsable, so browsers have always ignored this block; commented out by cleanup:
+* /
     
   /*  .collection-overlay {
         position: absolute;
@@ -2040,11 +2367,11 @@
         transition: opacity 0.3s ease;
         padding: 20px;
         text-align: center;
-    }*/
+    }* /
     
   /*  .photo-item:hover .collection-overlay {
         opacity: 1;
-    }*/
+    }* /
     
     .collection-title {
         font-size: 22px;
@@ -2052,22 +2379,23 @@
         color: white;
         margin-bottom: 10px;
     }
+*/
     
-    .collection-desc {
+    .collection-desc { /* FINAL definition (earlier duplicates commented out) */
         font-size: 14px;
         color: rgba(255, 255, 255, 0.8);
     }
     
     .view-collection {
-        display: inline-block;
+        /* DUP (overridden by a later rule for the same selector): display: inline-block; */
         background-color: #e77f67;
-        color: #121212;
-        padding: 8px 16px;
-        border-radius: 4px;
-        margin-top: 15px;
-        font-weight: 500;
+        /* DUP (overridden by a later rule for the same selector): color: #121212; */
+        /* DUP (overridden by a later rule for the same selector): padding: 8px 16px; */
+        /* DUP (overridden by a later rule for the same selector): border-radius: 4px; */
+        /* DUP (overridden by a later rule for the same selector): margin-top: 15px; */
+        /* DUP (overridden by a later rule for the same selector): font-weight: 500; */
         font-size: 14px;
-        transition: background-color 0.3s;
+        /* DUP (overridden by a later rule for the same selector): transition: background-color 0.3s; */
     }
     
     .view-collection:hover {
@@ -2075,7 +2403,8 @@
     }
     
     /* Collection Modal */
-    .collection-modal {
+    /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.collection-modal {
         position: fixed;
         top: 0;
         left: 0;
@@ -2089,12 +2418,16 @@
         overflow-y: auto;
         padding: 50px 20px;
     }
+*/
     
-    .collection-modal.open {
+    /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.collection-modal.open {
         display: flex;
     }
+*/
     
-    .modal-content {
+    /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.modal-content {
         max-width: 2000px;
         width: 100%;
         background-color: #1a1a1a;
@@ -2103,8 +2436,10 @@
         position: relative;
         animation: modalFadeIn 0.3s ease;
     }
+*/
     
-    @keyframes modalFadeIn {
+    /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+@keyframes modalFadeIn {
         from {
             opacity: 0;
             transform: scale(0.95);
@@ -2114,21 +2449,27 @@
             transform: scale(1);
         }
     }
+*/
     
-    .modal-header {
+    /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.modal-header {
         padding: 20px;
         border-bottom: 1px solid #333;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
+*/
     
-    .modal-title {
+    /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.modal-title {
         font-size: 24px;
         color: #e0e0e0;
     }
+*/
     
-    .close-modal {
+    /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.close-modal {
         background: none;
         border: none;
         color: #999;
@@ -2136,72 +2477,90 @@
         cursor: pointer;
         transition: color 0.3s;
     }
+*/
     
-    .close-modal:hover {
+    /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.close-modal:hover {
         color: #e0e0e0;
     }
+*/
     
-    .modal-body {
+    /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.modal-body {
         padding: 20px;
     }
+*/
     
-    .collection-description {
+    /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.collection-description {
         margin-bottom: 30px;
         color: #b0b0b0;
         line-height: 1.6;
     }
+*/
     
-    .collection-photos {
+    /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.collection-photos {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
         gap: 15px;
     }
+*/
     
-    .collection-photo {
+    /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.collection-photo {
         overflow: hidden;
         border-radius: 4px;
         cursor: pointer;
     }
+*/
     
-    .collection-photo img {
+    /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.collection-photo img {
         width: 100%;
         height: 200px;
         object-fit: cover;
         transition: transform 0.3s;
     }
+*/
     
-    .collection-photo:hover img {
+    /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.collection-photo:hover img {
         transform: scale(1.05);
     }
+*/
     
     /* Responsive adjustments */
     @media (max-width: 768px) {
-        .collection-title {
+        .collection-title { /* FINAL definition (earlier duplicates commented out) */
             font-size: 20px;
         }
         
-        .collection-desc {
+        .collection-desc { /* FINAL definition (earlier duplicates commented out) */
             font-size: 12px;
         }
         
-        .collection-photos {
+        /* DUPLICATE — redefined later in this file (search for the same selector); commented out:
+.collection-photos {
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         }
+*/
     }
     
     @media (max-width: 576px) {
-        .modal-content {
+        .modal-content { /* FINAL definition (earlier duplicates commented out) */
             width: 100%;
             height: auto;
             margin: 10px;
         }
         
-        .collection-photos {
+        .collection-photos { /* FINAL definition (earlier duplicates commented out) */
             grid-template-columns: 1fr 1fr;
         }
     }
     
     /* Collection Modal Styles */
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .collection-modal {
     position: fixed;
     top: 0;
@@ -2216,11 +2575,15 @@
     overflow-y: auto;
     padding: 50px 20px;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .collection-modal.open {
     display: flex;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .modal-content {
     max-width: 2000px;
     width: 100%;
@@ -2230,7 +2593,9 @@
     position: relative;
     animation: modalFadeIn 0.3s ease;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 @keyframes modalFadeIn {
     from {
         opacity: 0;
@@ -2241,7 +2606,9 @@
         transform: scale(1);
     }
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .modal-header {
     padding: 20px;
     border-bottom: 1px solid #333;
@@ -2249,12 +2616,16 @@
     justify-content: space-between;
     align-items: center;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .modal-title {
     font-size: 24px;
     color: #e0e0e0;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .close-modal {
     background: none;
     border: none;
@@ -2263,36 +2634,47 @@
     cursor: pointer;
     transition: color 0.3s;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .close-modal:hover {
     color: #e0e0e0;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .modal-body {
     padding: 20px;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .collection-description {
     margin-bottom: 30px;
     color: #b0b0b0;
     line-height: 1.6;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .collection-photos {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 15px;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .collection-photo {
     overflow: hidden;
     border-radius: 4px;
     cursor: pointer;
-    /*position: relative;*/
+    /*position: relative;* /
 }
+*/
 
 .collection-photo:after {
-    content: '👁️';
+    /* DUP (overridden by a later rule for the same selector): content: '👁️'; */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -2310,22 +2692,27 @@
     justify-content: center;
 }
 
-.collection-photo:hover:after {
+.collection-photo:hover:after { /* FINAL definition (earlier duplicates commented out) */
     opacity: 1;
 }
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .collection-photo img {
     width: 100%;
     height: 200px;
     object-fit: cover;
     transition: transform 0.3s;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .collection-photo:hover img {
     transform: scale(1.05);
 }
+*/
 
 /* Fullscreen Photo Viewer Styles */
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .fullscreen-photo-viewer {
     position: fixed;
     top: 0;
@@ -2338,11 +2725,15 @@
     justify-content: center;
     align-items: center;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .fullscreen-photo-viewer.active {
     display: flex;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .fullscreen-container {
     position: relative;
     width: 90%;
@@ -2351,14 +2742,18 @@
     justify-content: center;
     align-items: center;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .fullscreen-container img {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .fullscreen-controls {
     position: absolute;
     top: 0;
@@ -2367,7 +2762,9 @@
     height: 100%;
     pointer-events: none;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .prev-photo, .next-photo {
     background: rgba(0, 0, 0, 0.5);
     color: white;
@@ -2386,19 +2783,27 @@
     transform: translateY(-50%);
     pointer-events: auto;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .prev-photo {
     left: 20px;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .next-photo {
     right: 20px;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .prev-photo:hover, .next-photo:hover {
     background: rgba(50, 50, 50, 0.7);
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .close-fullscreen {
     background: rgba(0, 0, 0, 0.5);
     color: white;
@@ -2417,11 +2822,15 @@
     right: 20px;
     pointer-events: auto;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .close-fullscreen:hover {
     background: rgba(50, 50, 50, 0.7);
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .photo-caption {
     position: absolute;
     bottom: 60px;
@@ -2433,7 +2842,9 @@
     font-size: 18px;
     background: rgba(0, 0, 0, 0.6);
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .photo-counter {
     position: absolute;
     bottom: 20px;
@@ -2443,6 +2854,7 @@
     color: #aaa;
     font-size: 14px;
 }
+*/
 
 
 .collection-modal {
@@ -2456,27 +2868,27 @@
     display: none;
     justify-content: center;
     align-items: flex-start;
-    overflow-y: auto;
+    /* DUP (overridden by a later rule for the same selector): overflow-y: auto; */
     padding: 30px 20px;
 }
-}
+/* stray closing brace removed by cleanup — browsers were silently dropping the rule after it: } */
 
-.collection-modal.open {
+.collection-modal.open { /* FINAL definition (earlier duplicates commented out) */
     display: flex;
 }
 
 .modal-content {
-    max-width: 1200px; /* Increased from 1000px */
-    width: 100%;
-    background-color: #1a1a1a;
-    border-radius: 8px;
-    overflow: hidden;
-    position: relative;
+    /* DUP (overridden by a later rule for the same selector): max-width: 1200px; */ /* Increased from 1000px */
+    /* DUP (overridden by a later rule for the same selector): width: 100%; */
+    /* DUP (overridden by a later rule for the same selector): background-color: #1a1a1a; */
+    /* DUP (overridden by a later rule for the same selector): border-radius: 8px; */
+    /* DUP (overridden by a later rule for the same selector): overflow: hidden; */
+    /* DUP (overridden by a later rule for the same selector): position: relative; */
     animation: modalFadeIn 0.3s ease;
-    margin: 30px auto; /* Added margin for better spacing when scrolling */
+    /* DUP (overridden by a later rule for the same selector): margin: 30px auto; */ /* Added margin for better spacing when scrolling */
 }
 
-@keyframes modalFadeIn {
+@keyframes modalFadeIn { /* FINAL definition (earlier duplicates commented out) */
     from {
         opacity: 0;
         transform: scale(0.95);
@@ -2489,23 +2901,23 @@
 
 .modal-header {
     padding: 20px;
-    border-bottom: 1px solid #333;
+    /* DUP (overridden by a later rule for the same selector): border-bottom: 1px solid #333; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky; /* Make header sticky */
-    top: 0;
-    background-color: #1a1a1a;
-    z-index: 10;
+    /* DUP (overridden by a later rule for the same selector): position: sticky; */ /* Make header sticky */
+    /* DUP (overridden by a later rule for the same selector): top: 0; */
+    /* DUP (overridden by a later rule for the same selector): background-color: #1a1a1a; */
+    /* DUP (overridden by a later rule for the same selector): z-index: 10; */
 }
 
-.modal-title {
+.modal-title { /* FINAL definition (earlier duplicates commented out) */
        font-size: 28px;
     color: #423c3c;
 	margin-left:30px;
 }
 
-.close-modal {
+.close-modal { /* FINAL definition (earlier duplicates commented out) */
     background: none;
     border: none;
     color: #999;
@@ -2519,15 +2931,17 @@
     justify-content: center;
 }
 
-.close-modal:hover {
+.close-modal:hover { /* FINAL definition (earlier duplicates commented out) */
     color: #e0e0e0;
 }
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .modal-body {
     padding: 20px;
 }
+*/
 
-.collection-description {
+.collection-description { /* FINAL definition (earlier duplicates commented out) */
     margin-bottom: 40px; /* Increased from 30px */
     color: #423c3c;
     line-height: 1.6;
@@ -2537,7 +2951,7 @@
 }
 
 /* Updated collection photos grid with larger images */
-.collection-photos {
+.collection-photos { /* FINAL definition (earlier duplicates commented out) */
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Changed to 2 columns per row */
     gap: 20px; /* Increased from 15px */
@@ -2550,7 +2964,7 @@
     border-radius: 8px; /* Increased from 4px */
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    background-color: #121212; /* Added for placeholder background */
+    /* DUP (overridden by a later rule for the same selector): background-color: #121212; */ /* Added for placeholder background */
     /*position: relative;*/
 }
 
@@ -2558,16 +2972,17 @@
     width: 100%;
     height: 100%; /* Increased from 200px */
     object-fit: cover;
-    transition: transform 0.3s, filter 0.3s;
+    /* DUP (overridden by a later rule for the same selector): transition: transform 0.3s, filter 0.3s; */
     display: block;
 }
 
-.collection-photo:hover img {
+.collection-photo:hover img { /* FINAL definition (earlier duplicates commented out) */
     transform: scale(1.05);
 /*    filter: brightness(1.1);*/
 }
 
 /* Loading animation */
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .collection-photo.loading::before {
     content: '';
     position: absolute;
@@ -2581,13 +2996,16 @@
     border-top-color: #e77f67;
     animation: spin 1s ease-in-out infinite;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 @keyframes spin {
     to { transform: rotate(360deg); }
 }
+*/
 
 /* Fullscreen Photo Viewer Styles */
-.fullscreen-photo-viewer {
+.fullscreen-photo-viewer { /* FINAL definition (earlier duplicates commented out) */
     position: fixed;
     top: 0;
     left: 0;
@@ -2602,13 +3020,13 @@
     transition: opacity 0.3s ease;
 }
 
-.fullscreen-photo-viewer.active {
+.fullscreen-photo-viewer.active { /* FINAL definition (earlier duplicates commented out) */
     display: flex;
     opacity: 1;
 	  background-color: whitesmoke;
 }
 
-.fullscreen-container {
+.fullscreen-container { /* FINAL definition (earlier duplicates commented out) */
     position: relative;
     width: 90%;
     height: 85%;
@@ -2618,7 +3036,7 @@
 	    background-color: whitesmoke;
 }
 
-.fullscreen-container img {
+.fullscreen-container img { /* FINAL definition (earlier duplicates commented out) */
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
@@ -2628,7 +3046,7 @@
 	  
 }
 
-.fullscreen-controls {
+.fullscreen-controls { /* FINAL definition (earlier duplicates commented out) */
     position: absolute;
     top: 0;
     left: 0;
@@ -2638,7 +3056,7 @@
     z-index: 10;
 }
 
-.prev-photo, .next-photo {
+.prev-photo, .next-photo { /* FINAL definition (earlier duplicates commented out) */
     background: rgba(0, 0, 0, 0.5);
     color: white;
     width: 60px;
@@ -2658,24 +3076,24 @@
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
-.prev-photo {
+.prev-photo { /* FINAL definition (earlier duplicates commented out) */
     left: 20px;
 }
 
-.next-photo {
+.next-photo { /* FINAL definition (earlier duplicates commented out) */
     right: 20px;
 }
 
-.prev-photo:hover, .next-photo:hover {
+.prev-photo:hover, .next-photo:hover { /* FINAL definition (earlier duplicates commented out) */
     background: rgba(50, 50, 50, 0.8);
     transform: translateY(-50%) scale(1.1);
 }
 
-.prev-photo:active, .next-photo:active {
+.prev-photo:active, .next-photo:active { /* FINAL definition (earlier duplicates commented out) */
     transform: translateY(-50%) scale(0.95);
 }
 
-.close-fullscreen {
+.close-fullscreen { /* FINAL definition (earlier duplicates commented out) */
     background: rgba(0, 0, 0, 0.5);
     color: white;
     width: 60px;
@@ -2695,12 +3113,12 @@
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
-.close-fullscreen:hover {
+.close-fullscreen:hover { /* FINAL definition (earlier duplicates commented out) */
     background: rgba(50, 50, 50, 0.8);
     transform: scale(1.1);
 }
 
-.close-fullscreen:active {
+.close-fullscreen:active { /* FINAL definition (earlier duplicates commented out) */
     transform: scale(0.95);
 }
 
@@ -2713,13 +3131,13 @@
     color: white;
     text-align: center;
     font-size: 18px;
-    background: rgba(0, 0, 0, 0.6);
+    /* DUP (overridden by a later rule for the same selector): background: rgba(0, 0, 0, 0.6); */
     backdrop-filter: blur(5px);
     opacity: 0.9;
     transition: opacity 0.3s;
 }
 
-.photo-counter {
+.photo-counter { /* FINAL definition (earlier duplicates commented out) */
     position: absolute;
     bottom: 20px;
     left: 0;
@@ -2731,53 +3149,56 @@
 
 /* Responsive adjustments for fullscreen viewer */
 @media (max-width: 768px) {
-    .collection-photos {
+    .collection-photos { /* FINAL definition (earlier duplicates commented out) */
         grid-template-columns: 1fr; /* Single column on mobile */
     }
     
-    .collection-photo img {
+    .collection-photo img { /* FINAL definition (earlier duplicates commented out) */
         height: 300px; /* Smaller on mobile but still prominent */
     }
     
-    .prev-photo, .next-photo, .close-fullscreen {
+    .prev-photo, .next-photo, .close-fullscreen { /* FINAL definition (earlier duplicates commented out) */
         width: 50px;
         height: 50px;
         font-size: 24px;
     }
     
-    .photo-caption {
+    .photo-caption { /* FINAL definition (earlier duplicates commented out) */
         font-size: 16px;
         padding: 10px;
     }
     
-    .close-fullscreen {
+    .close-fullscreen { /* FINAL definition (earlier duplicates commented out) */
         top: 10px;
         right: 10px;
     }
 }
 
 @media (max-width: 576px) {
-    .prev-photo, .next-photo {
+    .prev-photo, .next-photo { /* FINAL definition (earlier duplicates commented out) */
         width: 40px;
         height: 40px;
         font-size: 20px;
     }
     
-    .prev-photo {
+    .prev-photo { /* FINAL definition (earlier duplicates commented out) */
         left: 10px;
     }
     
-    .next-photo {
+    .next-photo { /* FINAL definition (earlier duplicates commented out) */
         right: 10px;
     }
 }
 
 /* Remove the eye emoji that appears when scrolling */
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .collection-photo:after {
-    content: none; /* Remove the eye emoji content */
+    content: none; /* Remove the eye emoji content * /
 }
+*/
 
 /* Improve stickiness of modal header */
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .modal-header {
     position: sticky;
     top: 0;
@@ -2785,30 +3206,40 @@
     z-index: 100;
     border-bottom: 1px solid #333;
 }
+*/
 
 /* Smooth transitions for collection modal */
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .collection-modal {
     transition: background-color 0.3s ease;
     overflow-y: auto;
 }
+*/
 
 /* Improve transitions for photo loading */
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .collection-photo {
     background-color: #121212;
-    position: relative; /* Ensure position relative for loading state */
-    transform: translateZ(0); /* Force hardware acceleration */
+    position: relative; /* Ensure position relative for loading state * /
+    transform: translateZ(0); /* Force hardware acceleration * /
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .collection-photo img {
     transition: transform 0.3s ease, opacity 0.3s ease;
-    backface-visibility: hidden; /* Prevent flickering */
+    backface-visibility: hidden; /* Prevent flickering * /
 }
+*/
 
 /* Improved loading state */
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .collection-photo.loading img {
     opacity: 0.3;
 }
+*/
 
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .collection-photo.loading::before {
     content: '';
     position: absolute;
@@ -2823,30 +3254,35 @@
     animation: spin 1s ease-in-out infinite;
     z-index: 5;
 }
+*/
 
 /* Improvement for modal scrolling */
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .modal-content {
     max-width: 1200px;
     width: 100%;
     background-color: #1a1a1a;
     border-radius: 8px;
-    overflow: visible; /* Changed from hidden to prevent scroll issues */
+    overflow: visible; /* Changed from hidden to prevent scroll issues * /
     position: relative;
     margin: 30px auto;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
+*/
 
 /* Adjust modal body to accommodate sticky header */
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .modal-body {
     padding: 20px;
     overflow: visible;
-}/* Remove the eye emoji that appears when scrolling */
-.collection-photo:after {
+}
+*//* Remove the eye emoji that appears when scrolling */
+.collection-photo:after { /* FINAL definition (earlier duplicates commented out) */
     content: none; /* Remove the eye emoji content */
 }
 
 /* Improve stickiness of modal header */
-.modal-header {
+.modal-header { /* FINAL definition (earlier duplicates commented out) */
    position: relative;
     top: 0;
     background-color: whitesmoke;
@@ -2855,7 +3291,7 @@
 }
 
 /* Smooth transitions for collection modal */
-.collection-modal {
+.collection-modal { /* FINAL definition (earlier duplicates commented out) */
     transition: background-color 0.3s ease;
     overflow-y: auto;
 }
@@ -2863,37 +3299,39 @@
 /* Improve transitions for photo loading */
 .collection-photo {
     background-color: #121212;
-    position: relative; /* Ensure position relative for loading state */
+    /* DUP (overridden by a later rule for the same selector): position: relative; */ /* Ensure position relative for loading state */
     transform: translateZ(0); /* Force hardware acceleration */
 }
 
-.collection-photo img {
+.collection-photo img { /* FINAL definition (earlier duplicates commented out) */
     transition: transform 0.3s ease, opacity 0.3s ease;
     backface-visibility: hidden; /* Prevent flickering */
 }
 
 /* Improved loading state */
+/* DUPLICATE — redefined later in this file (search for the same selector); commented out:
 .collection-photo.loading img {
     opacity: 0.3;
 }
+*/
 
 .collection-photo.loading::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 30px;
-    height: 30px;
-    margin: -15px 0 0 -15px;
-    border: 3px solid rgba(255, 255, 255, 0.2);
-    border-radius: 50%;
-    border-top-color: #e77f67;
-    animation: spin 1s ease-in-out infinite;
+    /* DUP (overridden by a later rule for the same selector): content: ''; */
+    /* DUP (overridden by a later rule for the same selector): position: absolute; */
+    /* DUP (overridden by a later rule for the same selector): top: 50%; */
+    /* DUP (overridden by a later rule for the same selector): left: 50%; */
+    /* DUP (overridden by a later rule for the same selector): width: 30px; */
+    /* DUP (overridden by a later rule for the same selector): height: 30px; */
+    /* DUP (overridden by a later rule for the same selector): margin: -15px 0 0 -15px; */
+    /* DUP (overridden by a later rule for the same selector): border: 3px solid rgba(255, 255, 255, 0.2); */
+    /* DUP (overridden by a later rule for the same selector): border-radius: 50%; */
+    /* DUP (overridden by a later rule for the same selector): border-top-color: #e77f67; */
+    /* DUP (overridden by a later rule for the same selector): animation: spin 1s ease-in-out infinite; */
     z-index: 5;
 }
 
 /* Improvement for modal scrolling */
-.modal-content {
+.modal-content { /* FINAL definition (earlier duplicates commented out) */
     max-width: 1200px;
     width: 100%;
     background-color: whitesmoke;
@@ -2905,7 +3343,7 @@
 }
 
 /* Adjust modal body to accommodate sticky header */
-.modal-body {
+.modal-body { /* FINAL definition (earlier duplicates commented out) */
     padding: 20px;
     overflow: visible;
 }
@@ -2965,7 +3403,7 @@
     animation: spin 1s ease-in-out infinite;
 }
 
-@keyframes spin {
+@keyframes spin { /* FINAL definition (earlier duplicates commented out) */
     to { transform: rotate(360deg); }
 }
 
@@ -2982,15 +3420,15 @@
 }
 
 .video-container {
-  position: relative;
+  /* DUP (overridden by a later rule for the same selector): position: relative; */
   width: 100%;
   padding-top: 56.25%; /* 16:9 aspect ratio */
-  overflow: hidden;
+  /* DUP (overridden by a later rule for the same selector): overflow: hidden; */
   background: #000;
 }
 
 .video-container iframe, 
-.video-container video {
+.video-container video { /* FINAL definition (earlier duplicates commented out) */
     position: absolute;
     top: 0;
     left: 0;
@@ -3005,7 +3443,7 @@
   margin: 0 auto 30px;
 }
 
-.video-item2 {
+.video-item2 { /* FINAL definition (earlier duplicates commented out) */
   display: none;
 }
 
@@ -3045,7 +3483,7 @@
 }
 */
 /* Optional: video container responsive style */
-.video-container {
+.video-container { /* FINAL definition (earlier duplicates commented out) */
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
@@ -3059,12 +3497,12 @@
   height: 100%;
 }
 
-.photo-item {
+.photo-item { /* FINAL definition (earlier duplicates commented out) */
   position: relative;
   overflow: hidden;
 }
 
-.photo-item img {
+.photo-item img { /* FINAL definition (earlier duplicates commented out) */
   display: block;
   width: 100%;
   transition: transform 0.3s ease; /* Optional zoom effect */
@@ -3094,7 +3532,7 @@
   pointer-events: auto;
 }
 
-.view-collection {
+.view-collection { /* FINAL definition (earlier duplicates commented out) */
   background: #fff;
   color: #000;
   padding: 8px 14px;
@@ -3105,7 +3543,7 @@
       display: none;
 }
 
-.view-collection:hover {
+.view-collection:hover { /* FINAL definition (earlier duplicates commented out) */
   background: #eee;
 }
 
@@ -3117,10 +3555,10 @@
 .lazy-img.loaded { opacity: 1; }
 
 /* Make overlay animate cheaply */
-.collection-overlay { will-change: opacity; transform: translateZ(0); }
+.collection-overlay { /* FINAL definition (earlier duplicates commented out) */ will-change: opacity; transform: translateZ(0); }
 
 /* Stop work for off-screen tiles in modal */
-.collection-photo {
+.collection-photo { /* FINAL definition (earlier duplicates commented out) */
   content-visibility: auto;
   contain-intrinsic-size: 400px 300px;
   position: relative;
@@ -3129,8 +3567,8 @@
 }
 
 /* Lightweight loading state */
-.collection-photo.loading img { opacity: 0.3; }
-.collection-photo.loading::before {
+.collection-photo.loading img { /* FINAL definition (earlier duplicates commented out) */ opacity: 0.3; }
+.collection-photo.loading::before { /* FINAL definition (earlier duplicates commented out) */
   content: '';
   position: absolute;
   top: 50%; left: 50%;
@@ -3143,7 +3581,7 @@
 }
 
 /* Avoid expensive backdrop blur (major perf win) */
-.photo-caption { background: rgba(0,0,0,0.6); /* backdrop-filter: blur(5px); */ 
+.photo-caption { /* FINAL definition (earlier duplicates commented out) */ background: rgba(0,0,0,0.6); /* backdrop-filter: blur(5px); */ 
     display: none;}
 	
 	
@@ -3154,39 +3592,41 @@
 
 /* .video-zoom { */
     /* position: relative; */
-    /* padding-bottom: 56.25%; /* 16:9 ratio */ */
-    /* height: 0; */
-    /* overflow: hidden; /* This hides the 'zoomed' parts of the video */ */
-    /* background: #000; */
-/* } */
+    /* padding-bottom: 56.25%; /* 16:9 ratio */ /* INVALID RULE — a stray comment-closer above it (from an unbalanced comment) makes the selector unparsable, so browsers have always ignored this block; commented out by cleanup:
+* /
+    /* height: 0; * /
+    /* overflow: hidden; /* This hides the 'zoomed' parts of the video * / * /
+    /* background: #000; * /
+/* } * /
 
-/* .video-zoom iframe { */
-    /* position: absolute; */
-    /* top: 50%; */
-    /* left: 50%; */
-    /* width: 115%; /* Make the video 15% wider */ */
-    /* height: 115%; /* Make the video 15% taller */ */
-    /* transform: translate(-50%, -50%); /* Re-center the zoomed video */ */
-    /* border: 0; */
-/* } */
+/* .video-zoom iframe { * /
+    /* position: absolute; * /
+    /* top: 50%; * /
+    /* left: 50%; * /
+    /* width: 115%; /* Make the video 15% wider * / * /
+    /* height: 115%; /* Make the video 15% taller * / * /
+    /* transform: translate(-50%, -50%); /* Re-center the zoomed video * / * /
+    /* border: 0; * /
+/* } * /
 
-/* .container { */
-  /* width: 300px;  /* Set the desired width of your div */ */
-  /* height: 200px; /* Set the desired height of your div */ */
-  /* overflow: hidden; /* Ensures any overflowing parts are hidden */ */
-/* } */
+/* .container { * /
+  /* width: 300px;  /* Set the desired width of your div * / * /
+  /* height: 200px; /* Set the desired height of your div * / * /
+  /* overflow: hidden; /* Ensures any overflowing parts are hidden * / * /
+/* } * /
 
-/* .container img { */
-  /* max-width: 100%; /* Ensures image doesn't exceed container width */ */
-  /* height: auto;     /* Makes the image take the full height of the div */ */
-  /* object-fit: cover; /* Resizes and crops the image to cover the entire space */ */
-/* } */
+/* .container img { * /
+  /* max-width: 100%; /* Ensures image doesn't exceed container width * / * /
+  /* height: auto;     /* Makes the image take the full height of the div * / * /
+  /* object-fit: cover; /* Resizes and crops the image to cover the entire space * / * /
+/* } * /
 
-/* Play button overlay for video thumbnails */
+/* Play button overlay for video thumbnails * /
 .video-item2 a {
     position: relative;
     display: block;
 }
+*/
 
 /* Play button circle background */
 .video-item2 a::before {
@@ -3238,7 +3678,7 @@
 }
 
 /* Darken image slightly on hover */
-.video-item2 img {
+.video-item2 img { /* FINAL definition (earlier duplicates commented out) */
     transition: filter 0.3s ease;
 }
 
