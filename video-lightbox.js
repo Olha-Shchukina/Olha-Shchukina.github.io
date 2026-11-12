@@ -47,6 +47,9 @@
   function show(url, title, ratioW, ratioH, trigger) {
     var v = parseVideo(url);
     if (!v) return false;
+    // Opened by double-clicking index.html (file://)? Embedded players need a real web page
+    // (YouTube answers "Error 153" without a referrer), so fall back to the new tab.
+    if (location.protocol === 'file:') return false;
     if (!root) build();
     lastFocus = trigger || document.activeElement;
     setRatio(ratioW, ratioH);
