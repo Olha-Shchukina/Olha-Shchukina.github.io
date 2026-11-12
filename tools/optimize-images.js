@@ -16,6 +16,7 @@ const repo = path.join(__dirname, '..');
 const read = f => fs.readFileSync(path.join(repo, f), 'utf8');
 const noComments = s => s.replace(/\/\*[\s\S]*?\*\//g, '').replace(/<!--[\s\S]*?-->/g, '');
 const EXTS = ['.jpg', '.jpeg', '.JPG', '.JPEG', '.png', '.PNG'];
+// The small PNG icons in photos/ (whats.png, tiktok02.png, ...) are used as-is and are not converted.
 // "photos/web/thumbs/X.webp" -> "X", "photos/web/X.webp" -> "X", "photos/X.jpg" -> "X"
 function inner(ref, sub) {
   const webPrefix = 'photos/' + sub + '/';
@@ -24,8 +25,8 @@ function inner(ref, sub) {
   return null;
 }
 const refs = (text, re) => [...new Set([...noComments(text).matchAll(re)].map(m => m[1]))];
-const gallery = refs(read('main.js'), /src:\s*'(photos\/[^']+\.(?:jpe?g|JPG|JPEG|png|PNG|webp))'/g).map(r => inner(r, 'web')).filter(Boolean);
-const thumbs = refs(read('index.html'), /(?:src|data-src)="(photos\/[^"]+\.(?:jpe?g|JPG|JPEG|png|PNG|webp))"/g).map(r => inner(r, 'web/thumbs')).filter(Boolean);
+const gallery = refs(read('main.js'), /src:\s*'(photos\/[^']+\.(?:jpe?g|JPG|JPEG|webp))'/g).map(r => inner(r, 'web')).filter(Boolean);
+const thumbs = refs(read('index.html'), /(?:src|data-src)="(photos\/[^"]+\.(?:jpe?g|JPG|JPEG|webp))"/g).map(r => inner(r, 'web/thumbs')).filter(Boolean);
 function findOriginal(name) { for (const e of EXTS) { const p = path.join(repo, 'photos', name + e); if (fs.existsSync(p)) return p; } return null; }
 async function convert(name, sub, maxEdge) {
   const src = findOriginal(name), out = path.join(repo, 'photos', sub, name + '.webp');
