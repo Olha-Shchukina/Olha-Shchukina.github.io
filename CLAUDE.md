@@ -1,8 +1,10 @@
 # Hola Visuals — olha-shchukina.com
 
 Static portfolio site for Olha Shchukina (wedding videographer/photographer, Madrid).
-Hosted on GitHub Pages: push to `gh-pages` and it is live, no build step, no server.
-Work happens on `main` and is merged into `gh-pages` with a pull request.
+Hosted on GitHub Pages, no build step, no server. GitHub Pages is configured to publish the `main`
+branch (checked via the Pages API in Nov 2026), so a push to `main` is live within a minute.
+By habit `main` is also merged into `gh-pages` with a pull request to keep the two identical, but
+`gh-pages` is not what visitors see.
 
 ## Files that matter
 
