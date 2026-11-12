@@ -21,6 +21,13 @@ Work happens on `main` and is merged into `gh-pages` with a pull request.
 Everything else (`index-es.html`, `index-es-old.html`, `photos.html`, `videos.html`, `backup*.html`, `*-es.html`)
 is old and not linked from `index.html`. Leave it alone unless asked.
 
+## Image rule (always)
+
+Every image the site uses must be a WebP under `photos/web/`, produced by `tools/optimize-images.js`.
+Never reference an original (`photos/*.jpg`) from `index.html` or `main.js`, and never commit originals:
+they are gitignored and were purged from git history in Nov 2026. When asked to add or change photos,
+do the steps below and run the script before committing.
+
 ## Adding photos or a new collection
 
 1. Put the originals in `photos/<Collection name>/` (they stay local, git ignores them; only the WebP copies get committed).
