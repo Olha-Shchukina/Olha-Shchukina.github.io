@@ -437,7 +437,11 @@ section { padding: 72px 0; scroll-margin-top: 72px; }
 /* ---------- Footer ------------------------------------------------------ */
 
 footer { padding: 48px 0; background: var(--green); color: #e4ded3; }
+.social-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px 34px; margin-bottom: 26px; }
 .social-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
   color: #f5f0e8;
   font-size: 13px;
   font-weight: 500;
@@ -445,6 +449,7 @@ footer { padding: 48px 0; background: var(--green); color: #e4ded3; }
   text-transform: uppercase;
   text-decoration: none;
 }
+.social-links a img { width: 20px; height: 20px; }
 .social-links a:hover { color: #fff; opacity: 0.8; }
 .copyright { font-size: 13px; color: #8f867c; }
 
