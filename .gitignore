@@ -5,3 +5,8 @@
 photos/*
 !photos/web/
 !photos/*.png
+
+# Dependencies of the optimize script (installed with: cd tools && npm install sharp)
+tools/node_modules/
+tools/package.json
+tools/package-lock.json
