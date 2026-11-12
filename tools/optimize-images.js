@@ -31,14 +31,22 @@ const thumbs = pageRefs.filter(r => !r.startsWith('photos/web/') || r.startsWith
 // index.html may also use a full-size copy (photos/web/<x>.webp, max 2000px), e.g. the portrait in the intro.
 const pageLarge = pageRefs.filter(r => r.startsWith('photos/web/') && !r.startsWith('photos/web/thumbs/')).map(r => inner(r, 'web')).filter(Boolean);
 function findOriginal(name) { for (const e of EXTS) { const p = path.join(repo, 'photos', name + e); if (fs.existsSync(p)) return p; } return null; }
+// A reference ending in "-bw" (e.g. photos/web/thumbs/me-working-bw.webp) is a black-and-white
+// copy of the original without the suffix (photos/me-working.jpg). The original stays in colour.
+function resolve(name) {
+  let src = findOriginal(name); if (src) return { src, bw: false };
+  if (name.endsWith('-bw')) { src = findOriginal(name.slice(0, -3)); if (src) return { src, bw: true }; }
+  return null;
+}
 async function convert(name, sub, maxEdge) {
-  const src = findOriginal(name), out = path.join(repo, 'photos', sub, name + '.webp');
+  const r = resolve(name), src = r && r.src, out = path.join(repo, 'photos', sub, name + '.webp');
   if (!src) return fs.existsSync(out) ? 'skip' : 'missing';
   if (fs.existsSync(out) && fs.statSync(out).mtimeMs >= fs.statSync(src).mtimeMs) return 'skip';
   fs.mkdirSync(path.dirname(out), { recursive: true });
   let img = sharp(src, { failOn: 'none' }).rotate();
   // Homepage thumbnails: some exports carry a flat white band along an edge; trim it so the grid crops cleanly.
   if (sub === 'web/thumbs') img = img.trim({ background: '#ffffff', threshold: 12 });
+  if (r.bw) img = img.grayscale();
   await img.resize({ width: maxEdge, height: maxEdge, fit: 'inside', withoutEnlargement: true }).webp({ quality: 80, effort: 4 }).toFile(out);
   console.log('converted', path.relative(repo, out));
   return 'ok';

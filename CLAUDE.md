@@ -59,6 +59,10 @@ do the steps below and run the script before committing.
    `index.html` changes. The originals are not on the server, so a photo only shows up once its
    WebP copy is generated and pushed.
 
+Two script conventions: a reference ending in `-bw` (e.g. `photos/web/thumbs/me-working-bw.webp`) is
+generated as a black-and-white copy of `photos/me-working.jpg`; and `index.html` may reference a
+full-size copy `photos/web/<name>.webp` (max 2000px) when a thumbnail would be upscaled (the intro portrait).
+
 Video tiles in `index.html` are plain links to YouTube/Vimeo with a local thumbnail; use
 `loading="lazy" decoding="async"` and a `photos/web/thumbs/...webp` thumbnail.
 
