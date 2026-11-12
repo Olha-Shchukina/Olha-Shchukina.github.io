@@ -9,7 +9,10 @@ Work happens on `main` and is merged into `gh-pages` with a pull request.
 - `index.html` — the whole site (Spanish). Hero, photo grid, video thumbnails, contact form (Formspree).
 - `main.js` — gallery data (`collections` object: title, description, photo list per collection), modal + fullscreen viewer, lazy loading, contact form submit.
 - `style.css` — all styles. See "CSS notes" below.
-- `photos/` — ORIGINAL photos. Source of truth, never resize or re-encode these.
+- `photos/` — ORIGINAL photos, kept on disk only. They are gitignored since Nov 2026 (they were 2.4 GB of
+  dead weight in the repo and the site never serves them). Never resize or re-encode these, and never
+  delete them: the optimize script needs them to regenerate the WebP copies. Olha keeps the master copies
+  outside the repo. Only `photos/web/` and the small PNG icons directly in `photos/` are tracked.
 - `photos/web/` — generated WebP copies used by the site (gallery photos, max 2000px long edge, quality 80).
 - `photos/web/thumbs/` — generated WebP copies of the homepage thumbnails (max 1200px).
 - `tools/optimize-images.js` — regenerates the WebP copies (see below).
@@ -20,7 +23,7 @@ is old and not linked from `index.html`. Leave it alone unless asked.
 
 ## Adding photos or a new collection
 
-1. Put the originals in `photos/<Collection name>/`.
+1. Put the originals in `photos/<Collection name>/` (they stay local, git ignores them; only the WebP copies get committed).
 2. Add the collection to the `collections` object in `main.js`, referencing `photos/web/<Collection name>/<file>.webp`.
 3. Add a tile in the photo grid in `index.html` with `data-collection="<key>"` and
    `data-src="photos/web/thumbs/<path>.webp"` (the grid uses JS lazy loading, keep `class="lazy-img"`).
@@ -30,8 +33,9 @@ is old and not linked from `index.html`. Leave it alone unless asked.
    node tools/optimize-images.js   # from the repo root
    ```
    The script reads `main.js` and `index.html`, converts every referenced photo that has no up-to-date copy,
-   and never touches the originals. If Node is not available the site still works with `.jpg` paths,
-   just slower.
+   and never touches the originals. Commit the new files under `photos/web/` together with the `main.js` /
+   `index.html` changes. The originals are not on the server, so a photo only shows up once its
+   WebP copy is generated and pushed.
 
 Video tiles in `index.html` are plain links to YouTube/Vimeo with a local thumbnail; use
 `loading="lazy" decoding="async"` and a `photos/web/thumbs/...webp` thumbnail.

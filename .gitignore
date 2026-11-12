@@ -1,2 +1,7 @@
 .DS_Store
-.DS_Store
+
+# Original photos are kept locally only and are NOT in git (see CLAUDE.md).
+# The site serves the WebP copies in photos/web/ and the small PNG icons in photos/.
+photos/*
+!photos/web/
+!photos/*.png
