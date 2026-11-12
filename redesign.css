@@ -24,7 +24,7 @@
   --gutter: 20px;
 }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 
 body {
   background: var(--bg);
@@ -87,6 +87,7 @@ header.scrolled { padding: 0; }
 }
 nav ul li { margin: 0; }
 nav ul li a, .nav-link {
+  white-space: nowrap;        /* never break inside 'Sobre mí' / 'Así trabajo' */
   font-family: var(--sans);
   font-size: 13px;
   font-weight: 500;
@@ -471,8 +472,12 @@ footer { padding: 48px 0; background: var(--accent); color: #f3e6e2; }
 
 @media (max-width: 768px) {
   .header-container { flex-direction: column; gap: 6px; padding: 10px var(--gutter); min-height: 0; }
-  .nav-class { gap: 20px; }
-  nav ul li a, .nav-link { font-size: 12px; letter-spacing: 0.14em; }
+  .nav-class { flex-wrap: wrap; justify-content: center; gap: 4px 16px; }
+  nav ul li a, .nav-link { font-size: 11px; letter-spacing: 0.12em; white-space: nowrap; }
+}
+@media (max-width: 420px) {
+  .nav-class { gap: 4px 11px; }
+  nav ul li a, .nav-link { font-size: 10px; letter-spacing: 0.09em; }
   .hero3-photo { height: min(52vh, 440px); }
   .hero3 h1 { font-size: clamp(38px, 11vw, 52px); }
   .process { padding: 60px 0; }
