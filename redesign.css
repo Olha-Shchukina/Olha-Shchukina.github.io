@@ -313,7 +313,7 @@ section { padding: 72px 0; scroll-margin-top: 72px; }
 .about2-grid { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 56px; align-items: start; }
 .about2-aside { position: sticky; top: 96px; }
 .about2-aside .section-kicker, .about2-aside .section-title { text-align: left; }
-.about2-aside .section-title { margin-bottom: 26px; }
+.about2-kicker { margin: 0 0 22px; font-weight: 500; }   /* the label is the heading now */
 .about2-text { max-width: 640px; }
 .about2-text p, .hero-bio p {
   margin: 0 0 18px;
