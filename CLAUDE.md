@@ -1,14 +1,23 @@
 # Hola Visuals — olha-shchukina.com
 
 Static portfolio site for Olha Shchukina (wedding videographer/photographer, Madrid).
-Hosted on GitHub Pages: push to `gh-pages` and it is live, no build step, no server.
-Work happens on `main` and is merged into `gh-pages` with a pull request.
+Hosted on GitHub Pages, no build step, no server. GitHub Pages is configured to publish the `main`
+branch (checked via the Pages API in Nov 2026), so a push to `main` is live within a minute.
+By habit `main` is also merged into `gh-pages` with a pull request to keep the two identical, but
+`gh-pages` is not what visitors see.
 
 ## Files that matter
 
-- `index.html` — the whole site (Spanish). Hero, photo grid, video thumbnails, contact form (Formspree).
+- `index.html` — the whole site (Spanish). Order: hero (Olha + portrait), bio with "Pide tu fecha" (wa.link),
+  "Así trabajo" steps, photo grid, video tiles, contact form (Formspree), footer.
 - `main.js` — gallery data (`collections` object: title, description, photo list per collection), modal + fullscreen viewer, lazy loading, contact form submit.
-- `style.css` — all styles. See "CSS notes" below.
+- `style.css` — the original stylesheet (messy, see "CSS notes" below). Still loaded first.
+- `redesign.css` — the Nov 2026 redesign, loaded AFTER `style.css` and overriding it. New styling goes
+  here; edit `style.css` only to fix something `redesign.css` does not touch (e.g. the gallery modal).
+  Palette tokens are at the top (Olha's: beige `--bg`, black `--ink`, red `--accent`, green `--green`).
+- `video-lightbox.js` — opens the video tiles in an on-page player (YouTube/Vimeo) with prev/next.
+  Falls back to the plain links when the page is opened from `file://` (YouTube refuses embeds
+  without a referrer, "Error 153"). Preview with `python3 -m http.server 8765` from the repo root.
 - `photos/` — ORIGINAL photos, kept on disk only. They are gitignored since Nov 2026 (they were 2.4 GB of
   dead weight in the repo and the site never serves them). Never resize or re-encode these, and never
   delete them: the optimize script needs them to regenerate the WebP copies. Olha keeps the master copies
