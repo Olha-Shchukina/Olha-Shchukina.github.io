@@ -135,9 +135,9 @@ nav ul li a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 .intro { padding: 56px 0 80px; }
 .intro-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
   grid-template-areas: "head head" "bio photo";
-  column-gap: 56px;
+  column-gap: 72px;
   align-items: start;
 }
 .intro-head { grid-area: head; max-width: 600px; }
@@ -172,10 +172,10 @@ nav ul li a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 }
 .intro-cta { margin: 10px 0 34px; }
 /* Two layered photos: black-and-white behind (up, right), colour portrait in front (down, left). */
-.intro-photo { position: relative; align-self: stretch; min-height: 720px; justify-self: stretch; margin-top: -6px; }
+.intro-photo { position: relative; width: min(100%, 540px); aspect-ratio: 4 / 5; justify-self: end; margin-top: -6px; }
 .intro-photo img { position: absolute; display: block; object-fit: cover; }
-.intro-photo-back { top: 0; right: 0; width: 60%; height: 54%; object-position: 55% 35%; }
-.intro-photo-front { left: 0; bottom: 0; width: 64%; height: 62%; object-position: 50% 20%; }
+.intro-photo-back { top: 0; right: 0; width: 64%; height: 70%; object-position: 50% 30%; }
+.intro-photo-front { left: 0; bottom: 0; width: 66%; height: 74%; object-position: 50% 20%; }
 
 /* ---------- Sections ---------------------------------------------------- */
 
@@ -448,7 +448,7 @@ footer { padding: 48px 0; background: var(--accent); color: #f3e6e2; }
 @media (max-width: 900px) {
   .intro { padding-top: 0; }
   .intro-grid { grid-template-columns: 1fr; grid-template-areas: "photo" "head" "bio"; row-gap: 0; }
-  .intro-photo { align-self: auto; min-height: 0; margin: 0 calc(-1 * var(--gutter)) 36px; height: min(58vh, 540px); }
+  .intro-photo { width: auto; aspect-ratio: auto; justify-self: stretch; margin: 0 calc(-1 * var(--gutter)) 36px; height: min(58vh, 540px); }
   .intro-photo-back { display: none; }
   .intro-photo-front { position: static; width: 100%; height: 100%; }
   .intro-head, .intro-bio { max-width: none; }
