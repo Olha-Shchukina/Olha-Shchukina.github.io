@@ -534,9 +534,51 @@ html.vlb-open, html.vlb-open body { overflow: hidden; }
 }
 .vlb-close:hover { background: rgba(255, 255, 255, 0.2); }
 .vlb-close:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
+/* Prev / next */
+.vlb-nav {
+  position: fixed;
+  top: 50%;
+  z-index: 1;
+  width: 54px;
+  height: 54px;
+  margin-top: -27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff;
+  cursor: pointer;
+  opacity: 0.75;
+  transition: opacity 0.2s ease, background 0.2s ease, transform 0.2s ease;
+}
+.vlb-prev { left: 22px; }
+.vlb-next { right: 22px; }
+.vlb-nav:hover { opacity: 1; background: rgba(255, 255, 255, 0.16); }
+.vlb-prev:hover { transform: translateX(-2px); }
+.vlb-next:hover { transform: translateX(2px); }
+.vlb-nav:focus-visible { outline: 2px solid #fff; outline-offset: 3px; opacity: 1; }
+.vlb-nav:disabled { opacity: 0.18; cursor: default; transform: none; background: transparent; }
+.vlb-counter {
+  margin: 6px 0 0;
+  font-family: var(--sans);
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  color: rgba(255, 255, 255, 0.45);
+  text-align: center;
+}
+/* Keep the player clear of the side arrows on desktop. */
+@media (min-width: 769px) {
+  .vlb-frame { width: min(calc(100vw - 200px), calc(80vh * var(--r))); }
+}
 @media (max-width: 768px) {
   .vlb { padding: 12px; }
-  .vlb-frame { width: min(96vw, calc(70vh * var(--r))); }
+  .vlb-frame { width: min(96vw, calc(66vh * var(--r))); }
   .vlb-caption { font-size: 17px; }
   .vlb-caption a { display: inline-block; margin: 8px 0 0; }
+  .vlb-nav { top: auto; bottom: 16px; margin-top: 0; width: 48px; height: 48px; opacity: 0.9; }
+  .vlb-prev { left: 16px; }
+  .vlb-next { right: 16px; }
+  .vlb-stage { padding-bottom: 72px; }
 }
