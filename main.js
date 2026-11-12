@@ -2508,7 +2508,7 @@ document.addEventListener('DOMContentLoaded', function() {
 				{ src: 'photos/web/A7401572.webp', alt: '' },
 			    { src: 'photos/web/A7401621-Enhanced-NR_02.webp', alt: '' },
 				{ src: 'photos/web/Laura_03.webp', alt: '' },
-                { src: 'photos/Laura_02.jpg ', alt: '' },
+                { src: 'photos/web/Laura_02.webp', alt: '' },
                 { src: 'photos/web/A7401528.webp', alt: '' },
 				{ src: 'photos/web/A7401684-Enhanced-NR.webp', alt: '' },
 				{ src: 'photos/web/A7401672-Enhanced-NR.webp', alt: '' }
@@ -2718,7 +2718,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { src: 'photos/web/A7401578.webp', alt: '' },
         { src: 'photos/web/A7401572.webp', alt: '' },
         { src: 'photos/web/Laura_03.webp', alt: '' },
-        { src: 'photos/Laura_02.jpg ', alt: '' },
+        { src: 'photos/web/Laura_02.webp', alt: '' },
         { src: 'photos/web/A7401528.webp', alt: '' },
         { src: 'photos/web/A7401684-Enhanced-NR.webp', alt: '' },
         { src: 'photos/web/A7401672-Enhanced-NR.webp', alt: '' }
