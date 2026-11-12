@@ -26,22 +26,33 @@ function inner(ref, sub) {
 }
 const refs = (text, re) => [...new Set([...noComments(text).matchAll(re)].map(m => m[1]))];
 const gallery = refs(read('main.js'), /src:\s*'(photos\/[^']+\.(?:jpe?g|JPG|JPEG|webp))'/g).map(r => inner(r, 'web')).filter(Boolean);
-const thumbs = refs(read('index.html'), /(?:src|data-src)="(photos\/[^"]+\.(?:jpe?g|JPG|JPEG|webp))"/g).map(r => inner(r, 'web/thumbs')).filter(Boolean);
+const pageRefs = refs(read('index.html'), /(?:src|data-src|href)="(photos\/[^"]+\.(?:jpe?g|JPG|JPEG|webp))"/g);
+const thumbs = pageRefs.filter(r => !r.startsWith('photos/web/') || r.startsWith('photos/web/thumbs/')).map(r => inner(r, 'web/thumbs')).filter(Boolean);
+// index.html may also use a large copy (photos/web/<x>.webp, max 1500px), e.g. the portrait in the intro.
+const pageLarge = pageRefs.filter(r => r.startsWith('photos/web/') && !r.startsWith('photos/web/thumbs/')).map(r => inner(r, 'web')).filter(Boolean);
 function findOriginal(name) { for (const e of EXTS) { const p = path.join(repo, 'photos', name + e); if (fs.existsSync(p)) return p; } return null; }
+// A reference ending in "-bw" (e.g. photos/web/thumbs/me-working-bw.webp) is a black-and-white
+// copy of the original without the suffix (photos/me-working.jpg). The original stays in colour.
+function resolve(name) {
+  let src = findOriginal(name); if (src) return { src, bw: false };
+  if (name.endsWith('-bw')) { src = findOriginal(name.slice(0, -3)); if (src) return { src, bw: true }; }
+  return null;
+}
 async function convert(name, sub, maxEdge) {
-  const src = findOriginal(name), out = path.join(repo, 'photos', sub, name + '.webp');
+  const r = resolve(name), src = r && r.src, out = path.join(repo, 'photos', sub, name + '.webp');
   if (!src) return fs.existsSync(out) ? 'skip' : 'missing';
   if (fs.existsSync(out) && fs.statSync(out).mtimeMs >= fs.statSync(src).mtimeMs) return 'skip';
   fs.mkdirSync(path.dirname(out), { recursive: true });
   let img = sharp(src, { failOn: 'none' }).rotate();
   // Homepage thumbnails: some exports carry a flat white band along an edge; trim it so the grid crops cleanly.
   if (sub === 'web/thumbs') img = img.trim({ background: '#ffffff', threshold: 12 });
+  if (r.bw) img = img.grayscale();
   await img.resize({ width: maxEdge, height: maxEdge, fit: 'inside', withoutEnlargement: true }).webp({ quality: 80, effort: 4 }).toFile(out);
   console.log('converted', path.relative(repo, out));
   return 'ok';
 }
 (async () => {
-  const jobs = [...gallery.map(n => [n, 'web', 2000]), ...thumbs.map(n => [n, 'web/thumbs', 1200])];
+  const jobs = [...gallery.map(n => [n, 'web', 2000]), ...pageLarge.map(n => [n, 'web', 1500]), ...thumbs.map(n => [n, 'web/thumbs', 1200])];
   const stats = { ok: 0, skip: 0, missing: 0 }; let i = 0;
   await Promise.all(Array.from({ length: 8 }, async () => { while (i < jobs.length) { const [n, sub, max] = jobs[i++]; stats[await convert(n, sub, max)]++; } }));
   console.log(`converted ${stats.ok}, already up to date ${stats.skip}, no original and no copy ${stats.missing}`);

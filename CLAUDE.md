@@ -6,6 +6,12 @@ branch (checked via the Pages API in Nov 2026), so a push to `main` is live with
 By habit `main` is also merged into `gh-pages` with a pull request to keep the two identical, but
 `gh-pages` is not what visitors see.
 
+## Publishing rule (always)
+
+Never `git push` (or merge into `gh-pages`) on your own. Commit locally, say "committed, not pushed",
+and wait: a push to `main` is live on olha-shchukina.com within a minute and Olha reviews first.
+A "push" instruction covers only the changes the owner is looking at, not later ones.
+
 ## Files that matter
 
 - `index.html` — the whole site (Spanish). Order: hero (Olha + portrait), bio with "Pide tu fecha" (wa.link),
@@ -52,6 +58,10 @@ do the steps below and run the script before committing.
    and never touches the originals. Commit the new files under `photos/web/` together with the `main.js` /
    `index.html` changes. The originals are not on the server, so a photo only shows up once its
    WebP copy is generated and pushed.
+
+Two script conventions: a reference ending in `-bw` (e.g. `photos/web/thumbs/me-working-bw.webp`) is
+generated as a black-and-white copy of `photos/me-working.jpg`; and `index.html` may reference a
+large copy `photos/web/<name>.webp` (max 1500px) when a thumbnail would be upscaled (the intro photo).
 
 Video tiles in `index.html` are plain links to YouTube/Vimeo with a local thumbnail; use
 `loading="lazy" decoding="async"` and a `photos/web/thumbs/...webp` thumbnail.
