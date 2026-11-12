@@ -130,51 +130,41 @@ nav ul li a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 .btn-outline:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
 .btn-dark:hover, .submit-btn:hover, #showMoreBtn:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
 
-/* ---------- Hero (Olha + portrait, split) ------------------------------ */
+/* ---------- Intro (title + bio left, portrait right) ---------------------- */
 
-.hero3 {
-  display: grid;
-  grid-template-columns:
-    minmax(var(--gutter), 1fr)
-    minmax(0, calc(var(--container) / 2 - var(--gutter)))
-    minmax(0, calc(var(--container) / 2 - var(--gutter)))
-    minmax(var(--gutter), 1fr);
-  min-height: min(86vh, 820px);
-  padding: 0;               /* no section padding: the portrait meets the header */
-  background: var(--bg);
-}
-.hero3-text {
-  grid-column: 2;
-  align-self: center;
-  padding: 64px 48px 64px 0;
-}
-.hero3 h1 {
-  margin: 0 0 16px;
+.intro { padding: 56px 0 80px; }
+.intro-grid { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); gap: 72px; align-items: start; }
+.intro-text { max-width: 600px; }
+.intro h1 {
+  margin: 0 0 14px;
   font-family: var(--serif);
-  font-size: clamp(44px, 5.6vw, 82px);
+  font-size: clamp(44px, 4.8vw, 74px);
   font-weight: 500;
   line-height: 1.02;
   letter-spacing: -0.01em;
   color: var(--ink);
 }
-.hero3-sub {
-  margin: 0 0 34px;
+.intro-sub {
+  margin: 0 0 30px;
   font-family: var(--serif);
   font-style: italic;
-  font-size: clamp(20px, 2vw, 27px);
+  font-size: clamp(20px, 1.8vw, 26px);
   line-height: 1.35;
   color: var(--ink-2);
 }
-.hero3-actions { display: flex; flex-wrap: wrap; gap: 14px; }
-.hero3-photo { grid-column: 3 / 5; position: relative; min-height: 420px; }
-.hero3-photo img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 50% 20%;
+.intro-actions { display: flex; flex-wrap: wrap; gap: 14px; }
+.intro-bio { margin-top: 64px; }
+.intro-bio .intro-kicker { margin: 0 0 18px; font-weight: 500; text-align: left; }
+.intro-bio p, .hero-bio p {
+  margin: 0 0 18px;
+  font-family: var(--serif);
+  font-size: 19px;
+  line-height: 1.6;
+  color: var(--ink-2);
 }
+.intro-cta { margin: 10px 0 34px; }
+.intro-photo { position: sticky; top: 88px; height: calc(100vh - 112px); max-height: 780px; min-height: 520px; }
+.intro-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; display: block; }
 
 /* ---------- Sections ---------------------------------------------------- */
 
@@ -307,23 +297,7 @@ section { padding: 72px 0; scroll-margin-top: 72px; }
 }
 .video-more { text-align: center; margin-top: 36px; }
 
-/* ---------- Bio (aside + text) ------------------------------------------ */
-
-.about2 { padding-top: 88px; }
-.about2-grid { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 56px; align-items: start; }
-.about2-aside { position: sticky; top: 96px; }
-.about2-aside .section-kicker, .about2-aside .section-title { text-align: left; }
-.about2-kicker { margin: 0 0 22px; font-weight: 500; }   /* the label is the heading now */
-.about2-text { max-width: 640px; }
-.about2-text p, .hero-bio p {
-  margin: 0 0 18px;
-  font-family: var(--serif);
-  font-size: 19px;
-  line-height: 1.6;
-  color: var(--ink-2);
-}
-.about2-text p:first-child { font-size: 22px; color: var(--ink); }
-.about2-cta { margin-top: 14px; }
+/* ---------- Social icons ------------------------------------------------ */
 
 .social-icons { display: flex; gap: 12px; margin: 0; }
 .social-icons a {
@@ -461,12 +435,11 @@ footer { padding: 48px 0; background: var(--accent); color: #f3e6e2; }
 /* ---------- Responsive -------------------------------------------------- */
 
 @media (max-width: 900px) {
-  .hero3 { grid-template-columns: 1fr; min-height: 0; }
-  .hero3-photo { grid-column: 1; order: -1; min-height: 0; height: min(58vh, 540px); }
-  .hero3-text { grid-column: 1; padding: 36px var(--gutter) 48px; }
-  .about2 { padding-top: 56px; }
-  .about2-grid { grid-template-columns: 1fr; gap: 28px; }
-  .about2-aside { position: static; }
+  .intro { padding-top: 0; }
+  .intro-grid { grid-template-columns: 1fr; gap: 36px; }
+  .intro-photo { order: -1; position: static; margin: 0 calc(-1 * var(--gutter)); height: min(58vh, 540px); min-height: 0; }
+  .intro-text { max-width: none; }
+  .intro-bio { margin-top: 48px; }
   .process-steps { grid-template-columns: repeat(2, 1fr); }
   .contact-container { grid-template-columns: 1fr; }
   .photo-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
@@ -481,8 +454,8 @@ footer { padding: 48px 0; background: var(--accent); color: #f3e6e2; }
 @media (max-width: 420px) {
   .nav-class { gap: 4px 11px; }
   nav ul li a, .nav-link { font-size: 10px; letter-spacing: 0.09em; }
-  .hero3-photo { height: min(52vh, 440px); }
-  .hero3 h1 { font-size: clamp(38px, 11vw, 52px); }
+  .intro-photo { height: min(52vh, 440px); }
+  .intro h1 { font-size: clamp(38px, 11vw, 52px); }
   .process { padding: 60px 0; }
   .process-steps { grid-template-columns: 1fr; gap: 24px; }
   section { padding: 52px 0; scroll-margin-top: 100px; }
