@@ -224,6 +224,9 @@ section { padding: 72px 0; scroll-margin-top: 72px; }
   transition: transform 0.6s ease, opacity 0.4s ease;
 }
 .photo-item:hover img { transform: scale(1.04); }
+/* Per-photo framing for the 4:5 crop: where the couple is not in the middle of the picture. */
+.photo-item[data-collection="wedd:Fran"] img { object-position: 72% 50%; }
+.photo-item[data-collection="wedd:Lauren"] img { object-position: 64% 45%; }
 .collection-overlay {
   position: absolute;
   inset: 0;
