@@ -331,7 +331,7 @@ section { padding: 72px 0; scroll-margin-top: 72px; }
   color: #fff;
   transition: background 0.2s, transform 0.2s;
 }
-.social-icons a img { width: 20px; height: 20px; filter: invert(1); }
+.social-icons a img { width: 20px; height: 20px; }   /* the PNGs are already white glyphs */
 .social-icons a:hover { background: var(--accent); transform: translateY(-2px); }
 
 /* ---------- Process ("Así trabajo", green band) ------------------------- */
