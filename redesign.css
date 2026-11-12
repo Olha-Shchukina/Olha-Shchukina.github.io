@@ -133,8 +133,16 @@ nav ul li a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 /* ---------- Intro (title + bio left, portrait right) ---------------------- */
 
 .intro { padding: 56px 0 80px; }
-.intro-grid { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); gap: 72px; align-items: start; }
-.intro-text { max-width: 600px; }
+.intro-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  grid-template-areas: "head head" "bio photo";
+  column-gap: 72px;
+  align-items: start;
+}
+.intro-head { grid-area: head; max-width: 600px; }
+.intro-bio { grid-area: bio; max-width: 600px; }
+.intro-photo { grid-area: photo; }
 .intro h1 {
   margin: 0 0 14px;
   font-family: var(--serif);
@@ -153,7 +161,7 @@ nav ul li a:hover { color: var(--accent); border-bottom-color: var(--accent); }
   color: var(--ink-2);
 }
 .intro-actions { display: flex; flex-wrap: wrap; gap: 14px; }
-.intro-bio { margin-top: 64px; }
+.intro-bio { margin-top: 56px; }
 .intro-bio .intro-kicker { margin: 0 0 18px; font-weight: 500; text-align: left; }
 .intro-bio p, .hero-bio p {
   margin: 0 0 18px;
@@ -163,7 +171,7 @@ nav ul li a:hover { color: var(--accent); border-bottom-color: var(--accent); }
   color: var(--ink-2);
 }
 .intro-cta { margin: 10px 0 34px; }
-.intro-photo { height: min(calc(100vh - 112px), 780px); min-height: 520px; }   /* static, top-aligned with the title */
+.intro-photo { width: min(100%, 480px); aspect-ratio: 7 / 10; justify-self: end; margin-top: -6px; }   /* beside the bio, right-aligned */
 .intro-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; display: block; }
 
 /* ---------- Sections ---------------------------------------------------- */
@@ -436,9 +444,9 @@ footer { padding: 48px 0; background: var(--accent); color: #f3e6e2; }
 
 @media (max-width: 900px) {
   .intro { padding-top: 0; }
-  .intro-grid { grid-template-columns: 1fr; gap: 36px; }
-  .intro-photo { order: -1; position: static; margin: 0 calc(-1 * var(--gutter)); height: min(58vh, 540px); min-height: 0; }
-  .intro-text { max-width: none; }
+  .intro-grid { grid-template-columns: 1fr; grid-template-areas: "photo" "head" "bio"; row-gap: 0; }
+  .intro-photo { width: auto; aspect-ratio: auto; justify-self: stretch; margin: 0 calc(-1 * var(--gutter)) 36px; height: min(58vh, 540px); }
+  .intro-head, .intro-bio { max-width: none; }
   .intro-bio { margin-top: 48px; }
   .process-steps { grid-template-columns: repeat(2, 1fr); }
   .contact-container { grid-template-columns: 1fr; }
