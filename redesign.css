@@ -5,7 +5,7 @@
    without touching it. To go back to the old look, remove the <link> to this
    file from index.html (and the hero/about markup changes, see git diff).
 
-   Palette: warm ivory background, charcoal text, one muted terracotta accent.
+   Palette: warm ivory background, charcoal text, Olha's coral (#e25545) as a sparing accent.
    Type:    Cormorant Garamond (headings, serif) + Jost (UI and body, sans).
    ========================================================================== */
 
@@ -16,7 +16,7 @@
   --ink-2: #4a4440;
   --muted: #857b72;
   --line: #e2d9cd;
-  --accent: #9b5a44;
+  --accent: #e25545;   /* Olha's signature coral, kept to small touches: logo, hovers, selection */
   --serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
   --sans: 'Jost', 'Helvetica Neue', Arial, sans-serif;
   --container: 1200px;
@@ -73,7 +73,7 @@ header.scrolled { padding: 0; }
   font-size: 26px;
   font-weight: 600;
   letter-spacing: 0.02em;
-  color: var(--ink);
+  color: var(--accent);
   text-decoration: none;
 }
 
@@ -97,7 +97,7 @@ nav ul li a, .nav-link {
   border-bottom: 1px solid transparent;
   transition: color 0.2s, border-color 0.2s;
 }
-nav ul li a:hover { color: var(--ink); border-bottom-color: var(--ink); }
+nav ul li a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 
 /* ---------- Buttons ----------------------------------------------------- */
 
@@ -118,9 +118,9 @@ nav ul li a:hover { color: var(--ink); border-bottom-color: var(--ink); }
   transition: background 0.2s, color 0.2s, border-color 0.2s;
 }
 .btn-light { background: #fff; color: var(--ink); border-color: #fff; }
-.btn-light:hover { background: transparent; color: #fff; }
+.btn-light:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
 .btn-ghost { background: transparent; color: #fff; border-color: rgba(255, 255, 255, 0.75); }
-.btn-ghost:hover { background: #fff; color: var(--ink); border-color: #fff; }
+.btn-ghost:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
 .btn-dark, .submit-btn, #showMoreBtn { background: var(--ink); color: #fff; border-color: var(--ink); }
 .btn-dark:hover, .submit-btn:hover, #showMoreBtn:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
 
