@@ -65,6 +65,18 @@ large copy `photos/web/<name>.webp` (max 1500px) when a thumbnail would be upsca
 
 Video tiles in `index.html` are plain links to YouTube/Vimeo with a local thumbnail; use
 `loading="lazy" decoding="async"` and a `photos/web/thumbs/...webp` thumbnail.
+To hide a video without deleting it, add `hidden` to its `.video-item2` div (three Penov Group
+tiles are hidden this way since Nov 2026): `video-lightbox.js` and the "show more" batching in
+`main.js` skip hidden tiles, and `redesign.css` keeps them `display: none`. The lightbox asks
+players for 1080p (`vq=hd1080` on YouTube, `quality=1080p` on Vimeo); YouTube treats it as a hint.
+
+## Links and buttons
+
+- Every WhatsApp link (icon under the bio, phone number in the contact section, footer) goes to
+  `http://wa.link/ms8szi`, which opens the chat with a prefilled message. Do not use `wa.me/...`.
+- The "Pide tu fecha" / "Ver mi trabajo" buttons appear once, at the end of "Sobre mí" (Olha asked
+  for them to be removed from under the title, Nov 2026).
+- "Ver colección" on the photo tiles is hidden under 768px (`redesign.css`), by Olha's request.
 
 ## CSS notes
 
