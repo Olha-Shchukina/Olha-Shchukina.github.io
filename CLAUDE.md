@@ -86,8 +86,9 @@ players for 1080p (`vq=hd1080` on YouTube, `quality=1080p` on Vimeo); YouTube tr
 
 ## Links and buttons
 
-- Every WhatsApp link (icon under the bio, phone number in the contact section, footer) goes to
-  `http://wa.link/ms8szi`, which opens the chat with a prefilled message. Do not use `wa.me/...`.
+- Every WhatsApp link (two buttons/icons under the bio, phone number in the contact section, footer) opens
+  the chat with a prefilled message. Spanish page: `http://wa.link/ms8szi`. English page: `https://wa.link/zbuuiu`
+  (English text). Do not use `wa.me/...`, and never mix the two links between the pages.
 - The "Pide tu fecha" / "Ver mi trabajo" buttons appear once, at the end of "Sobre mí" (Olha asked
   for them to be removed from under the title, Nov 2026).
 - The photo tiles show only the collection title: the "Ver colección / View collection" label was removed
