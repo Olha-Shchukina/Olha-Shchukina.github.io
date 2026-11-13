@@ -167,7 +167,8 @@ nav ul li a:hover { color: var(--accent); border-bottom-color: var(--accent); }
   color: var(--ink-2);
 }
 .intro-actions { display: flex; flex-wrap: wrap; gap: 14px; }
-.intro-bio { margin-top: 12px; }   /* bio follows the subtitle directly (the "Sobre mí" kicker was removed, Nov 2026) */
+.intro-bio { margin-top: 12px; }   /* desktop: bio follows the subtitle directly, no kicker (Olha, Nov 2026) */
+.intro-bio .intro-kicker { display: none; margin: 0 0 18px; font-weight: 500; text-align: left; }
 .intro-bio p, .hero-bio p {
   margin: 0 0 18px;
   font-family: var(--serif);
@@ -444,7 +445,8 @@ footer { padding: 48px 0; background: var(--accent); color: #f3e6e2; }
   .intro-photo { width: auto; aspect-ratio: auto; justify-self: stretch; margin: 0 calc(-1 * var(--gutter)) 36px; height: min(62vh, 560px); }
   .intro-photo img { object-position: 62% 35%; }
   .intro-head, .intro-bio { max-width: none; }
-  .intro-bio { margin-top: 8px; }
+  .intro-bio { margin-top: 40px; }
+  .intro-bio .intro-kicker { display: block; }   /* phones keep the "Sobre mí" kicker */
   .process-steps { grid-template-columns: repeat(2, 1fr); }
   .contact-container { grid-template-columns: 1fr; }
   .photo-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
