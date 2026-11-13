@@ -92,7 +92,8 @@ players for 1080p (`vq=hd1080` on YouTube, `quality=1080p` on Vimeo); YouTube tr
   for them to be removed from under the title, Nov 2026).
 - The photo tiles show only the collection title: the "Ver colección / View collection" label was removed
   (Olha's request, Nov 2026). Do not add it back.
-- The intro has no "Sobre mí" kicker: the bio starts right after the "Videógrafa y fotógrafa..." subtitle.
+- On desktop the intro has no "Sobre mí" kicker (the bio starts right after the subtitle); on phones (under
+  900px, stacked layout) the kicker is shown. Both are the same markup, toggled in `redesign.css`.
 - Olha's green (`--green`) is used for the secondary buttons ("Ver más vídeos", "Enviar mensaje"), the
   social-icon circles and the "Así trabajo" step rules; red stays for primary actions and hovers.
 - Social icons are inline SVGs in one stroke style (Instagram, TikTok, LinkedIn); WhatsApp is still
