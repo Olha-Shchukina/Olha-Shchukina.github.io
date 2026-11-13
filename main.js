@@ -19,6 +19,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const statusEl = document.getElementById('contactStatus');
   const submitBtn = form.querySelector('button[type="submit"]');
+  const MSG = document.documentElement.lang === 'en' ? {
+    sending: 'Sending…', sent: 'Thanks! Your message has been sent.',
+    failed: 'Oops — something went wrong. Please try again later.',
+    network: 'Network error. Please check your connection and try again.'
+  } : {
+    sending: 'Enviando…', sent: '¡Gracias! Tu mensaje se ha enviado.',
+    failed: 'Vaya, algo ha fallado. Inténtalo de nuevo más tarde.',
+    network: 'Error de conexión. Comprueba tu conexión e inténtalo de nuevo.'
+  };
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -30,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     submitBtn.disabled = true;
-    statusEl.textContent = 'Sending…';
+    statusEl.textContent = MSG.sending;
 
         try {
           const formData = new FormData(form);
@@ -42,13 +51,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
           if (res.ok) {
             form.reset();
-            statusEl.textContent = 'Thanks! Your message has been sent.';
+            statusEl.textContent = MSG.sent;
           } else {
             const data = await res.json().catch(() => ({}));
-            statusEl.textContent = data?.errors?.[0]?.message || 'Oops — something went wrong. Please try again later.';
+            statusEl.textContent = data?.errors?.[0]?.message || MSG.failed;
           }
         } catch (err) {
-          statusEl.textContent = 'Network error. Please check your connection and try again.';
+          statusEl.textContent = MSG.network;
         } finally {
           submitBtn.disabled = false;
           setTimeout(() => { statusEl.textContent = ''; }, 6000);
@@ -2870,8 +2879,10 @@ document.addEventListener('DOMContentLoaded', function() {
         const collection = collections[collectionId];
         
         if (collection) {
-            modalTitle.textContent = collection.title;
-            modalDescription.textContent = collection.description;
+            // en.html loads collections-en.js; fall back to the Spanish text if a key is missing.
+            const en = (document.documentElement.lang === 'en' && window.COLLECTIONS_EN && window.COLLECTIONS_EN[collectionId]) || {};
+            modalTitle.textContent = en.title || collection.title;
+            modalDescription.textContent = en.description || collection.description;
             
             // Clear previous photos
             collectionPhotos.innerHTML = '';

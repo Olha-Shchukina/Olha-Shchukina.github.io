@@ -18,6 +18,10 @@
     return null;
   }
 
+  var EN = document.documentElement.lang === 'en';
+  var L = EN ? { player: 'Video player', close: 'Close (Esc)', prev: 'Previous video', next: 'Next video', video: 'Video', watchOn: 'Watch on ' }
+             : { player: 'Reproductor de vídeo', close: 'Cerrar (Esc)', prev: 'Vídeo anterior', next: 'Vídeo siguiente', video: 'Vídeo', watchOn: 'Ver en ' };
+
   var items = [];           // [{ url, title, w, h, el, video }]
   var current = -1, open = false, lastFocus;
   var root, frame, caption, counter, closeBtn, prevBtn, nextBtn;
@@ -31,11 +35,11 @@
     root.className = 'vlb';
     root.setAttribute('role', 'dialog');
     root.setAttribute('aria-modal', 'true');
-    root.setAttribute('aria-label', 'Reproductor de vídeo');
+    root.setAttribute('aria-label', L.player);
     root.innerHTML =
-      '<button type="button" class="vlb-close" aria-label="Cerrar (Esc)">' + SVG_X + '</button>' +
-      '<button type="button" class="vlb-nav vlb-prev" aria-label="Vídeo anterior">' + SVG_PREV + '</button>' +
-      '<button type="button" class="vlb-nav vlb-next" aria-label="Vídeo siguiente">' + SVG_NEXT + '</button>' +
+      '<button type="button" class="vlb-close" aria-label="' + L.close + '">' + SVG_X + '</button>' +
+      '<button type="button" class="vlb-nav vlb-prev" aria-label="' + L.prev + '">' + SVG_PREV + '</button>' +
+      '<button type="button" class="vlb-nav vlb-next" aria-label="' + L.next + '">' + SVG_NEXT + '</button>' +
       '<div class="vlb-stage">' +
         '<div class="vlb-frame"><div class="vlb-spinner"></div></div>' +
         '<p class="vlb-caption"><span class="vlb-title"></span> <a class="vlb-ext" target="_blank" rel="noopener"></a></p>' +
@@ -94,7 +98,7 @@
     frame.classList.add('is-loading');
     var iframe = document.createElement('iframe');
     iframe.src = v.src;
-    iframe.title = it.title || 'Vídeo';
+    iframe.title = it.title || L.video;
     iframe.setAttribute('allow', 'autoplay; fullscreen; picture-in-picture; encrypted-media');
     iframe.setAttribute('allowfullscreen', '');
     iframe.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
@@ -102,7 +106,7 @@
     frame.appendChild(iframe);
     caption.querySelector('.vlb-title').textContent = it.title;
     var ext = caption.querySelector('.vlb-ext');
-    ext.href = it.url; ext.textContent = 'Ver en ' + v.label + ' ↗';
+    ext.href = it.url; ext.textContent = L.watchOn + v.label + ' ↗';
     counter.textContent = (i + 1) + ' / ' + items.length;
     prevBtn.disabled = i === 0;
     nextBtn.disabled = i === items.length - 1;
