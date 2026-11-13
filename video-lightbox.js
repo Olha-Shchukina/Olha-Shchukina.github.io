@@ -8,12 +8,12 @@
   function parseVideo(url) {
     var m = url.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?(?:.*&)?v=|shorts\/|embed\/|live\/))([\w-]{11})/);
     if (m) return { kind: 'youtube', id: m[1], label: 'YouTube',
-      src: 'https://www.youtube-nocookie.com/embed/' + m[1] + '?autoplay=1&rel=0&playsinline=1&modestbranding=1' };
+      src: 'https://www.youtube-nocookie.com/embed/' + m[1] + '?autoplay=1&rel=0&playsinline=1&modestbranding=1&vq=hd1080' };
     m = url.match(/vimeo\.com\/(?:video\/)?(\d+)(?:\/([0-9a-f]+))?/);
     if (m) {
       var h = m[2] || (url.match(/[?&]h=([0-9a-f]+)/) || [])[1];
       return { kind: 'vimeo', id: m[1], label: 'Vimeo',
-        src: 'https://player.vimeo.com/video/' + m[1] + '?autoplay=1&title=0&byline=0&portrait=0&dnt=1' + (h ? '&h=' + h : '') };
+        src: 'https://player.vimeo.com/video/' + m[1] + '?autoplay=1&title=0&byline=0&portrait=0&dnt=1&quality=1080p' + (h ? '&h=' + h : '') };
     }
     return null;
   }
@@ -137,7 +137,7 @@
 
   function collect(grid) {
     items = [];
-    grid.querySelectorAll('.video-item2 a[href]').forEach(function (a) {
+    grid.querySelectorAll('.video-item2:not([hidden]) a[href]').forEach(function (a) {
       var v = parseVideo(a.href);
       if (!v) return;
       var img = a.querySelector('img');
