@@ -167,8 +167,7 @@ nav ul li a:hover { color: var(--accent); border-bottom-color: var(--accent); }
   color: var(--ink-2);
 }
 .intro-actions { display: flex; flex-wrap: wrap; gap: 14px; }
-.intro-bio { margin-top: 56px; }
-.intro-bio .intro-kicker { margin: 0 0 18px; font-weight: 500; text-align: left; }
+.intro-bio { margin-top: 12px; }   /* bio follows the subtitle directly (the "Sobre mí" kicker was removed, Nov 2026) */
 .intro-bio p, .hero-bio p {
   margin: 0 0 18px;
   font-family: var(--serif);
@@ -255,18 +254,7 @@ section { padding: 72px 0; scroll-margin-top: 72px; }
   line-height: 1.15;
   color: #fff;
 }
-.view-collection {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  background: none;
-  border-radius: 0;
-  color: rgba(255, 255, 255, 0.85);
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-}
+.view-collection { display: none; }   /* label removed from the tiles (Nov 2026); rule kept in case a span is left behind */
 @media (hover: none) { .collection-overlay { opacity: 1; } }
 
 /* ---------- Video grid -------------------------------------------------- */
@@ -456,7 +444,7 @@ footer { padding: 48px 0; background: var(--accent); color: #f3e6e2; }
   .intro-photo { width: auto; aspect-ratio: auto; justify-self: stretch; margin: 0 calc(-1 * var(--gutter)) 36px; height: min(62vh, 560px); }
   .intro-photo img { object-position: 62% 35%; }
   .intro-head, .intro-bio { max-width: none; }
-  .intro-bio { margin-top: 48px; }
+  .intro-bio { margin-top: 8px; }
   .process-steps { grid-template-columns: repeat(2, 1fr); }
   .contact-container { grid-template-columns: 1fr; }
   .photo-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
@@ -464,7 +452,6 @@ footer { padding: 48px 0; background: var(--accent); color: #f3e6e2; }
 }
 
 @media (max-width: 768px) {
-  .view-collection { display: none; }
   .header-container { flex-direction: column; gap: 6px; padding: 10px var(--gutter); min-height: 0; }
   .nav-class { flex-wrap: wrap; justify-content: center; gap: 4px 16px; }
   nav ul li a, .nav-link { font-size: 11px; letter-spacing: 0.12em; white-space: nowrap; }
