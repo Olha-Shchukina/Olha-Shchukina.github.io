@@ -6,6 +6,12 @@ branch (checked via the Pages API in Nov 2026), so a push to `main` is live with
 By habit `main` is also merged into `gh-pages` with a pull request to keep the two identical, but
 `gh-pages` is not what visitors see.
 
+## Two languages rule (always)
+
+The site exists in Spanish (`index.html`) and English (`en.html`). Every change, however small, is made
+to both files (and to `collections-en.js` when it touches the gallery data). Never change one without the
+other; before committing, check that both pages still have the same structure.
+
 ## Publishing rule (always)
 
 Never `git push` (or merge into `gh-pages`) on your own. Commit locally, say "committed, not pushed",
@@ -84,7 +90,9 @@ players for 1080p (`vq=hd1080` on YouTube, `quality=1080p` on Vimeo); YouTube tr
   `http://wa.link/ms8szi`, which opens the chat with a prefilled message. Do not use `wa.me/...`.
 - The "Pide tu fecha" / "Ver mi trabajo" buttons appear once, at the end of "Sobre mí" (Olha asked
   for them to be removed from under the title, Nov 2026).
-- "Ver colección" on the photo tiles is hidden under 768px (`redesign.css`), by Olha's request.
+- The photo tiles show only the collection title: the "Ver colección / View collection" label was removed
+  (Olha's request, Nov 2026). Do not add it back.
+- The intro has no "Sobre mí" kicker: the bio starts right after the "Videógrafa y fotógrafa..." subtitle.
 - Olha's green (`--green`) is used for the secondary buttons ("Ver más vídeos", "Enviar mensaje"), the
   social-icon circles and the "Así trabajo" step rules; red stays for primary actions and hovers.
 - Social icons are inline SVGs in one stroke style (Instagram, TikTok, LinkedIn); WhatsApp is still
