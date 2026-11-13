@@ -16,7 +16,15 @@ A "push" instruction covers only the changes the owner is looking at, not later 
 
 - `index.html` — the whole site (Spanish). Order: hero (Olha + portrait), bio with "Pide tu fecha" (wa.link),
   "Así trabajo" steps, photo grid, video tiles, contact form (Formspree), footer.
+- `en.html` — the English version, a comment-free copy of `index.html` with the texts translated (same ids,
+  classes, images and scripts, `lang="en"`). The ES / EN switch is the last item of the nav on both pages.
+  There is no build step: when `index.html` changes (text, a tile, a video), mirror the change in `en.html`.
+- `collections-en.js` — English title + description for each gallery collection, keyed like `collections`
+  in `main.js`. Loaded by `en.html` only; `main.js` uses it when `<html lang="en">`, falling back to the
+  Spanish text for a missing key. Add an entry whenever a collection is added. (Photo captions in the
+  fullscreen viewer come from the `alt` texts in `main.js` and are not translated.)
 - `main.js` — gallery data (`collections` object: title, description, photo list per collection), modal + fullscreen viewer, lazy loading, contact form submit.
+  UI strings in `main.js` and `video-lightbox.js` are picked by `document.documentElement.lang` (es / en).
 - `style.css` — the original stylesheet (messy, see "CSS notes" below). Still loaded first.
 - `redesign.css` — the Nov 2026 redesign, loaded AFTER `style.css` and overriding it. New styling goes
   here; edit `style.css` only to fix something `redesign.css` does not touch (e.g. the gallery modal).
@@ -77,6 +85,10 @@ players for 1080p (`vq=hd1080` on YouTube, `quality=1080p` on Vimeo); YouTube tr
 - The "Pide tu fecha" / "Ver mi trabajo" buttons appear once, at the end of "Sobre mí" (Olha asked
   for them to be removed from under the title, Nov 2026).
 - "Ver colección" on the photo tiles is hidden under 768px (`redesign.css`), by Olha's request.
+- Olha's green (`--green`) is used for the secondary buttons ("Ver más vídeos", "Enviar mensaje"), the
+  social-icon circles and the "Así trabajo" step rules; red stays for primary actions and hovers.
+- Social icons are inline SVGs in one stroke style (Instagram, TikTok, LinkedIn); WhatsApp is still
+  `photos/whats.png`. Do not reintroduce `photos/tiktok02.png`, it rendered dimmer than the rest.
 
 ## CSS notes
 
