@@ -46,6 +46,9 @@ A "push" instruction covers only the changes the owner is looking at, not later 
 - `photos/web/thumbs/` — generated WebP copies of the homepage thumbnails (max 1200px).
 - `tools/optimize-images.js` — regenerates the WebP copies (see below).
 - `CNAME` — custom domain.
+- `favicon.ico` + `photos/favicon-*.png` + `photos/apple-touch-icon.png` — the tab icon (red tile, beige
+  serif "H"), linked from the head of both pages. Source: a 512px render of the "H" in Cormorant Garamond
+  on `--accent`; regenerate all sizes together if the design changes.
 
 Everything else (`index-es.html`, `index-es-old.html`, `photos.html`, `videos.html`, `backup*.html`, `*-es.html`)
 is old and not linked from `index.html`. Leave it alone unless asked.
