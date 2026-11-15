@@ -74,8 +74,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 { src: 'photos/web/Eli y China/1 (2).webp', alt: '' },
                 { src: 'photos/web/Eli y China/1 (3).webp', alt: '' },
                 { src: 'photos/web/Eli y China/1 (4).webp', alt: '' },
-                { src: 'photos/web/Eli y China/1 (5).webp', alt: '' },
-                { src: 'photos/web/Eli y China/1 (6).webp', alt: '' },
                 { src: 'photos/web/Eli y China/1 (7).webp', alt: '' },
                 { src: 'photos/web/Eli y China/1 (8).webp', alt: '' },
                 { src: 'photos/web/Eli y China/1 (9).webp', alt: '' },
