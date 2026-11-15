@@ -2,6 +2,7 @@
 // Loaded by en.html only; main.js uses it when <html lang="en">. Keys match the
 // `collections` object in main.js (and data-collection in the HTML).
 window.COLLECTIONS_EN = {
+  "wedd:Eli y China": { title: "Wedding story: Eli and China", description: "Eli and China got married at a country estate, surrounded by their people. Nervous, laughter-filled preparations, an open-air ceremony, drinks in the sun with friends and family, and a party that went on late into the night. A day of summer, light and a lot of love." },
   "Wed:Silvia": { title: "Civil wedding of Silvia and Alejandro", description: "This was the civil wedding of Silvia and Alejandro. My work began with the bride getting ready at home, followed by the ceremony at the Moncloa-Aravaca civil registry and a portrait session in the park. I captured group photos, candid shots of the newlyweds and some precious moments with their son. It was an incredible day!" },
   "Rosa y Jesus": { title: "Engagement session: Rosa and Jesús", description: "A fun and varied engagement photo session at the Lagunas de las Madres in Arganda del Rey." },
   "Wed:Monica": { title: "Wedding story: Mónica and Colin", description: "A wedding that united two hearts from different corners of Europe: Mónica's Spanish grace and Colin's Irish charm. It was an honour to capture their big day, full of meaningful traditions, artistic performances by their family and a moving energy on the dance floor once the music started." },

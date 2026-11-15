@@ -6,6 +6,10 @@ branch (checked via the Pages API in Nov 2026), so a push to `main` is live with
 By habit `main` is also merged into `gh-pages` with a pull request to keep the two identical, but
 `gh-pages` is not what visitors see.
 
+On the Windows machine `git` is not on PATH; use SourceTree's copy:
+`%LOCALAPPDATA%\Atlassian\SourceTree\git_local\cmd\git.exe`. Node.js is not installed there either
+(see the Python optimizer below).
+
 ## Two languages rule (always)
 
 The site exists in Spanish (`index.html`) and English (`en.html`). Every change, however small, is made
@@ -44,7 +48,8 @@ A "push" instruction covers only the changes the owner is looking at, not later 
   outside the repo. Only `photos/web/` and the small PNG icons directly in `photos/` are tracked.
 - `photos/web/` — generated WebP copies used by the site (gallery photos, max 2000px long edge, quality 80).
 - `photos/web/thumbs/` — generated WebP copies of the homepage thumbnails (max 1200px).
-- `tools/optimize-images.js` — regenerates the WebP copies (see below).
+- `tools/optimize-images.js` — regenerates the WebP copies (see below). `tools/optimize-images.py` is the same
+  script for Python + Pillow (used on the Windows machine, which has no Node.js); keep the two in sync.
 - `CNAME` — custom domain.
 - `favicon.ico` + `photos/favicon-*.png` + `photos/apple-touch-icon.png` — the tab icon (red tile, beige
   serif "H"), linked from the head of both pages. Source: a 512px render of the "H" in Cormorant Garamond
@@ -71,6 +76,7 @@ do the steps below and run the script before committing.
    cd tools && npm install sharp   # once
    node tools/optimize-images.js   # from the repo root
    ```
+   Without Node.js (the Windows machine): `pip install pillow` once, then `python tools/optimize-images.py`.
    The script reads `main.js` and `index.html`, converts every referenced photo that has no up-to-date copy,
    and never touches the originals. Commit the new files under `photos/web/` together with the `main.js` /
    `index.html` changes. The originals are not on the server, so a photo only shows up once its
