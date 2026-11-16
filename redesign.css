@@ -180,14 +180,19 @@ nav ul li a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 /* Two layered photos: black-and-white behind (up, right), colour portrait in front (down, left). */
 .intro-photo { width: min(100%, 500px); aspect-ratio: 2 / 3; justify-self: end; margin-top: -6px; }
 .intro-photo img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; }
-/* Olha's motto written over the bottom of the portrait (option D, Nov 2026) */
-.intro-photo { position: relative; }
-.intro-motto {
-  position: absolute; left: 0; right: 0; bottom: 0; margin: 0;
-  padding: 90px 30px 28px;
-  background: linear-gradient(to top, rgba(26, 26, 26, .78), rgba(26, 26, 26, 0));
-  font-family: var(--serif); font-style: italic; font-size: clamp(22px, 2.1vw, 30px); line-height: 1.25;
-  color: var(--bg);
+/* Olha's motto opening the bio: large italic quote, faint red quote mark, signed (option C, Nov 2026) */
+.intro-motto { position: relative; margin: 6px 0 30px; padding: 18px 0 0; border: 0; }
+.intro-motto::before {
+  content: "\201C"; position: absolute; top: -26px; left: -6px;
+  font-family: var(--serif); font-size: 96px; line-height: 1; color: var(--accent); opacity: .35;
+}
+.hero-bio .intro-motto p {
+  margin: 0; font-family: var(--serif); font-style: italic;
+  font-size: clamp(28px, 2.6vw, 36px); line-height: 1.2; color: var(--ink);
+}
+.intro-motto cite {
+  display: block; margin-top: 10px; font-family: var(--sans); font-style: normal;
+  font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--accent);
 }
 
 /* ---------- Sections ---------------------------------------------------- */
@@ -453,7 +458,7 @@ footer { padding: 48px 0; background: var(--accent); color: #f3e6e2; }
   .intro-grid { grid-template-columns: 1fr; grid-template-areas: "photo" "head" "bio"; row-gap: 0; }
   .intro-photo { width: auto; aspect-ratio: auto; justify-self: stretch; margin: 0 calc(-1 * var(--gutter)) 36px; height: min(62vh, 560px); }
   .intro-photo img { object-position: 62% 35%; }
-  .intro-motto { padding: 70px var(--gutter) 22px; font-size: clamp(21px, 5.6vw, 27px); }
+  .hero-bio .intro-motto p { font-size: clamp(26px, 7vw, 32px); }
   .intro-head, .intro-bio { max-width: none; }
   .intro-bio { margin-top: 40px; }
   .intro-bio .intro-kicker { display: block; }   /* phones keep the "Sobre mí" kicker */
