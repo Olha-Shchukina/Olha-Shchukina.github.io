@@ -452,6 +452,7 @@ section { padding: 72px 0; scroll-margin-top: 72px; }
   line-height: 1.5;
   color: var(--ink-2);
 }
+.form-group label .optional { font-size: 11px; letter-spacing: 0.06em; text-transform: none; font-weight: 400; }
 .form-group input, .form-group textarea, .form-group select {
   width: 100%;
   padding: 10px 0;
