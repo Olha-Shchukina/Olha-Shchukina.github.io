@@ -20,11 +20,11 @@ document.addEventListener('DOMContentLoaded', function() {
   const statusEl = document.getElementById('contactStatus');
   const submitBtn = form.querySelector('button[type="submit"]');
   const MSG = document.documentElement.lang === 'en' ? {
-    sending: 'Sending…', sent: 'Thanks! Your message has been sent.',
+    sending: 'Sending…', sent: 'Thank you! I will reply within 24 hours.',
     failed: 'Oops — something went wrong. Please try again later.',
     network: 'Network error. Please check your connection and try again.'
   } : {
-    sending: 'Enviando…', sent: '¡Gracias! Tu mensaje se ha enviado.',
+    sending: 'Enviando…', sent: '¡Gracias! Os contesto en menos de 24 horas.',
     failed: 'Vaya, algo ha fallado. Inténtalo de nuevo más tarde.',
     network: 'Error de conexión. Comprueba tu conexión e inténtalo de nuevo.'
   };

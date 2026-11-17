@@ -725,10 +725,10 @@
         <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
             <span class="section-kicker">Let's talk about your wedding</span>
             <h2 class="section-title section-title2">Contact</h2>
+            <p class="contact-lead">Tell me your date and I'll let you know if I'm free. Message me on WhatsApp for a quick answer, or use the form if you prefer email. I reply personally within 24 hours.</p>
             <div class="contact-container">
                 <div class="contact-info">
                     <h3>Get in touch</h3>
-                    <p>I will help you prepare for the big day and guide you so you feel at ease in front of the camera. I will also help you build the perfect timeline so that every important moment gets captured. Get in touch to get started!</p>
                     <div class="contact-details">
 					  <div class="contact-item">
                             <span class="contact-label">WhatsApp</span> 
@@ -757,24 +757,49 @@
                     <form id="contactForm"
                       action="https://formspree.io/f/mjkanbno"
                       method="POST"
-                    >   
+                    >
+                        <input type="hidden" name="_subject" value="Nueva consulta de fecha (web en inglés)">
                         <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your names</label>
+                            <input type="text" id="name" name="nombres" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" id="email" name="email" autocomplete="email" required>
                         </div>
                         <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" required>
+                            <label for="date">Wedding date (or "we don't have one yet")</label>
+                            <input type="text" id="date" name="fecha" required>
                         </div>
                         <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="venue">Venue or estate</label>
+                            <input type="text" id="venue" name="lugar" required>
                         </div>
-                        <button type="submit" class="submit-btn">Send message</button>
+                        <div class="form-group">
+                            <label for="service">What are you looking for?</label>
+                            <select id="service" name="servicio" required>
+                                <option value="" selected disabled hidden>Choose an option</option>
+                                <option>Video</option>
+                                <option>Photo</option>
+                                <option>Photo + video</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Anything you'd like to tell me? <span class="optional">(optional)</span></label>
+                            <textarea id="message" name="mensaje" rows="4"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="source">How did you hear about me? <span class="optional">(optional)</span></label>
+                            <select id="source" name="como_me_conocieron">
+                                <option value="" selected>—</option>
+                                <option>Instagram</option>
+                                <option>TikTok</option>
+                                <option>Google</option>
+                                <option>Someone recommended you</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="submit-btn">Book my date</button>
                         <p id="contactStatus" class="form-status" aria-live="polite"></p>
                     </form>
                 </div>

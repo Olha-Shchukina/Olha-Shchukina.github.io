@@ -981,11 +981,10 @@
         <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
             <span class="section-kicker">Hablemos de tu boda</span>
             <h2 class="section-title section-title2">Contacto</h2>
+            <p class="contact-lead">Contadme vuestra fecha y os digo si la tengo libre. Por WhatsApp, si queréis respuesta rápida, o con el formulario si preferís el correo. Os contesto personalmente en menos de 24 horas.</p>
             <div class="contact-container">
                 <div class="contact-info">
                     <h3>Ponerse en contacto</h3>
-                    <p>Te ayudaré a prepararte para el gran día y te guiaré para que te sientas cómoda ante la cámara. Además, te ayudaré a crear el planning perfecto para asegurarme de capturar cada momento importante. ¡Ponte en contacto para empezar!</p>
-                    
                     <div class="contact-details">
 					  <div class="contact-item">
                             <span class="contact-label">WhatsApp</span> 
@@ -1017,24 +1016,50 @@
                     <form id="contactForm"
                       action="https://formspree.io/f/mjkanbno"
                       method="POST"
-                    >   
+                    >
+                        <!-- Field names are the same on en.html, so Olha gets the same email layout from both pages -->
+                        <input type="hidden" name="_subject" value="Nueva consulta de fecha (web en español)">
                         <div class="form-group">
-                            <label for="name">Nombre</label>
-                            <input type="text" id="name" name="name" required>
+                            <label for="name">Vuestros nombres</label>
+                            <input type="text" id="name" name="nombres" required>
                         </div>
                         <div class="form-group">
-                            <label for="email">Correo electrónico</label>
-                            <input type="email" id="email" name="email" required>
+                            <label for="email">Correo</label>
+                            <input type="email" id="email" name="email" autocomplete="email" required>
                         </div>
                         <div class="form-group">
-                            <label for="subject">Asunto</label>
-                            <input type="text" id="subject" name="subject" required>
+                            <label for="date">Fecha de la boda (o «aún no la tenemos»)</label>
+                            <input type="text" id="date" name="fecha" required>
                         </div>
                         <div class="form-group">
-                            <label for="message">Mensaje</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="venue">Lugar o finca</label>
+                            <input type="text" id="venue" name="lugar" required>
                         </div>
-                        <button type="submit" class="submit-btn">Enviar mensaje</button>
+                        <div class="form-group">
+                            <label for="service">¿Qué buscáis?</label>
+                            <select id="service" name="servicio" required>
+                                <option value="" selected disabled hidden>Elegid una opción</option>
+                                <option>Vídeo</option>
+                                <option>Foto</option>
+                                <option>Foto + vídeo</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">¿Algo que queráis contarme? <span class="optional">(opcional)</span></label>
+                            <textarea id="message" name="mensaje" rows="4"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="source">¿Cómo me habéis conocido? <span class="optional">(opcional)</span></label>
+                            <select id="source" name="como_me_conocieron">
+                                <option value="" selected>—</option>
+                                <option>Instagram</option>
+                                <option>TikTok</option>
+                                <option>Google</option>
+                                <option>Me recomendó alguien</option>
+                                <option>Otro</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="submit-btn">Pedir mi fecha</button>
                         <p id="contactStatus" class="form-status" aria-live="polite"></p>
                     </form>
                 </div>

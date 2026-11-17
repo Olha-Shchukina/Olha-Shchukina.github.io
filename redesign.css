@@ -442,7 +442,18 @@ section { padding: 72px 0; scroll-margin-top: 72px; }
   text-transform: uppercase;
   color: var(--muted);
 }
-.form-group input, .form-group textarea {
+/* Intro line above the two panels (replaces the old paragraph in the left panel, Nov 2026) */
+.contact-lead {
+  max-width: 720px;
+  margin: -12px auto 44px;
+  text-align: center;
+  font-family: var(--serif);
+  font-size: clamp(20px, 2vw, 23px);
+  line-height: 1.5;
+  color: var(--ink-2);
+}
+.form-group label .optional { font-size: 11px; letter-spacing: 0.06em; text-transform: none; font-weight: 400; }
+.form-group input, .form-group textarea, .form-group select {
   width: 100%;
   padding: 10px 0;
   background: transparent;
@@ -457,10 +468,21 @@ section { padding: 72px 0; scroll-margin-top: 72px; }
   transition: border-color 0.2s;
 }
 .form-group input:focus, .form-group textarea:focus,
-.form-group input:valid:focus, .form-group textarea:valid:focus {
+.form-group input:valid:focus, .form-group textarea:valid:focus,
+.form-group select:focus {
   border-color: var(--ink);
   box-shadow: none;
 }
+/* Dropdowns ("¿Qué buscáis?", "¿Cómo me habéis conocido?"): same underline look as the inputs + a small chevron */
+.form-group select {
+  -webkit-appearance: none;
+  appearance: none;
+  padding-right: 28px;
+  cursor: pointer;
+  background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23857b72' stroke-width='1.4'/%3E%3C/svg%3E") no-repeat right 4px center;
+}
+.form-group select:invalid { color: var(--muted); }   /* "Elegid una opción" placeholder */
+.form-group select option { color: var(--ink); }
 
 /* ---------- Footer ------------------------------------------------------ */
 
