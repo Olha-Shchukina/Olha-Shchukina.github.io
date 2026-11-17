@@ -159,7 +159,7 @@ nav ul li a:hover { color: var(--accent); border-bottom-color: var(--accent); }
   color: var(--ink);
 }
 .intro-sub {
-  margin: 0 0 30px;
+  margin: 0 0 8px;   /* desktop: motto sits close under the subtitle (Olha, Nov 2026); phones keep 30px, see the 900px block */
   font-family: var(--serif);
   font-style: italic;
   font-size: clamp(20px, 1.8vw, 26px);
@@ -514,6 +514,7 @@ footer { padding: 48px 0; background: var(--accent); color: #f3e6e2; }
   .intro-photo img { object-position: 62% 35%; }
   .hero-bio .intro-motto p { font-size: clamp(26px, 7vw, 32px); }
   .intro-head, .intro-bio { max-width: none; }
+  .intro-sub { margin-bottom: 30px; }
   .intro-bio { margin-top: 40px; }
   .intro-bio .intro-kicker { display: block; }   /* phones keep the "Sobre mí" kicker */
   .process-steps { grid-template-columns: repeat(2, 1fr); }
